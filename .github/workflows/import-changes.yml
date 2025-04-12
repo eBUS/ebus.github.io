@@ -73,7 +73,7 @@ jobs:
           echo "For details on the changes refer to the assocated [ChangeLog](https://github.com/john30/ebusd-configuration/blob/$ref/ChangeLog.md)." >> ${subdir}/mapping.md
           echo >> ${subdir}/mapping.md
         fi
-        ((cd ebusd-configuration${suffix}/src/ && find . -type d) | xargs -i ./.github/workflows/genmapping.sh "${subdir}/mapping.md" "ebusd-configuration${suffix}/src" "$ref" "{}")
+        ((cd ebusd-configuration${suffix}/src/ && find . -type d) | sort | xargs -i ./.github/workflows/genmapping.sh "${subdir}/mapping.md" "ebusd-configuration${suffix}/src" "$ref" "{}")
     - name: Unstash versions
       continue-on-error: true
       run: |
