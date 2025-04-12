@@ -1,0 +1,6 @@
+type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,unit,comment
+*r,
+*w,
+r,,,SensorValue,40a100,,,40a1,,uir,,UIR,,,Address,uir_1,,UIR,,,,uir_2,,UIR,,ppm,Value
+w,,,SensorUpperLimit,4080039103e8,,,4080,91,value,,UIR,,ppm,
+w,,,SensorLowerLimit,4080039002bc,,,4080,90,value,,UIR,,ppm,

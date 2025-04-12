@@ -159,8 +159,8 @@ r,,service,LiveMonitorCurrentCompressorUtil,compressor modulation,,,b51a,0500322
 r,,service,LiveMonitorAirIntakeTemp,air intake temperature,,,b51a,05003226,value,,IGN:3,,,,value,,D2C,,°C,Temperatur
 r,,install,StatCompressorHours,compressor hours,,,b51a,05b43400,value,,IGN:3,,,,value,,ULG,,h,Stunden
 r,,install,StatCompressorStarts,compressor starts,,,b51a,05b43401,value,,IGN:3,,,,value,,UIN,,,
-r,,install,StatBuildingPumpHours,building punp hours,,,b51a,05b43402,value,,IGN:3,,,,value,,ULG,,h,Stunden
-r,,install,StatBuildingPumpStarts,building punp starts,,,b51a,05b43403,value,,IGN:3,,,,value,,UIN,,,
+r,,install,StatBuildingPumpHours,building pump hours,,,b51a,05b43402,value,,IGN:3,,,,value,,ULG,,h,Stunden
+r,,install,StatBuildingPumpStarts,building pump starts,,,b51a,05b43403,value,,IGN:3,,,,value,,UIN,,,
 r,,install,StatFourWayValveHours,4 way valve hours,,,b51a,05073406,value,,IGN:3,,,,value,,ULG,,h,Stunden
 r,,install,StatFourWayValveSwitchingOperations,4 way valve switching operations,,,b51a,05363407,value,,IGN:3,,,,value,,UIN,,,
 r,,install,StatFan1Hours,fan 1 hours,,,b51a,053c3451,value,,IGN:3,,,,value,,ULG,,h,Stunden

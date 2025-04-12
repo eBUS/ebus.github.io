@@ -4,6 +4,21 @@
     "size": 2535,
     "mtime": 1733673661
   },
+  "encon/0a..co2.csv": {
+    "hash": "63504892",
+    "size": 306,
+    "mtime": 1744434032
+  },
+  "encon/3c..excellent.csv": {
+    "hash": "7c136e1c",
+    "size": 19201,
+    "mtime": 1744434032
+  },
+  "encon/7c..excellent.csv": {
+    "hash": "7c136e1c",
+    "size": 19201,
+    "mtime": 1744434032
+  },
   "memory.csv": {
     "hash": "3c2c3e01",
     "size": 518,
@@ -65,9 +80,9 @@
     "mtime": 1737488344
   },
   "vaillant/08.bai.csv": {
-    "hash": "8f38e3c6",
-    "size": 6278,
-    "mtime": 1737488344
+    "hash": "b9c29861",
+    "size": 6416,
+    "mtime": 1744433841
   },
   "vaillant/08.ehp.csv": {
     "hash": "a533e8b9",
@@ -75,9 +90,9 @@
     "mtime": 1737488344
   },
   "vaillant/08.hmu.csv": {
-    "hash": "b58096ba",
+    "hash": "f52dbe04",
     "size": 22759,
-    "mtime": 1737488344
+    "mtime": 1744433841
   },
   "vaillant/08.recov.csv": {
     "hash": "1f2436ce",

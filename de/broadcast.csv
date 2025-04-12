@@ -3,9 +3,9 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *r,
 *w,
 u,Broadcast,,Datetime,Datum Uhrzeit,,fe,0700,,outsidetemp,,D2B,,°C,Temperatur,time,,BTI,,,Uhrzeit,date,,BDA,,,Datum
-r,Broadcast,,Id,Identifikation,,,0704,,mf,,UCH,6=Dungs;15=FH Ostfalia;16=TEM;17=Lamberti;20=CEB;21=Landis-Staefa;22=FERRO;23=MONDIAL;24=Wikon;25=Wolf;32=RAWE;48=Satronic;64=ENCON;80=Kromschröder;96=Eberle;101=EBV;117=Grässlin;133=ebm-papst;149=SIG;165=Theben;167=Thermowatt;181=Vaillant;192=Toby;197=Weishaupt;253=ebusd.eu;253=ebusd,,Geräte-Hersteller,id,,STR:5,,,Geräte-ID,sw,,PIN,,,Software-Version,hw,,PIN,,,Hardware-Version
+r,Broadcast,,Id,Identifikation,,,0704,,mf,,UCH,6=Dungs;15=FH Ostfalia;16=TEM;17=Lamberti;20=CEB;21=Landis-Staefa;22=FERRO;23=MONDIAL;24=Wikon;25=Wolf;32=RAWE;48=Satronic;64=ENCON;80=Kromschröder;96=Eberle;101=EBV;117=Grässlin;133=ebm-papst;149=SIG;165=Theben;167=Thermowatt;181=Vaillant;192=Toby;197=Weishaupt;253=ebusd.eu;253=ebusd,,Geräte-Hersteller,id,,STR:5,,,Geräte-ID,sw,,PIN,,,Software Version,hw,,PIN,,,Hardware-Version
 w,Broadcast,,IdQuery,query identification,,fe,0704,,
-u,Broadcast,,IdAnswer,answer to identification query,,fe,0704,,mf,,UCH,6=Dungs;15=FH Ostfalia;16=TEM;17=Lamberti;20=CEB;21=Landis-Staefa;22=FERRO;23=MONDIAL;24=Wikon;25=Wolf;32=RAWE;48=Satronic;64=ENCON;80=Kromschröder;96=Eberle;101=EBV;117=Grässlin;133=ebm-papst;149=SIG;165=Theben;167=Thermowatt;181=Vaillant;192=Toby;197=Weishaupt;253=ebusd.eu;253=ebusd,,Geräte-Hersteller,id,,STR:5,,,Geräte-ID,sw,,PIN,,,Software-Version,hw,,PIN,,,Hardware-Version
+u,Broadcast,,IdAnswer,answer to identification query,,fe,0704,,mf,,UCH,6=Dungs;15=FH Ostfalia;16=TEM;17=Lamberti;20=CEB;21=Landis-Staefa;22=FERRO;23=MONDIAL;24=Wikon;25=Wolf;32=RAWE;48=Satronic;64=ENCON;80=Kromschröder;96=Eberle;101=EBV;117=Grässlin;133=ebm-papst;149=SIG;165=Theben;167=Thermowatt;181=Vaillant;192=Toby;197=Weishaupt;253=ebusd.eu;253=ebusd,,Geräte-Hersteller,id,,STR:5,,,Geräte-ID,sw,,PIN,,,Software Version,hw,,PIN,,,Hardware-Version
 w,Broadcast,,Queryexistence,Existenzanfrage,,fe,07fe,,
 u,Broadcast,,Signoflife,Lebenszeichen,,fe,07ff,,
 u,Broadcast,,Error,Fehlernachricht,,fe,fe01,,error,,STR:10,,,
