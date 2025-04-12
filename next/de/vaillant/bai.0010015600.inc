@@ -88,8 +88,8 @@ r,,,ProductionByte,ProductionByte,,,b509,0d3e04,value,,UCH,,,
 r,,,SerialNumber,SerialNumber,,,b509,0d3f04,value,,HEX:8,,,Seriennummer AI
 r,,,ReturnRegulation,d.17 Rücklaufregelung,,,b509,0db300,value,,UCH,0=off;1=on,,Aktivierung der Rücklaufregelung
 w,,install_NOT_YET_CONFIRMED,ReturnRegulation,d.17 Rücklaufregelung,,,b509,0eb300,value,,UCH,0=off;1=on,,Aktivierung der Rücklaufregelung
-r,,,HcPumpMode,d.18 Pumpenbetriebsart,,,b509,0db700,value,,UCH,0=post_run;1=permanent;2=winter,,Pumpenbetriebsart für den Heizbetrieb
-w,,install_NOT_YET_CONFIRMED,HcPumpMode,d.18 Pumpenbetriebsart,,,b509,0eb700,value,,UCH,0=post_run;1=permanent;2=winter,,Pumpenbetriebsart für den Heizbetrieb
+r,,,HcPumpMode,d.18 Pumpenbetriebsart,,,b509,0db700,value,,UCH,0=post_run;1=permanent;2=winter;3=eco,,Pumpenbetriebsart für den Heizbetrieb
+w,,install_NOT_YET_CONFIRMED,HcPumpMode,d.18 Pumpenbetriebsart,,,b509,0eb700,value,,UCH,0=post_run;1=permanent;2=winter;3=eco,,Pumpenbetriebsart für den Heizbetrieb
 r,,,HwcTempMax,d.20 Max. WW Temperatur,,,b509,0dd900,value,,D2C,,°C,Max. Speichersollwert. Begrenzt den max. Einstellbereich des Potentiometers (Rechtsanschlag).
 w,,install_NOT_YET_CONFIRMED,HwcTempMax,d.20 Max. WW Temperatur,,,b509,0ed900,value,,D2C,,°C,Max. Speichersollwert. Begrenzt den max. Einstellbereich des Potentiometers (Rechtsanschlag).
 r,,,OptionalRelais,d.26 OptionalRelais,,,b509,0db800,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Option relais function

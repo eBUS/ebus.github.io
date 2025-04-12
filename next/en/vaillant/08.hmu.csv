@@ -176,6 +176,8 @@ r,,,RunDataHighPressure,,,,b509,5402006a09,value,,IGN:4,,,,value,,EXP,,bar,press
 r,,,RunDataCompressorInletTemp,,,,b509,5402009808,value,,IGN:4,,,,value,,EXP,,°C,temperature
 r,,,RunDataCompressorOutletTemp,,,,b509,540200a208,value,,IGN:4,,,,value,,EXP,,°C,temperature
 r,,,RunDataEEVOutletTemp,,,,b509,540200ac08,value,,IGN:4,,,,value,,EXP,,°C,temperature
+r,,,RunDataFlowTemp,,,,b509,540200fc08,value,,IGN:4,,,,value,,EXP,,°C,"current flow temp, accurate to 2 decimal places"
+r,,,RunDataReturnTemp,,,,b509,5402000609,value,,IGN:4,,,,value,,EXP,,°C,"current return temp, accurate to 2 decimal places"
 r,,,RunStatsHMUHours,,,,b509,540200b80b,value,,IGN:4,,,,value,,UIN,,h,hours
 r,,,RunStatsHcHours,,,,b509,540200b90b,value,,IGN:4,,,,value,,UIN,,h,hours
 r,,,RunStatsHwcHours,,,,b509,540200bc0b,value,,IGN:4,,,,value,,UIN,,h,total runtime of Hwc mode
