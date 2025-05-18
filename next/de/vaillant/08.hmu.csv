@@ -64,10 +64,10 @@ r,,,MaxFlowTemp,,,,b51a,05ff348f3532,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C
 r,,,MinFlowTemp,,,,b51a,05ff348f3533,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Minimum flow temperature (°C)
 r,,,HcModeActive,,,,b51a,05ff348f3534,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=no;1=yes,,Central heating mode active (yes/no)
 r,,,HwcModeActive,,,,b51a,05ff348f3535,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=no;1=yes,,Domestic hot water mode active (yes/no)
-r,,,HwcChargeHysteresis,,,,b51a,05ff348f3539,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°K,Hysteresis Hwc charging (°K)
+r,,,HwcChargeHysteresis,,,,b51a,05ff348f3539,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,K,Hysteresis Hwc charging
 r,,,ImmersionHeaterMode,,,,b51a,05ff34c4331e,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=off;1=on,,Immersion heater mode (on/off)
-r,,,CompressorHysteresisHc,,,,b51a,05ff34f83443,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°K,Compressor hysteresis central heating (°K)
-r,,,CompressorHysteresisCooling,,,,b51a,05ff3486353f,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,,Compressor hysteresis cooling (°K)
+r,,,CompressorHysteresisHc,,,,b51a,05ff34f83443,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,K,Compressor hysteresis central heating
+r,,,CompressorHysteresisCooling,,,,b51a,05ff3486353f,value,,IGN:3,,,,ign,,IGN:3,,K,,d2c,,D2C,,,Compressor hysteresis cooling
 r,,,HwcMode,,,,b51a,05ff34523444,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=eco;1=normal;2=balance,,Domestic hot water mod (eco/normal/balance)
 r,,,TargetTempHwc,,,,b51a,05ff34c63207,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Target Hwc temperature (°C)
 r,,,YieldTotal,,,,b516,1801,value,,IGN:1,,,,value,,UIN,,kWh,
@@ -148,7 +148,7 @@ r,,service,TestMO3Output,MA3 output,,,b514,057f,value,,IGN:2,,,,value,,UCH,0=off
 r,,service,TestCondensorInletTemp,condensor inlet temperature,,,b514,0581,value,,IGN:2,,,,value,,SIN,10,°C,
 r,,service,TestFlowTempImmersionHeater,Vorlauftemperatur Heizstab,,,b514,0582,value,,IGN:2,,,,value,,SIN,10,°C,T1.130
 w,,service,EnableTestEEVTemp,read EEV temperature,,,b514,053b,ignore,,HEX:3,=000000,,,value,,HEX:3,,,
-r,,service,TestEEVTemp,EEV temperature,,,b514,053b000000,value,,IGN:2,,,,ign,,IGN:2,,,,sin,,SIN,10,,°C
+r,,service,TestEEVTemp,EEV temperature,,,b514,053b000000,value,,IGN:2,,,,ign,,IGN:2,,,,sin,,SIN,10,°C,
 w,,service,EnableiveMonitorMain,enable live monitor read status,,,b503,0003,
 u,,service,LiveMonitorMain,live monitor status,71,,b503,0003,status,,UCH,57=Controller_starting;244=Standby;245=Supply_on;246=Heating_Flow_ok;247=Heating_temperature_self_test;248=Heating_Start;250=Heating_Fan_on;252=EEV_switch;253=Compressor_starting;254=Heating_compressor_on;0=Compressor_off;2=Compressor_coast_down;3=Deicing_start;4=Deicing;5=Deicing_end;18=Cooling_Flow_on;20=Cooling_temperature_self_test;21=Cooling_starting;23=Cooling_Fan_on;19=Cooling_Flow_ok;25=Cooling_EEV;26=Cooling_compressor_starting;27=Cooling_compressor_on;29=Cooling_ending;41=Start_condition_not_met;87=Device_error;68=Flow_error_in_distribution_system,,,function,,UCH,1=Heating;2=Cooling,,
 r,,service,LiveMonitorDesiredSupplyTemp,desired supply temperature,,,b51a,0500321f,value,,IGN:3,,,,value,,D2C,,°C,Temperatur

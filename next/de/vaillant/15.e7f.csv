@@ -30,8 +30,8 @@ r,,,OutsideTempOffset,Außentemperatur-Abgleich: Korrekturwert für die Außente
 w,,install,OutsideTempOffset,Außentemperatur-Abgleich: Korrekturwert für die Außentemperatur,,,b509,0e0400,value,,D2C,,°C,Temperatur
 r,,,HeatingCurve,Heizkurve (nur relevant wenn ein Außentemperaturfühler an das Heizgerät angeschlossen ist),,,b509,0d2300,value,,UIN,100,,Heizkurve: Heating curve
 w,,install,HeatingCurve,Heizkurve (nur relevant wenn ein Außentemperaturfühler an das Heizgerät angeschlossen ist),,,b509,0e2300,value,,UIN,100,,Heizkurve: Heating curve
-r,,,ZweipunktAnalogSlct,Zweipunkt / Analogbetrieb,,,b509,0d2900,value,,UCH,0=two_point_control;1=analogue_control,,Zweipunktregelung
-w,,install,ZweipunktAnalogSlct,Zweipunkt / Analogbetrieb,,,b509,0e2900,value,,UCH,0=two_point_control;1=analogue_control,,Zweipunktregelung
+r,,,TwoPointAnalogCtrl,two point analog control,,,b509,0d2900,value,,UCH,0=two_point_control;1=analogue_control,,Zweipunktregelung
+w,,install,TwoPointAnalogCtrl,two point analog control,,,b509,0e2900,value,,UCH,0=two_point_control;1=analogue_control,,Zweipunktregelung
 r,,,WeekDayProgSwitch,Wochenprogramm,,,b509,0d2b00,value,,UCH,1=daily;7=weekly,,Umschaltung von Tagesprogramm (die Zeitprogramme sind dann jeden Tag identisch) zum Wochenprogramm (jeder Tag kann idividuell programmiert werden)
 w,,install,WeekDayProgSwitch,Wochenprogramm,,,b509,0e2b00,value,,UCH,1=daily;7=weekly,,Umschaltung von Tagesprogramm (die Zeitprogramme sind dann jeden Tag identisch) zum Wochenprogramm (jeder Tag kann idividuell programmiert werden)
 r,,,StackeBUSTaskMax,MaxStackeBUSTask: maximum number of bytes needed for the eBUS task stack,,,b509,0d1800,value,,UCH,,,
@@ -39,7 +39,7 @@ r,,,StackMainTaskMax,MaxStackMainTask: maximum number of bytes needed for the ma
 r,,,StackLifeCheckTaskMax,MaxStackLifeCheckTask: maximum number of bytes needed for the life check task stack,,,b509,0d1a00,value,,UCH,,,
 r,,,EBUSFifoDiffCntMax,eBUSFifoDiffCntMax: max. eBUS-Fifo Füllstand,,,b509,0d2800,value,,UCH,,,
 r,,,RTCAdjustment,"RTC Abgleich: Korrekturwert der Echtzeituhr.Anzahl der Minuten X nach deren Ablauf eine Korrektur durchgeführt wird. Ist der Wert negativ, dann wird alle X Minuten eine Sekunde abgezogen. Ist der Wert positiv, dann wird alle X Minuten eine Sekunde addiert.",,,b509,0d2c00,value,,SIN,,,
-r,,,EEpromMaxInkonsCnt,EEpromMaxInkonsCnt: Zähler EEPROM Inkonsistenz,,,b509,0d2d00,value,,UIN,,,
+r,,,EEpromMaxInconsCnt,EEpromMaxInkonsCnt: Zähler EEPROM Inkonsistenz,,,b509,0d2d00,value,,UIN,,,
 r,,,POCResetCnt,Netz ein Zähler: Power-On-Resets,,,b509,0d2e00,value,,UIN,,,
 r,,,WDResetCnt,Watchdog Zähler: Watchdog-Resets,,,b509,0d2f00,value,,UIN,,,
 r,,,LVResetCnt,LVResetCnt: counter of low voltage reset events,,,b509,0d3000,value,,UIN,,,

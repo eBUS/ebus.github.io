@@ -17,8 +17,8 @@ w,,,Hc1DayTemp,HC1_DaySetTemp: day setpoint,,,b509,0e2700,value,,D1C,,°C,temper
 r,,,Hc1NightTemp,HC1_NightSetTemp: lowering temperature setpoint of the first heating circuit,,,b509,0d3000,value,,D1C,,°C,temperature
 w,,,Hc1NightTemp,HC1_NightSetTemp: lowering temperature setpoint of the first heating circuit,,,b509,0e3000,value,,D1C,,°C,temperature
 r,,,Hc1QuickVetoTemp,HC1_QuickVetoTemp: manual override setpoint of the first heating circuit,,,b509,0d3c00,value,,D1C,,°C,temperature
-r,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0d4000,value,,D1C,,,
-w,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0e4000,value,,D1C,,,
+r,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0d4000,value,,D1C,,°C,temperature
+w,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0e4000,value,,D1C,,°C,temperature
 r,,,Hc1SFMode,HC1_SFMode,,,b509,0d5d00,value,,UCH,0=none;1=party;2=onedaybankholiday;3=onedayholiday;4=holiday;5=bankholiday;6=quickveto;7=onetimeventilation;8=onetimewater,,activated special function of first heating circuit
 r,,,Hc1HolidayStartPeriod,HC1HolidayStartPeriod: first heating circuit's start date of holidays,,,b509,0d1100,value,,HDA:3,,,date
 w,,,Hc1HolidayStartPeriod,HC1HolidayStartPeriod: first heating circuit's start date of holidays,,,b509,0e1100,value,,HDA:3,,,date
@@ -93,13 +93,13 @@ r,,,PumpEnergySaveStateMonitor,PumpEnergySaveStateMonitor: monitoring of the pum
 r,,,PumpEnergySaveCalculatedTimeMonitor,PumpEnergySaveCalculatedTimeMonitor: calculated time for the heating circuit's pump's switch off time during pump energy saving function (depends on outside temperature),,,b509,0d9200,value,,UCH,,min,minutes
 r,,,ActoSTOROPMode,actoSTOR_OPMode: state diagram actoSTOR control,,,b509,0d9400,value,,UCH,,,
 r,,,ClockSwitchSummerWinterDone,ClockSwitchSummerWinterDone: automatic switching over to/from daylight saving's time has been done,,,b509,0d7800,value,,UCH,0=no;1=yes,,
-r,,,MonitorEEpromInkonsiNumber,MonitorEEpromInkonsiNumber,,,b509,0d9f00,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
+r,,,MonitorEEpromInconsCnt,MonitorEEpromInkonsiNumber,,,b509,0d9f00,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
 r,,,MonitorCurrentIPart,MonitorCurrent_I_Anteil: current i-control value; updated every 3 minutes,,,b509,0d3300,value,,D2C,,°C,temperature
 r,,,CountryVariant,"CountryVariant: country variant (0 = west, 1 = east, 2 = all)",,,b509,0d1700,value,,UCH,,,
 r,,,DisplayedRoomTemp,DisplayedRoomTemp: displayed room temperature,,,b509,0d8000,value,,D2C,,°C,temperature
-r,,,RaumtempIstOben,RaumtempIstOben,,,b509,0dc000,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,RoomTempUpper,RaumtempIstOben,,,b509,0dc000,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,ADCValueTempabove,ADCValue_T_above,,,b509,0d2d00,value,,UIN,,,
-r,,,RaumtempIstUnten,RaumtempIstUnten,,,b509,0dc100,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,RoomTempLower,RaumtempIstUnten,,,b509,0dc100,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,ADCValueTempbelow,ADCValue_T_below,,,b509,0d4e00,value,,UIN,,,
 r,,,CcTimer_Monday,Periods Monday,,,b515,0002,value,,IGN:1,,,,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
 w,,,CcTimer_Monday,Periods Monday,,,b515,0002,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days

@@ -10,8 +10,8 @@ r,,,TempDesiredLow,Absenksollwert: Absenktemperatur des 2. Heizkreises,,,b509,0d
 w,,,TempDesiredLow,Absenksollwert: Absenktemperatur des 2. Heizkreises,,,b509,0e1300,value,,D1C,,°C,Temperatur
 r,,,TempDesiredHigh,Tages-Solltemperatur des 2. Heizkreises,,,b509,0d3800,value,,D1C,,°C,Temperatur
 w,,,TempDesiredHigh,Tages-Solltemperatur des 2. Heizkreises,,,b509,0e3800,value,,D1C,,°C,Temperatur
-r,,,HolidayTempDesired,"Feriensollwert: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0d1400,value,,D1C,,,
-w,,,HolidayTempDesired,"Feriensollwert: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0e1400,value,,D1C,,,
+r,,,HolidayTempDesired,"Feriensollwert: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0d1400,value,,D1C,,°C,Temperatur
+w,,,HolidayTempDesired,"Feriensollwert: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0e1400,value,,D1C,,°C,Temperatur
 r,,,Hc2ManualOPRoomTempDesired,HK2 Raumsoll Manuell: room setpoint in operation mode manual of the second heating circuit,,,b509,0d3400,value,,D1C,,°C,Temperatur
 w,,,Hc2ManualOPRoomTempDesired,HK2 Raumsoll Manuell: room setpoint in operation mode manual of the second heating circuit,,,b509,0e3400,value,,D1C,,°C,Temperatur
 r,,,Hc2QuickVetoTemp,HK2 Quick Veto Temp: manual override setpoint of the second heating circuit,,,b509,0d3200,value,,D1C,,°C,Temperatur
@@ -64,7 +64,7 @@ r,,,Hc2QuickVetoActive,HK2 Quick Veto aktiv: manual override of the second heati
 r,,,HcPreHeatingActive,Voraufheizung aktiv: bit-array where a set bit indicates that preheating is active for the corresponding heating circuit,,,b509,0d2a00,value,,UCH,0=no;1=yes,,
 r,,,HcPreShutdownActive,Vorarabschaltung aktiv: bit-array where a set bit indicates that early cut off is active for the corresponding heating circuit,,,b509,0d2900,value,,UCH,0=no;1=yes,,
 r,,,HcPumpIdlePeriodActive,Pumpensperrzeit aktiv: bit-array where a set bit indicates that pump's energy saving function is active for the corresponding heating circuit,,,b509,0d2b00,value,,UCH,0=no;1=yes,,
-r,,,MonitorEEpromInkonsiNumber,MonitorEEpromInkonsiNumber,,,b509,0d4600,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
+r,,,MonitorEEpromInconsCnt,MonitorEEpromInkonsiNumber,,,b509,0d4600,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
 r,,,Hc2aLegPumpP2Port,Rückmeldung P2: port: open mixer,,,b509,0d4400,value,,UCH,0=off;1=on,,
 r,,,Hc2zPort,Hk2z_Port: port: close mixer,,,b509,0d4500,value,,UCH,0=off;1=on,,
 r,,,Hc2pDemand,Hk2pDemand,,,b509,0d4900,value,,UCH,0=off;1=on,,

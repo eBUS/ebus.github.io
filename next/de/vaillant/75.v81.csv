@@ -18,7 +18,7 @@ r,,,StackLifeCheckTaskMax,MaxStackLifeCheckTask: maximum number of bytes needed 
 r,,,Variant,Variante,,,b509,0d0f00,uin,,UIN,,,Identifikator zur Variantenerkennung,uin_1,,UIN,,,
 r,,,EBUSCRC,eBUS_CRC: last calculated eBUS CRC,,,b509,0d1000,value,,UCH,,,
 r,,,EBUSFifoDiffCntMax,eBUSFifoDiffCntMax: max. eBUS-Fifo Füllstand,,,b509,0d1100,value,,UCH,,,
-r,,,EEpromMaxInkonsCnt,EEpromMaxInkonsCnt: Zähler EEPROM Inkonsistenz,,,b509,0d1300,value,,UIN,,,
+r,,,EEpromMaxInconsCnt,EEpromMaxInkonsCnt: Zähler EEPROM Inkonsistenz,,,b509,0d1300,value,,UIN,,,
 r,,,POCResetCnt,Netz ein Zähler: Power-On-Resets,,,b509,0d1400,value,,UIN,,,
 r,,,WDResetCnt,Watchdog Zähler: Watchdog-Resets,,,b509,0d1500,value,,UIN,,,
 r,,,LVResetCnt,LVResetCnt: counter of low voltage reset events,,,b509,0d1600,value,,UIN,,,

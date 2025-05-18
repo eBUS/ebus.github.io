@@ -2,12 +2,12 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *r,
 *w,
 r,,,StatPowerOn,StatPowerOn,,,b509,0dcc00,value,,UIN,,,
-r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,,
+r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,h,Stunden
 r,,,StatMonthOfInstallation,StatMonthOfInstallation,,,b509,0dce00,value,,UCH,,,
 r,,,StatYearOfInstallation,StatYearOfInstallation,,,b509,0dcf00,value,,UCH,,,
 r,,,Stat15MinBusTimeout,Stat15MinBusTimeout,,,b509,0dd000,value,,UCH,,,
 r,,,StatRTOSErrorcode,StatRTOSErrorcode,,,b509,0dd100,value,,UIN,,,
-r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,
+r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,Anzahl Starts
 r,,,StatRTOSErrorCounter,StatRTOSErrorCounter,,,b509,0dd300,value,,UIN,,,
 r,,,Storage1Sensor3,Temperature of SP1 sensor,,,b509,0d0000,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,Storage2Sensor3,Temperature of SP2 sensor,,,b509,0d0200,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
@@ -46,15 +46,15 @@ r,,,SolProtection,"Solarkreisschutzfunktion: Wird der hier eingestellte Wert üb
 w,,,SolProtection,"Solarkreisschutzfunktion: Wird der hier eingestellte Wert überschritten, dann wird die Kollektorpumpe des betroffenen Kreises zum Schutz vor Überhitzung der Komponenten abgeschaltet. Die Kollektortemperatur muß 30K unter diesen Wert sinken um die Schutzfunktion zu verlassen.",,,b509,0e8100,value,,UCH,0=off;1=on,,
 r,,,SolProtectionStartTemp,Starttemp. Sol. Schutzfunktion: Temperature for collector pump protection in case of high temperatures,,,b509,0d8200,value,,UCH,,°C,Temperatur
 w,,,SolProtectionStartTemp,Starttemp. Sol. Schutzfunktion: Temperature for collector pump protection in case of high temperatures,,,b509,0e8200,value,,UCH,,°C,Temperatur
-r,,,ColKickGradient,Gradient Kollektorkick,,,b509,0d9d00,value,,UCH,,0.1 K / 30 min,
-w,,service,ColKickGradient,Gradient Kollektorkick,,,b509,0e9d00,value,,UCH,,0.1 K / 30 min,
+r,,,ColKickGradient,Gradient Kollektorkick,,,b509,0d9d00,value,,UCH,300,°min,
+w,,service,ColKickGradient,Gradient Kollektorkick,,,b509,0e9d00,value,,UCH,300,°min,
 r,,,ColKickPumpTime,Länge Kollektorkick,,,b509,0d9e00,value,,UCH,,s,Sekunden
 w,,service,ColKickPumpTime,Länge Kollektorkick,,,b509,0e9e00,value,,UCH,,s,Sekunden
 r,,,ScProtectionHysteresis,Hysterese Schutzfunktion: Hysterese für die Kollektorkreisschutzfunktion,,,b509,0d9f00,value,,UCH,,°C,Solltemperatur
 w,,,ScProtectionHysteresis,Hysterese Schutzfunktion: Hysterese für die Kollektorkreisschutzfunktion,,,b509,0e9f00,value,,UCH,,°C,Solltemperatur
 r,,,FrostProtectionLimit,Grenze für Solarkreis Frostschutz,,,b509,0da200,value,,SCH,,K,limits for the solar collector frost protection
 r,,,FrostProtectionEnabled,Solarkreis Frostschutzfunktion: Frostschutzfunktion für den Solarkreis. In einigen Ländern gesetzlich vorgeschrieben. Bitte nin Deutschland nicht aktivieren,,,b509,0da300,value,,UCH,0=off;1=on,,
-r,,,SolCollVolumeSensorTicksPer10Lite,Anzahl Impule für 10 Liter,,,b509,0db000,value,,UCH,,ticks,How often the volume sensor has to pulse for the detection of 10 liters
+r,,,SolCollVolumeSensorTicksPer10Lite,Anzahl Impule für 10 Liter,,,b509,0db000,value,,UCH,,,How often the volume sensor has to pulse for the detection of 10 liters
 r,,,SolFlowRate,Volumenstrom Solarkreis,,,b509,0d7400,value,,UIN,60,l/min,Flow rate the collector pumps are able to deliver for 100% power
 w,,,SolFlowRate,Volumenstrom Solarkreis,,,b509,0e7400,value,,UIN,60,l/min,Flow rate the collector pumps are able to deliver for 100% power
 r,,,SolEnablePumpPWM,ED-Steuerung: Collector pumps should be driven by a slow pulse width modulation,,,b509,0dae00,value,,UCH,0=off;1=on,,

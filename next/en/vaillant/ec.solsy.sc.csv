@@ -2,12 +2,12 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *r,
 *w,
 r,,,StatPowerOn,StatPowerOn,,,b509,0dcc00,value,,UIN,,,
-r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,,
+r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,h,hours
 r,,,StatMonthOfInstallation,StatMonthOfInstallation,,,b509,0dce00,value,,UCH,,,
 r,,,StatYearOfInstallation,StatYearOfInstallation,,,b509,0dcf00,value,,UCH,,,
 r,,,Stat15MinBusTimeout,Stat15MinBusTimeout,,,b509,0dd000,value,,UCH,,,
 r,,,StatRTOSErrorcode,StatRTOSErrorcode,,,b509,0dd100,value,,UIN,,,
-r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,
+r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,start count
 r,,,StatRTOSErrorCounter,StatRTOSErrorCounter,,,b509,0dd300,value,,UIN,,,
 r,,,Storage1Sensor3,Storage1Sensor3: Temperature of SP1 sensor,,,b509,0d0000,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,Storage2Sensor3,Storage2Sensor3: Temperature of SP2 sensor,,,b509,0d0200,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
@@ -46,15 +46,15 @@ r,,,SolProtection,SolarProtection: Collector pump should not start for high temp
 w,,,SolProtection,SolarProtection: Collector pump should not start for high temperatures,,,b509,0e8100,value,,UCH,0=off;1=on,,
 r,,,SolProtectionStartTemp,SolarProtectionStartTemp: Temperature for collector pump protection in case of high temperatures,,,b509,0d8200,value,,UCH,,°C,temperature
 w,,,SolProtectionStartTemp,SolarProtectionStartTemp: Temperature for collector pump protection in case of high temperatures,,,b509,0e8200,value,,UCH,,°C,temperature
-r,,,ColKickGradient,ColKickGradient,,,b509,0d9d00,value,,UCH,,0.1 K / 30 min,
-w,,service,ColKickGradient,ColKickGradient,,,b509,0e9d00,value,,UCH,,0.1 K / 30 min,
+r,,,ColKickGradient,ColKickGradient,,,b509,0d9d00,value,,UCH,300,°min,
+w,,service,ColKickGradient,ColKickGradient,,,b509,0e9d00,value,,UCH,300,°min,
 r,,,ColKickPumpTime,ColKickPumpTime,,,b509,0d9e00,value,,UCH,,s,seconds
 w,,service,ColKickPumpTime,ColKickPumpTime,,,b509,0e9e00,value,,UCH,,s,seconds
 r,,,ScProtectionHysteresis,"SolarCircuitProtectionHysteresis: After collector pump protection in case of too high temperatures, the collector has to cool down at least this temperature",,,b509,0d9f00,value,,UCH,,°C,desired temperature
 w,,,ScProtectionHysteresis,"SolarCircuitProtectionHysteresis: After collector pump protection in case of too high temperatures, the collector has to cool down at least this temperature",,,b509,0e9f00,value,,UCH,,°C,desired temperature
 r,,,FrostProtectionLimit,FrostProtectionLimit,,,b509,0da200,value,,SCH,,K,limits for the solar collector frost protection
 r,,,FrostProtectionEnabled,FrostProtectionEnabled: Solar collector frost protection on/off,,,b509,0da300,value,,UCH,0=off;1=on,,
-r,,,SolCollVolumeSensorTicksPer10Lite,SolarCollectorVolumeSensorTicksPer10Liter,,,b509,0db000,value,,UCH,,ticks,How often the volume sensor has to pulse for the detection of 10 liters
+r,,,SolCollVolumeSensorTicksPer10Lite,SolarCollectorVolumeSensorTicksPer10Liter,,,b509,0db000,value,,UCH,,,How often the volume sensor has to pulse for the detection of 10 liters
 r,,,SolFlowRate,SolarFlowRate,,,b509,0d7400,value,,UIN,60,l/min,Flow rate the collector pumps are able to deliver for 100% power
 w,,,SolFlowRate,SolarFlowRate,,,b509,0e7400,value,,UIN,60,l/min,Flow rate the collector pumps are able to deliver for 100% power
 r,,,SolEnablePumpPWM,SolEnablePumpPWM: Collector pumps should be driven by a slow pulse width modulation,,,b509,0dae00,value,,UCH,0=off;1=on,,

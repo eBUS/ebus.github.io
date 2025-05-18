@@ -10,8 +10,8 @@ r,,,TempDesiredLow,DesiredLowTemperature: lowering temperature setpoint of the s
 w,,,TempDesiredLow,DesiredLowTemperature: lowering temperature setpoint of the second heating circuit,,,b509,0e1300,value,,D1C,,°C,temperature
 r,,,TempDesiredHigh,DesiredHighTemperature: day temperature setpoint of the second heating circuit,,,b509,0d3800,value,,D1C,,°C,temperature
 w,,,TempDesiredHigh,DesiredHighTemperature: day temperature setpoint of the second heating circuit,,,b509,0e3800,value,,D1C,,°C,temperature
-r,,,HolidayTempDesired,"DesiredHolidayTemperature: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0d1400,value,,D1C,,,
-w,,,HolidayTempDesired,"DesiredHolidayTemperature: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0e1400,value,,D1C,,,
+r,,,HolidayTempDesired,"DesiredHolidayTemperature: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0d1400,value,,D1C,,°C,temperature
+w,,,HolidayTempDesired,"DesiredHolidayTemperature: 4.5=frostprotect, holiday temperature of the second heating circuit",,,b509,0e1400,value,,D1C,,°C,temperature
 r,,,Hc2ManualOPRoomTempDesired,HC2_ManualOPRoomSetpoint: room setpoint in operation mode manual of the second heating circuit,,,b509,0d3400,value,,D1C,,°C,temperature
 w,,,Hc2ManualOPRoomTempDesired,HC2_ManualOPRoomSetpoint: room setpoint in operation mode manual of the second heating circuit,,,b509,0e3400,value,,D1C,,°C,temperature
 r,,,Hc2QuickVetoTemp,HC2_QuickVetoTemp: manual override setpoint of the second heating circuit,,,b509,0d3200,value,,D1C,,°C,temperature
@@ -64,7 +64,7 @@ r,,,Hc2QuickVetoActive,HC2_QuickVetoActive: manual override of the second heatin
 r,,,HcPreHeatingActive,HcPreHeatingActive: bit-array where a set bit indicates that preheating is active for the corresponding heating circuit,,,b509,0d2a00,value,,UCH,0=no;1=yes,,
 r,,,HcPreShutdownActive,HcPreShutdownActive: bit-array where a set bit indicates that early cut off is active for the corresponding heating circuit,,,b509,0d2900,value,,UCH,0=no;1=yes,,
 r,,,HcPumpIdlePeriodActive,HcPumpIdlePeriodActive: bit-array where a set bit indicates that pump's energy saving function is active for the corresponding heating circuit,,,b509,0d2b00,value,,UCH,0=no;1=yes,,
-r,,,MonitorEEpromInkonsiNumber,MonitorEEpromInkonsiNumber,,,b509,0d4600,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
+r,,,MonitorEEpromInconsCnt,MonitorEEpromInkonsiNumber,,,b509,0d4600,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
 r,,,Hc2aLegPumpP2Port,Hk2a_LegP_P2_Port: port: open mixer,,,b509,0d4400,value,,UCH,0=off;1=on,,
 r,,,Hc2zPort,Hk2z_Port: port: close mixer,,,b509,0d4500,value,,UCH,0=off;1=on,,
 r,,,Hc2pDemand,Hk2pDemand,,,b509,0d4900,value,,UCH,0=off;1=on,,

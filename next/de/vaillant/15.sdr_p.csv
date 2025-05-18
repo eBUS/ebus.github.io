@@ -15,8 +15,8 @@ r,,,YieldSensor,Ertragsfühler,,,b509,0d0500,temp,,D2C,,°C,Temperatur,sensor,,U
 w,,install,YieldSensor,Ertragsfühler,,,b509,0e0500,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,CollPump1,Status Kollektorpumpe 1,,,b509,0d0600,value,,UCH,0=off;1=on,,
 w,,install,CollPump1,Status Kollektorpumpe 1,,,b509,0e0600,value,,UCH,0=off;1=on,,
-r,,,CollPump1ActualPower,akt. Leistung Koll.-Pumpen,,,b509,0d0700,value,,HEX:2,,,
-w,,install,CollPump1ActualPower,akt. Leistung Koll.-Pumpen,,,b509,0e0700,value,,HEX:2,,,
+r,,,CollPump1ActualPower,akt. Leistung Koll.-Pumpen,,,b509,0d0700,value,,UCH,,%,,ignore,,IGN,,,
+w,,install,CollPump1ActualPower,akt. Leistung Koll.-Pumpen,,,b509,0e0700,value,,UCH,,%,,ignore,,IGN,,,
 r,,,CollPump2,Status Kollektorpumpe 2,,,b509,0d0800,value,,UCH,0=off;1=on,,
 w,,install,CollPump2,Status Kollektorpumpe 2,,,b509,0e0800,value,,UCH,0=off;1=on,,
 r,,,ThreeWayValve1,"Umschaltventil Heizen/Warmwasser, UV1",,,b509,0d0900,value,,UCH,0=off;1=on,,
@@ -31,8 +31,8 @@ r,,,C1C2,Status C1/C2,,,b509,0d0d00,value,,UCH,0=off;1=on,,
 w,,install,C1C2,Status C1/C2,,,b509,0e0d00,value,,UCH,0=off;1=on,,
 r,,,BypassValve,Bypass-Ventil,,,b509,0d0e00,value,,UCH,0=off;1=on,,
 w,,install,BypassValve,Bypass-Ventil,,,b509,0e0e00,value,,UCH,0=off;1=on,,
-r,,,ActualTempDesired,Solltemperatur [°C],,,b509,0d1400,value,,D1C,,°C,Temperatur
-w,,install,ActualTempDesired,Solltemperatur [°C],,,b509,0e1400,value,,D1C,,°C,Temperatur
+r,,,ActualTempDesired,Target temperature,,,b509,0d1400,value,,D1C,,°C,Temperatur
+w,,install,ActualTempDesired,Target temperature,,,b509,0e1400,value,,D1C,,°C,Temperatur
 r,,,OperatingMode,Betriebsmodus,,,b509,0d1500,value,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus
 w,,install,OperatingMode,Betriebsmodus,,,b509,0e1500,value,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus
 r,,,Weekday,Wochentag,,,b509,0d1600,value,,BDY,,,Wochentag
@@ -41,8 +41,8 @@ r,,,Time,Uhrzeit,,,b509,0d1700,value,,VTI,,,Uhrzeit
 w,,install,Time,Uhrzeit,,,b509,0e1700,value,,VTI,,,Uhrzeit
 r1,,,Yield,Solarertrag,,,b509,0d1e00,value,,UIN,,,
 w,,install,Yield,Solarertrag,,,b509,0e1e00,value,,UIN,,,
-r1,,,CollPumpHRuntime,Laufzeit Solarpumpe,,,b509,0d1f00,uin,,UIN,,,,uin_1,,UIN,,,
-w,,install,CollPumpHRuntime,Laufzeit Solarpumpe,,,b509,0e1f00,uin,,UIN,,,,uin_1,,UIN,,,
+r1,,,CollPumpHRuntime,Laufzeit Solarpumpe,,,b509,0d1f00,value,,ULG,,,
+w,,install,CollPumpHRuntime,Laufzeit Solarpumpe,,,b509,0e1f00,value,,ULG,,,
 r,,,Date,Datum,,,b509,0d2000,value,,HDA:3,,,Datum
 w,,install,Date,Datum,,,b509,0e2000,value,,HDA:3,,,Datum
 r,,,IsInHoliday,Urlaub,,,b509,0d2800,value,,UCH,,,
@@ -53,12 +53,12 @@ r,,,IsInSingleHwcLoading,einmalige Speicherladung,,,b509,0d2a00,value,,UCH,0=off
 w,,install,IsInSingleHwcLoading,einmalige Speicherladung,,,b509,0e2a00,value,,UCH,0=off;1=on,,
 r,,,HydraulicScheme,Hydraulikplan,,,b509,0d3d00,value,,UCH,,,
 w,,install,HydraulicScheme,Hydraulikplan,,,b509,0e3d00,value,,UCH,,,
-r,,,SolHwcMaxLoadTemp,Max. Temp. Solarspeicher [°C],,,b509,0d3e00,value,,HEX:2,,,
-w,,install,SolHwcMaxLoadTemp,Max. Temp. Solarspeicher [°C],,,b509,0e3e00,value,,HEX:2,,,
-r,,,SolEnableDiffTemp,Einschaltdiff. Solarspeicher [K],,,b509,0d3f00,value,,HEX:2,,,
-w,,install,SolEnableDiffTemp,Einschaltdiff. Solarspeicher [K],,,b509,0e3f00,value,,HEX:2,,,
-r,,,SolDisableDiffTemp,Ausschaltdiff. Solarspeicher [K],,,b509,0d4000,value,,HEX:2,,,
-w,,install,SolDisableDiffTemp,Ausschaltdiff. Solarspeicher [K],,,b509,0e4000,value,,HEX:2,,,
+r,,,SolHwcMaxLoadTemp,Max. temp. solar cylinder,,,b509,0d3e00,value,,UCH,,°C,Temperatur,ignore,,IGN,,,
+w,,install,SolHwcMaxLoadTemp,Max. temp. solar cylinder,,,b509,0e3e00,value,,UCH,,°C,Temperatur,ignore,,IGN,,,
+r,,,SolEnableDiffTemp,Switch-on diff. solar cyl.,,,b509,0d3f00,value,,UCH,,K,,ignore,,IGN,,,
+w,,install,SolEnableDiffTemp,Switch-on diff. solar cyl.,,,b509,0e3f00,value,,UCH,,K,,ignore,,IGN,,,
+r,,,SolDisableDiffTemp,Switch/off diff. solar cyl.,,,b509,0d4000,value,,UCH,,K,,ignore,,IGN,,,
+w,,install,SolDisableDiffTemp,Switch/off diff. solar cyl.,,,b509,0e4000,value,,UCH,,K,,ignore,,IGN,,,
 r,,,LegioProtectionEnabled,Legionellenschutz,,,b509,0d4100,value,,UCH,,,
 w,,install,LegioProtectionEnabled,Legionellenschutz,,,b509,0e4100,value,,UCH,,,
 r,,,StartTimeFillingMode,Startzeit Füllmodus (tFIL),,,b509,0d4200,value,,UCH,,,

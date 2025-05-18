@@ -3,20 +3,20 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *w,
 *[id_sw],scan,,,,SW
 [id_sw>=38]r,,,SingleStorageCharge,1x Speicherladung: Enable SingleTankCharge,,,b509,0d4400,value,,UCH,0=off;1=on,,
-[id_sw>=38]r,,,ZaehlerBetriebsStunden,ZaehlerBetriebsStunden: Working Hours,,,b509,0d4500,value,,UIN,,,
-[id_sw>=39]r,,,DurchflussTemp,Volumenstrom in Liter / Minute,,,b509,0d4600,value,,D2C,,°C,Temperatur
+[id_sw>=38]r,,,OperatingHours,ZaehlerBetriebsStunden: Working Hours,,,b509,0d4500,value,,UIN,,h,Stunden
+[id_sw>=39]r,,,FlowTemp,Volumenstrom in Liter / Minute,,,b509,0d4600,value,,D2C,,°C,Temperatur
 [id_sw>=112]r,,,VPMWMode,"VPMW Typ: 1=VPM 20/25W, 2=VPM 30/35W",,,b509,0d4b00,value,,UCH,,,
 [id_sw>=117]r,,,OverheatTimer,Overheat_timer,,,b509,0d5200,value,,UCH,,s,Sekunden
 [id_sw>=40]r,,,HexMonitoringCounter,HexMonitoringCounter: RO,,,b509,0d4700,value,,SIN,,,
-[id_sw>=40]r,,,HExThreshold,HExThreshold,,,b509,0d4800,value,,SIN,,in 1/100,RO
-[id_sw>=40]r,,,BigHExThreshold,BigHExThreshold,,,b509,0d4900,value,,SIN,,in 1/100,RW
-[id_sw>=40]r,,,HExIndex,HExIndex,,,b509,0d4a00,value,,SIN,,in 1/100,RO
-[id_sw>=113]r,,,ActualKrm,Actual_Krm,,,b509,0d4c00,value,,SIN,,in 1/1000,"Krm used for calculation (set in DynamicTnm), valid after 1. Tapping"
-[id_sw>=113]r,,,ActualTnm,Actual_Tnm,,,b509,0d4d00,value,,SIN,,in 1/1000,"Tnm used for calculation (set in DynamicTnm), valid after 1. Tapping"
-[id_sw>=114]r,,,KrmFaktorSmall,Krm_Faktor_Small,,,b509,0d4e00,value,,SIN,,in 1/1000,Krm Verstärkungsfaktor Small (1/1000)
-[id_sw>=114]r,,,KrmFaktorMiddl,Krm_Faktor_Middl,,,b509,0d4f00,value,,SIN,,in 1/1000,Krm Verstärkungsfaktor Middl (1/1000)
-[id_sw>=114]r,,,TnmFaktorSmall,Tnm_Faktor_Small,,,b509,0d5000,value,,SIN,,in 1/1000,Tnm Verstärkungsfaktor Small (1/1000)
-[id_sw>=114]r,,,TnmFaktorMiddl,Tnm_Faktor_Middl,,,b509,0d5100,value,,SIN,,in 1/1000,Tnm Verstärkungsfaktor Middl (1/1000)
+[id_sw>=40]r,,,HExThreshold,HExThreshold,,,b509,0d4800,value,,SIN,100,,RO
+[id_sw>=40]r,,,BigHExThreshold,BigHExThreshold,,,b509,0d4900,value,,SIN,100,,RW
+[id_sw>=40]r,,,HExIndex,HExIndex,,,b509,0d4a00,value,,SIN,100,,RO
+[id_sw>=113]r,,,ActualKrm,Actual_Krm,,,b509,0d4c00,value,,SIN,1000,,"Krm used for calculation (set in DynamicTnm), valid after 1. Tapping"
+[id_sw>=113]r,,,ActualTnm,Actual_Tnm,,,b509,0d4d00,value,,SIN,1000,,"Tnm used for calculation (set in DynamicTnm), valid after 1. Tapping"
+[id_sw>=114]r,,,KrmFaktorSmall,Krm_Faktor_Small,,,b509,0d4e00,value,,SIN,1000,,Krm Verstärkungsfaktor Small (1/1000)
+[id_sw>=114]r,,,KrmFaktorMiddl,Krm_Faktor_Middl,,,b509,0d4f00,value,,SIN,1000,,Krm Verstärkungsfaktor Middl (1/1000)
+[id_sw>=114]r,,,TnmFaktorSmall,Tnm_Faktor_Small,,,b509,0d5000,value,,SIN,1000,,Tnm Verstärkungsfaktor Small (1/1000)
+[id_sw>=114]r,,,TnmFaktorMiddl,Tnm_Faktor_Middl,,,b509,0d5100,value,,SIN,1000,,Tnm Verstärkungsfaktor Middl (1/1000)
 r,,,Ntc1Sensor,NTC 1 Sensor: T1 Temperature,,,b509,0d0000,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,Ntc2Sensor,NTC 2 Sensor: T2 Temperature,,,b509,0d0100,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,Ntc3Sensor,NTC 3 Sensor: T3 Temperature,,,b509,0d0200,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
@@ -34,7 +34,7 @@ r,,,AutoTappingTempDesired,Automatischer Zapfsollwert,,,b509,0d0c00,value,,D2C,,
 r,,,QuickVetoTempDesired,Quick Veto Sollwert,,,b509,0d0d00,value,,D2C,,°C,Temperatur
 r,,,ActualTappingTempDesired,Aktueller Zapfsollwert,,,b509,0d0e00,value,,D2C,,°C,Temperatur
 r,,,QuickVetoStart,Quick Veto start,,,b509,0d0f00,value,,UCH,0=off;1=on,,
-r,,,LegioStartDay,Starttag Legionellenschutz,,,b509,0d1000,value,,UCH,,0..8,0=Montag1 = Dienstag..6 = Sonntag7 = Legionellenschutz aus8 = täglich
+r,,,LegioStartDay,Starttag Legionellenschutz,,,b509,0d1000,value,,UCH,,,0=Montag1 = Dienstag..6 = Sonntag7 = Legionellenschutz aus8 = täglich
 r,,,LegioStartTime,Startzeit Legionellenschutz: Time when LegioProtect starts on specific day,,,b509,0d1100,value,,VTI,,,Uhrzeit
 r,,,PartyStart,Start Partyfunktion: Start Party Mode,,,b509,0d1200,value,,UCH,0=off;1=on,,
 r,,,HolidayStart,Start Ferienfunktion: Start Holiday Mode,,,b509,0d1300,value,,UCH,0=off;1=on,,
@@ -42,16 +42,16 @@ r,,,ActorFernsteuerung,ActorFernsteuerung: TRUE -> RemoteControl of actors,,,b50
 r,,,Time,Zeit: System Time,,,b509,0d2c00,value,,VTI,,,Uhrzeit
 r,,,Date,Datum: System Date,,,b509,0d2d00,value,,HDA:3,,,Datum
 r,,,Weekday,"Wochentag: System Weekday (0=Monday, 5=Saturday, 6=Sunday)",,,b509,0d2e00,value,,BDY,,,Wochentag
-r,,,TeleSwitch,TeleSWITCH,,,b509,0d3900,value,,UCH,,0..3,"TeleSwitch Operating Mode (0=disabled, 1=ON, 2=OFF, 3=AUTO"
+r,,,TeleSwitch,TeleSWITCH,,,b509,0d3900,value,,UCH,0=disabled;1=on;2=off;3=auto,,TeleSwitch Operating Mode
 r,,,TeleSwitchState,TeleSwitchState: Teleswitch port state (On / Off),,,b509,0d3a00,value,,UCH,0=off;1=on,,
 r,,,EnableHwcOperation,EnableDHWOperation: Enable DHW Ooperation,,,b509,0d4300,value,,UCH,0=off;1=on,,
-r,,,Krm,Krm,,,b509,0d1400,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
-r,,,Tm,Tm,,,b509,0d1500,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
-r,,,Tnm,Tnm,,,b509,0d1600,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
-r,,,Tvm,Tvm,,,b509,0d1700,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
-r,,,Krp,Krp,,,b509,0d1800,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
-r,,,Tvp,Tvp,,,b509,0d1900,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
-r,,,Tp,Tp,,,b509,0d1a00,value,,SIN,,in 1/1000,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Krm,Krm,,,b509,0d1400,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Tm,Tm,,,b509,0d1500,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Tnm,Tnm,,,b509,0d1600,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Tvm,Tvm,,,b509,0d1700,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Krp,Krp,,,b509,0d1800,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Tvp,Tvp,,,b509,0d1900,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
+r,,,Tp,Tp,,,b509,0d1a00,value,,SIN,1000,,"enter value in 1/1000: 25=0.025, 250=0,25, 2500=2,5"
 r,,,StateMainControl,State_MainControl: Aktuelle Zustandsnummer MainControl,,,b509,0d2f00,value,,UCH,,,
 r,,,StateMixerPumpControl,State_MixerPumpControl: Aktuelle Zustandsnummer MixerPumpControl,,,b509,0d3000,value,,UCH,,,
 r,,,StateCircoKick,State_CircoKick: Aktuelle Zustandsnummer CircoKickControl,,,b509,0d3100,value,,UCH,,,
@@ -68,7 +68,7 @@ w,,service,StInstallationDate,Installationsdatum: Installation Date,,,b509,0e410
 r,,,SteBusCheckFailedCounter,SteBusCheckFailedCounter: eBus Failed Counter,,,b509,0d4200,value,,UIN,,,
 w,,service,SteBusCheckFailedCounter,SteBusCheckFailedCounter: eBus Failed Counter,,,b509,0e4200,value,,UIN,,,
 r,,,DateTime,Datum Uhrzeit,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF Empfängerstatus,btime,,BTI,,,Uhrzeit,bdate,,BDA,,,Datum,temp,,D2B,,°C,Temperatur
-r,,,Mode,Betriebsmodus,,,b504,01,temp,,UCH,,°C,Temperatur,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,hex,,HEX,,,,daynight,,UCH,0=night;1=day;7=floorpaving,,Tag-/Nachtmodus
+r,,,Mode,Betriebsmodus,,,b504,01,temp,,UCH,,°C,Temperatur,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,hex,,HEX,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,Tag-/Nachtmodus
 w,,,SetTempDesired,Solltemperatur setzen,,,b505,01,value,,UCH,,°C,Temperatur
 w,,,SetMode,Betriebsart setzen,,,b505,02,value,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus
 w,,,SetFlowTempMin,Minimalen Vorlaufsollwert setzen,,,b505,0e,value,,UCH,,°C,Temperatur

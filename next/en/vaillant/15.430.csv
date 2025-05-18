@@ -6,7 +6,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=215]w,,,HwcQuickVetoActive,DHW_QuickVetoActive,,,b509,0e4300,value,,UCH,0=no;1=yes,,manual override of the domestic hot water circuit enabled
 [id_sw>=125]r,,,DisplayedHwcStorageTemp,DisplayedDHWTankTemperature: display of the storage's temperature in C4 (also in case of an SP1 error),,,b509,0d9e00,value,,D1C,,°C,temperature
 [id_sw>=125]r,,,HwcLoadingInBMUActive,DHWLoadingInBMUActive: indicates that BMU is in DHW preparation,,,b509,0d9d00,value,,UCH,0=no;1=yes,,
-[id_sw>=125]r,,,MonitorEEpromInkonsiNumber,MonitorEEpromInkonsiNumber,,,b509,0d9f00,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
+[id_sw>=125]r,,,MonitorEEpromInconsCnt,MonitorEEpromInkonsiNumber,,,b509,0d9f00,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
 [id_sw>=216]r,,,Hc1FloorPavementDryingTemp,HC1_FloorPavementDryingTemperature: HC1's current flow temperature setpoint with activated floor pavement drying,,,b509,0d2a00,value,,D1C,,°C,temperature
 [id_sw>=216]r,,,Hc1FloorPavementDryingDay,HC1_FloorPavementDryingDay: HC1's current day of floor pavement drying,,,b509,0d3800,value,,UCH,,,
 [id_sw<=209]r,,,B51000HcDisableMonitor,B51000CHDisableMonitor: copy of the M12 byte of the B5 10 00 service containing the disable bits,,,b509,0d8e00,value,,UCH,,,
@@ -45,8 +45,8 @@ r,,,NameHc2,Circuits_Name_HC2,,,b509,0d3f08,value,,STR:10,,,labelling of the sec
 w,,,NameHc2,Circuits_Name_HC2,,,b509,0e3f08,value,,STR:10,,,labelling of the second heating circuit
 r,,,NameHwc,Circuits_Name_DHW,,,b509,0d3f78,value,,STR:10,,,labelling of the domestic hot water circuit
 w,,,NameHwc,Circuits_Name_DHW,,,b509,0e3f78,value,,STR:10,,,labelling of the domestic hot water circuit
-r,,,HolidayRoomTemp,"HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0d4000,value,,D1C,,,
-w,,,HolidayRoomTemp,"HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0e4000,value,,D1C,,,
+r,,,HolidayRoomTemp,"HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0d4000,value,,D1C,,°C,temperature
+w,,,HolidayRoomTemp,"HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0e4000,value,,D1C,,°C,temperature
 r,,,HolidayStartPeriod,HolidayStartPeriod: start date of holidays,,,b509,0d1100,value,,HDA:3,,,date
 w,,,HolidayStartPeriod,HolidayStartPeriod: start date of holidays,,,b509,0e1100,value,,HDA:3,,,date
 r,,,HolidayEndPeriod,HolidayEndPeriod: end date of holidays,,,b509,0d1200,value,,HDA:3,,,date
@@ -149,7 +149,7 @@ r,,,PumpEnergySaveStateMonitor,PumpEnergySaveStateMonitor: monitoring of the pum
 r,,,PumpEnergySaveCalculatedTimeMonitor,PumpEnergySaveCalculatedTimeMonitor: calculated time for the heating circuit's pump's switch off time during pump energy saving function (depends on outside temperature),,,b509,0d9200,value,,UCH,,min,minutes
 r,,,HwcLoadingIn430Active,DHWLoadingIn430Active: DHW-loading is active in non parallel loading cases,,,b509,0d9300,value,,UCH,0=no;1=yes,,
 r,,,ActoSTOROPMode,actoSTOR_OPMode: Zustands-Automat actSTOR Ansteuerung,,,b509,0d9400,value,,UCH,,,
-r,,,B50418actDesFlowTemp,B50418actDesFlowTemp: flow temperature setpoint calculated by actoSTOR (S3 of B5 04 18),,,b509,0d6b00,value,,D1C,,,
+r,,,B50418actDesFlowTemp,B50418actDesFlowTemp: flow temperature setpoint calculated by actoSTOR (S3 of B5 04 18),,,b509,0d6b00,value,,D1C,,°C,temperature
 r,,,AdpPreHRoomTempDesired,adpPreH_RoomSetpoint,,,b509,0db400,value,,D2C,,°C,temperature
 r,,,AdpPreHCurrentRoomTemp,adpPreH_CurrentRoomTemp,,,b509,0db500,value,,D2C,,°C,temperature
 r,,,AdpPreHMinutesBeforeFirstTW,adpPreH_MinutesBeforeFirstTW,,,b509,0db600,value,,UIN,,s,seconds

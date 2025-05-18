@@ -18,7 +18,7 @@ r,,,StackLifeCheckTaskMax,MaxStackLifeCheckTask: maximum number of bytes needed 
 r,,,Variant,Variant,,,b509,0d0f00,uin,,UIN,,,identifier for the variant,uin_1,,UIN,,,
 r,,,EBUSCRC,eBUS_CRC: last calculated eBUS CRC,,,b509,0d1000,value,,UCH,,,
 r,,,EBUSFifoDiffCntMax,eBUSFifoDiffCntMax: max. eBUS-fifo level,,,b509,0d1100,value,,UCH,,,
-r,,,EEpromMaxInkonsCnt,EEpromMaxInkonsCnt: EEPROM inconsistency counter,,,b509,0d1300,value,,UIN,,,
+r,,,EEpromMaxInconsCnt,EEpromMaxInkonsCnt: EEPROM inconsistency counter,,,b509,0d1300,value,,UIN,,,
 r,,,POCResetCnt,POCResetCnt: power on resets,,,b509,0d1400,value,,UIN,,,
 r,,,WDResetCnt,WDResetCnt: watchdog resets,,,b509,0d1500,value,,UIN,,,
 r,,,LVResetCnt,LVResetCnt: low voltage resets,,,b509,0d1600,value,,UIN,,,
