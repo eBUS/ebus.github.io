@@ -88,8 +88,8 @@ r,,,ProductionByte,ProductionByte,,,b509,0d3e04,value,,UCH,,,
 r,,,SerialNumber,SerialNumber,,,b509,0d3f04,value,,HEX:8,,,Serial number AI
 r,,,ReturnRegulation,d.17 Return control,,,b509,0db300,value,,UCH,0=off;1=on,,Activation of the return control
 w,,install_NOT_YET_CONFIRMED,ReturnRegulation,d.17 Return control,,,b509,0eb300,value,,UCH,0=off;1=on,,Activation of the return control
-r,,,HcPumpMode,d.18 CH pump mode,,,b509,0db700,value,,UCH,0=post_run;1=permanent;2=winter,,Pump mode for central heating
-w,,install_NOT_YET_CONFIRMED,HcPumpMode,d.18 CH pump mode,,,b509,0eb700,value,,UCH,0=post_run;1=permanent;2=winter,,Pump mode for central heating
+r,,,HcPumpMode,d.18 CH pump mode,,,b509,0db700,value,,UCH,0=post_run;1=permanent;2=winter;3=eco,,Pump mode
+w,,install_NOT_YET_CONFIRMED,HcPumpMode,d.18 CH pump mode,,,b509,0eb700,value,,UCH,0=post_run;1=permanent;2=winter;3=eco,,Pump mode
 r,,,HwcTempMax,d.20 Maximum DHW temperature,,,b509,0dd900,value,,D2C,,°C,Max. Speichersollwert. Limits the maximum adjustment range of the potentiometer (right stop).
 w,,install_NOT_YET_CONFIRMED,HwcTempMax,d.20 Maximum DHW temperature,,,b509,0ed900,value,,D2C,,°C,Max. Speichersollwert. Limits the maximum adjustment range of the potentiometer (right stop).
 r,,,OptionalRelais,d.26 Optional relay,,,b509,0db800,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of optional relay

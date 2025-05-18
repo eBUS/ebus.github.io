@@ -32,8 +32,8 @@ r,,,RemainingBoilerblocktime,d.67 Remaining burner block time: Remaining burner 
 r,,,EBusHeatcontrol,d.90 Digital control recognized: Digital regulator status,,,b509,0d7400,value,,UCH,0=no;1=yes,,
 r,,,ReturnRegulation,d.17 Return regulation: heating flow/return regulation activation,,,b509,0db300,value,,UCH,0=off;1=on,,
 w,,service,ReturnRegulation,d.17 Return regulation: heating flow/return regulation activation,,,b509,0eb300,value,,UCH,0=off;1=on,,
-r,,,HcPumpMode,d.18 CH pump mode,,,b509,0db700,value,,UCH,0=post_run;1=permanent;2=winter,,Pump mode
-w,,install,HcPumpMode,d.18 CH pump mode,,,b509,0eb700,value,,UCH,0=post_run;1=permanent;2=winter,,Pump mode
+r,,,HcPumpMode,d.18 CH pump mode,,,b509,0db700,value,,UCH,0=post_run;1=permanent;2=winter;3=eco,,Pump mode
+w,,install,HcPumpMode,d.18 CH pump mode,,,b509,0eb700,value,,UCH,0=post_run;1=permanent;2=winter;3=eco,,Pump mode
 r,,,SecondPumpMode,"d.19 Mode of 2 speed pump: Operating mode of the two-stage heating pump0: burner mode = 2, pre/post-run = 1; 1: CH + post-run = 1, DHW = 2, 2: as 1 but rotation speed in CH is dependent of heating part load, (defaultsetting)3: always stage 2",,,b509,0da000,value,,UCH,,,
 w,,install,SecondPumpMode,"d.19 Mode of 2 speed pump: Operating mode of the two-stage heating pump0: burner mode = 2, pre/post-run = 1; 1: CH + post-run = 1, DHW = 2, 2: as 1 but rotation speed in CH is dependent of heating part load, (defaultsetting)3: always stage 2",,,b509,0ea000,value,,UCH,,,
 r,,,HwcTempMax,d.20 Max value tanksetpoint: Adjustment of maximum tank setpoint range (maximum endposition of potmeter),,,b509,0dd900,value,,D2C,,°C,temperature
