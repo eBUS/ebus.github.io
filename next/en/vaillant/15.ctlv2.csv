@@ -209,9 +209,9 @@ r,,,Z1ActualRoomTempDesired,Raumsolltemperatur Zone 1,,,b524,020003001400,value,
 w,,,Z1ActualRoomTempDesired,Raumsolltemperatur Zone 1,,,b524,020103001400,value,,EXP,,°C,current room setpoint considering all basic conditions passed to the control algorithms
 r,,,Z1Shortname,Kurzbezeichnung zone 1,,,b524,020003001600,value,,IGN:4,,,,value,,STR:6,,,short name of zone 1
 w,,,Z1Shortname,Kurzbezeichnung zone 1,,,b524,020103001600,value,,STR:6,,,short name of zone 1
-r,,,Z1Name1,Bezeichnung Zone 1 Teil 1,,,b524,020003001700,value,,IGN:4,,,,value,,STR:5,,,name of zone 1
+r,,,Z1Name1,Bezeichnung Zone 1 Teil 1,,,b524,020003001700,value,,IGN:4,,,,value,,STR:*,,,name of zone 1
 w,,,Z1Name1,Bezeichnung Zone 1 Teil 1,,,b524,020103001700,value,,STR:5,,,name of zone 1
-r,,,Z1Name2,Bezeichnung Zone 1 Teil 2,,,b524,020003001800,value,,IGN:4,,,,value,,STR:5,,,name of zone 1
+r,,,Z1Name2,Bezeichnung Zone 1 Teil 2,,,b524,020003001800,value,,IGN:4,,,,value,,STR:*,,,name of zone 1
 w,,,Z1Name2,Bezeichnung Zone 1 Teil 2,,,b524,020103001800,value,,STR:5,,,name of zone 1
 r,,,Z1DayTemp,Solltemperatur Zone 1,,,b524,020003002200,value,,IGN:4,,,,value,,EXP,,°C,day setpoint for zone 1
 w,,,Z1DayTemp,Solltemperatur Zone 1,,,b524,020103002200,value,,EXP,,°C,day setpoint for zone 1

@@ -1,8 +1,8 @@
 type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,unit,comment
 *r,
 *w,
-r,,,ContinuousHeating,Durchgehendes Heizen,,,b524,020000000200,value,,IGN:4,,,,value,,EXP,,°C,"-26=off,when the outside temperature falls below this threshold temperature the continuous heating function is started (off <=> function is disabled)"
-w,,,ContinuousHeating,Durchgehendes Heizen,,,b524,020100000200,value,,EXP,,°C,"-26=off,when the outside temperature falls below this threshold temperature the continuous heating function is started (off <=> function is disabled)"
+r,,,ContinuousHeating,Durchgehendes Heizen,,,b524,020000000200,value,,IGN:4,,,,value,,EXP,,°C,"-26=off, when the outside temperature falls below this threshold temperature the continuous heating function is started (off <=> function is disabled)"
+w,,,ContinuousHeating,Durchgehendes Heizen,,,b524,020100000200,value,,EXP,,°C,"-26=off, when the outside temperature falls below this threshold temperature the continuous heating function is started (off <=> function is disabled)"
 r,,,FrostOverRideTime,Frostschutz-Verzögerung,,,b524,020000000300,value,,IGN:4,,,,value,,UIN,,h,delay before frost protection is activated
 w,,,FrostOverRideTime,Frostschutz-Verzögerung,,,b524,020100000300,value,,UIN,,h,delay before frost protection is activated
 r,,,HwcParallelLoading,Parallele Ladung Warmwasserkreis,,,b524,020000000a00,value,,IGN:4,,,,value,,UCH,0=off;1=on,,Heizbetrieb und Speicherladung parallel
@@ -81,10 +81,10 @@ w,,,KeyCodeforConfigMenu,Passwort für das Konfigurationsmenü,,,b524,0201000076
 r,,,OutsideTempAvg,mittlere Außentemperatur,,,b524,020000009500,value,,IGN:4,,,,value,,EXP,,°C,gerundete mittlere Außentemperatur (alle 3h aktualisiert)
 w,,,OutsideTempAvg,mittlere Außentemperatur,,,b524,020100009500,value,,EXP,,°C,gerundete mittlere Außentemperatur (alle 3h aktualisiert)
 r,,,MaintenanceDue,Wartung fällig,,,b524,020000009600,value,,IGN:4,,,,value,,UCH,0=no;1=yes,,zeigt an ob die Wartung fällig ist
-r,,,HwcStorageTempTop,"Temp.fühler WW,oben",,,b524,020000009d00,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler WW,oben"
-r,,,HwcStorageTempBottom,"Temp.fühler WW,unten",,,b524,020000009e00,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler WW,unten"
-r,,,HcStorageTempTop,"Temp.fühler Hz,oben",,,b524,020000009f00,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler Hz,oben"
-r,,,HcStorageTempBottom,"Temp.fühler Hz,unten",,,b524,02000000a000,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler Hz,unten"
+r,,,HwcStorageTempTop,"Temp.fühler WW,oben",,,b524,020000009d00,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler WW, oben"
+r,,,HwcStorageTempBottom,"Temp.fühler WW,unten",,,b524,020000009e00,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler WW, unten"
+r,,,HcStorageTempTop,"Temp.fühler Hz,oben",,,b524,020000009f00,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler Hz, oben"
+r,,,HcStorageTempBottom,"Temp.fühler Hz,unten",,,b524,02000000a000,value,,IGN:4,,,,value,,EXP,,°C,"Temp.fühler Hz, unten"
 r,,,HwcOpMode,HwcOpMode,,,b524,020001000300,value,,IGN:4,,,,value,,UIN,0=off;1=auto;2=day;3=night,,operation mode of Hwc
 w,,,HwcOpMode,HwcOpMode,,,b524,020101000300,value,,UIN,0=off;1=auto;2=day;3=night,,operation mode of Hwc
 r,,,HwcTempDesired,gewünschte Temperatur Warmwasserkreis,,,b524,020001000400,value,,IGN:4,,,,value,,EXP,,°C,setpoint of domestic hot water circuit
@@ -120,7 +120,7 @@ r,,,Hc1SummerTempLimit,AT-Abschaltgrenze Heizkreis 1,,,b524,020002001400,value,,
 w,,,Hc1SummerTempLimit,AT-Abschaltgrenze Heizkreis 1,,,b524,020102001400,value,,EXP,,°C,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r,,,Hc1RoomTempSwitchOn,RoomTempSwitchOn Heizkreis 1,,,b524,020002001500,value,,IGN:4,,,,value,,UIN,0=off;1=modulating;2=thermostat,,room temperature modulation of Hc1
 w,,,Hc1RoomTempSwitchOn,RoomTempSwitchOn Heizkreis 1,,,b524,020102001500,value,,UIN,0=off;1=modulating;2=thermostat,,room temperature modulation of Hc1
-r,,,Hc1MixerMovement,MixerMovement Heizkreis 1,,,b524,020002001a00,value,,IGN:4,,,,value,,EXP,,,"status of mixer (<0 closing,>0 opening)"
+r,,,Hc1MixerMovement,MixerMovement Heizkreis 1,,,b524,020002001a00,value,,IGN:4,,,,value,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r,,,Hc1HeatCurveAdaption,Anpassung Heizkurve Heizkreis 1,,,b524,020002001c00,value,,IGN:4,,,,value,,EXP,,,adaption applied to heating curve of Hc1
 r,,,Hc1Status,Status Heizkreis 1,,,b524,020002001b00,value,,IGN:4,,,,value,,UCH,,,status of zone 1
 w,,,Hc1Status,Status Heizkreis 1,,,b524,020102001b00,value,,UCH,,,status of zone 1
@@ -145,7 +145,7 @@ r,,,Hc2SummerTempLimit,AT-Abschaltgrenze Heizkreis 2,,,b524,020002011400,value,,
 w,,,Hc2SummerTempLimit,AT-Abschaltgrenze Heizkreis 2,,,b524,020102011400,value,,EXP,,°C,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r,,,Hc2RoomTempSwitchOn,RoomTempSwitchOn Heizkreis 2,,,b524,020002011500,value,,IGN:4,,,,value,,UIN,0=off;1=modulating;2=thermostat,,room temperature modulation of Hc2
 w,,,Hc2RoomTempSwitchOn,RoomTempSwitchOn Heizkreis 2,,,b524,020102011500,value,,UIN,0=off;1=modulating;2=thermostat,,room temperature modulation of Hc2
-r,,,Hc2MixerMovement,MixerMovement Heizkreis 2,,,b524,020002011a00,value,,IGN:4,,,,value,,EXP,,,"status of mixer (<0 closing,>0 opening)"
+r,,,Hc2MixerMovement,MixerMovement Heizkreis 2,,,b524,020002011a00,value,,IGN:4,,,,value,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r,,,Hc2HeatCurveAdaption,Anpassung Heizkurve Heizkreis 2,,,b524,020002011c00,value,,IGN:4,,,,value,,EXP,,,adaption applied to heating curve of Hc2
 r,,,Hc2Status,Status Heizkreis 2,,,b524,020002011b00,value,,IGN:4,,,,value,,UCH,,,status of zone 2
 w,,,Hc2Status,Status Heizkreis 2,,,b524,020102011b00,value,,UCH,,,status of zone 2
@@ -170,7 +170,7 @@ r,,,Hc3SummerTempLimit,AT-Abschaltgrenze Heizkreis 3,,,b524,020002021400,value,,
 w,,,Hc3SummerTempLimit,AT-Abschaltgrenze Heizkreis 3,,,b524,020102021400,value,,EXP,,°C,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r,,,Hc3RoomTempSwitchOn,RoomTempSwitchOn Heizkreis 3,,,b524,020002021500,value,,IGN:4,,,,value,,UIN,0=off;1=modulating;2=thermostat,,room temperature modulation of Hc3
 w,,,Hc3RoomTempSwitchOn,RoomTempSwitchOn Heizkreis 3,,,b524,020102021500,value,,UIN,0=off;1=modulating;2=thermostat,,room temperature modulation of Hc3
-r,,,Hc3MixerMovement,MixerMovement Heizkreis 3,,,b524,020002021a00,value,,IGN:4,,,,value,,EXP,,,"status of mixer (<0 closing,>0 opening)"
+r,,,Hc3MixerMovement,MixerMovement Heizkreis 3,,,b524,020002021a00,value,,IGN:4,,,,value,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r,,,Hc3HeatCurveAdaption,Anpassung Heizkurve Heizkreis 3,,,b524,020002021c00,value,,IGN:4,,,,value,,EXP,,,adaption applied to heating curve of Hc3
 r,,,Hc3Status,Status Heizkreis 3,,,b524,020002021b00,value,,IGN:4,,,,value,,UCH,,,status of zone 2
 w,,,Hc3Status,Status Heizkreis 3,,,b524,020102021b00,value,,UCH,,,status of zone 2
@@ -211,7 +211,7 @@ r,,,Z1Shortname,Kurzbezeichnung Zone 1,,,b524,020003001600,value,,IGN:4,,,,value
 w,,,Z1Shortname,Kurzbezeichnung Zone 1,,,b524,020103001600,value,,STR:6,,,short name of zone 1
 r,,,Z1Name1,Bezeichnung Zone 1 Teil 1,,,b524,020003001700,value,,IGN:4,,,,value,,STR:5,,,name of zone 1
 w,,,Z1Name1,Bezeichnung Zone 1 Teil 1,,,b524,020103001700,value,,STR:5,,,name of zone 1
-r,,,Z1Name2,Bezeichnung Zone 1 Teil 2,,,b524,020003001800,value,,IGN:4,,,,value,,STR:5,,,name of zone 1
+r,,,Z1Name2,Bezeichnung Zone 1 Teil 2,,,b524,020003001800,value,,IGN:4,,,,value,,STR:*,,,name of zone 1
 w,,,Z1Name2,Bezeichnung Zone 1 Teil 2,,,b524,020103001800,value,,STR:5,,,name of zone 1
 r,,,Z1DayTemp,Solltemperatur Zone 1,,,b524,020003002200,value,,IGN:4,,,,value,,EXP,,°C,day setpoint for zone 1
 w,,,Z1DayTemp,Solltemperatur Zone 1,,,b524,020103002200,value,,EXP,,°C,day setpoint for zone 1
