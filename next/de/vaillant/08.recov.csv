@@ -9,7 +9,7 @@ w,,,VentilationLevelNight,Lüfterstufe Nacht,,,b509,0e8b03,value,,UCH,,,
 r2,,,HeatRecovery,Wärmerückgewinnung,,,b509,0d8c03,value,,UCH,0=auto;1=on;2=off,,
 w,,,HeatRecovery,Wärmerückgewinnung,,,b509,0e8c03,value,,UCH,0=auto;1=on;2=off,,
 r9,,,FrostProtection,frost protection element active,,,b509,0df10c,value,,UCH,0=off;1=on,,
-u,,,FrostProtection,frost protection element active,,,b509,29f10c,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,FrostProtection,frost protection element active,,,b509,29f10c,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,FilterChangeDaysLeft,Tage bis Filterwechsel,,,b509,0d350e,value,,UIN,,days,
 w,,,FilterChangeDaysLeft,Tage bis Filterwechsel,,,b509,0e350e,value,,UIN,,days,
 r,,,MaintenanceDaysLeft,Tage bis Wartung,,,b509,0d360e,value,,UIN,,days,
@@ -54,7 +54,7 @@ w,,,MaxAirHumidity,max Luftfeuchte,,,b509,0e310e,value,,UCH,,%,
 r,,,SupplyAirSpeed,Drehzahl Zuluft,,,b509,0d010e,value,,UIN,,rpm,
 r,,,ExhaustAirSpeed,Drehzahl Abluft,,,b509,0d020e,value,,UIN,,rpm,
 r2,,,SupplyFlowActual,Interner Istwert Volumenstrom Zuluft,,,b509,0d030e,value,,UIN,,m3/h,
-u,,,SupplyFlowActual,Interner Istwert Volumenstrom Zuluft,,,b509,29030e,value,,IGN:2,,,,value,,UIN,,m3/h,
+u,,,SupplyFlowActual,Interner Istwert Volumenstrom Zuluft,,,b509,29030e,ign,,IGN:2,,,,value,,UIN,,m3/h,
 r,,,SupplyFlowTarget,Interner Sollwert Volumenstrom Zuluft,,,b509,0d040e,value,,UIN,,m3/h,
 r,,,ExhaustFlowActual,Interner Istwert Volumenstrom Abluft,,,b509,0d050e,value,,UIN,,m3/h,
 r,,,ExhaustFlowTarget,Interner Sollwert Volumenstrom Abluft,,,b509,0d060e,value,,UIN,,m3/h,
@@ -62,21 +62,21 @@ r,,,VentilationStage,Lüfterstufe,,,b509,0d150e,value,,UCH,0=low;1=auto;2=medium
 w,,,VentilationStage,Lüfterstufe,,,b509,0e150e,value,,UCH,0=low;1=auto;2=medium;3=high,,
 r,,,DesiredTemp,Solltemperatur,,,b509,0d140e,value,,D2C,,°C,Temperatur
 w,,,DesiredTemp,Solltemperatur,,,b509,0e140e,value,,D2C,,°C,Temperatur
-u,,,DesiredTemp,Solltemperatur,,,b509,29140e,value,,IGN:2,,,,value,,D2C,,°C,Temperatur
+u,,,DesiredTemp,Solltemperatur,,,b509,29140e,ign,,IGN:2,,,,value,,D2C,,°C,Temperatur
 r,,,IntensiveVentilation,Intensivlüftung,,,b509,0dca0d,value,,UCH,0=off;1=on,,
 w,,,IntensiveVentilation,Intensivlüftung,,,b509,0eca0d,value,,UCH,0=off;1=on,,
 r,,,OutsideAirTemp,Außenlufttemperatur,,,b509,0d0c0e,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,OutsideAirTemp,Außenlufttemperatur,,,b509,290c0e,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,OutsideAirTemp,Außenlufttemperatur,,,b509,290c0e,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,ExitAirTemp,Exit air temperature,,,b509,0d0d0e,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,ExitAirTemp,Exit air temperature,,,b509,290d0e,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,ExitAirTemp,Exit air temperature,,,b509,290d0e,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,ExhaustAirTemp,Ablufttemperatur,,,b509,0db40d,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,ExhaustAirTemp,Ablufttemperatur,,,b509,29b40d,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,ExhaustAirTemp,Ablufttemperatur,,,b509,29b40d,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,ExhaustAirHumidity,Abluftfeuchte,,,b509,0d8503,value,,D2C,,%,
-u,,,ExhaustAirHumidity,Abluftfeuchte,,,b509,298503,value,,IGN:2,,,,value,,D2C,,%,
+u,,,ExhaustAirHumidity,Abluftfeuchte,,,b509,298503,ign,,IGN:2,,,,value,,D2C,,%,
 r,,,SupplyAirTemp,Zulufttemperatur,,,b509,0db30d,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,SupplyAirTemp,Zulufttemperatur,,,b509,29b30d,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,SupplyAirTemp,Zulufttemperatur,,,b509,29b30d,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r9,,,BypassPosition,Position Bypassklappe,,,b509,0d0b0e,value,,D2C,,%,
-u,,,BypassPosition,Position Bypassklappe,,,b509,290b0e,value,,IGN:2,,,,value,,D2C,,%,
+u,,,BypassPosition,Position Bypassklappe,,,b509,290b0e,ign,,IGN:2,,,,value,,D2C,,%,
 w,,,VentDay,Set Ventilation Day,,,b522,000200ffff,
 w,,,VentNight,Set Ventilation Night,,,b522,000100ffff,
 w,,,VentBoost,Activate Boost Ventilation,,,b522,000300ffff,

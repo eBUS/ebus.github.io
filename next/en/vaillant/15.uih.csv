@@ -7,7 +7,9 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=202]w,,install,YieldOld,EarnedEnergyOld: Contains earned energy sum stored from AMU last midnight. Required for data transmission between PCBs.,,,b509,0e8600,value,,ULG,,,
 [id_sw<=345]r,,,ChildProtection,Child protection,,,b509,0d6e00,value,,UCH,0=no;1=yes,,
 [id_sw>=220]r,,,CoolingDay,CoolingDay,,,b509,0d7c00,value,,UCH,,,
+[id_sw>=220]w,,,CoolingDay,CoolingDay,,,b509,0e7c00,value,,UCH,,,
 [id_sw>=220]r,,,CoolingActive,CoolingActive,,,b509,0d8300,value,,UCH,0=off;1=on,,
+[id_sw>=220]w,,,CoolingActive,CoolingActive,,,b509,0e8300,value,,UCH,0=off;1=on,,
 [id_sw>=250]r,,,DiagnoseMode,"DiagnoseMode: _DiaMode_Not=0, _DiaMode_Off, _DiaMode_CH, _DiaMode_DhwLoading, _DiaMode_Cooling, _DiaMode_Deicing",,,b509,0d8f00,value,,UCH,,,
 [id_sw>=250]r,,,EmStateWorkingMode,EmState_WorkingMode: 0 = Standby1 = CH2 = Cooling,,,b509,0d9000,value,,UCH,,,
 [id_sw>=250]r,,,EmStateCooling,EmStateCooling: 0=off1=DhwReq2=Dhw3=TankPOverrun4=Heating5=OverpresFDhw6=OverpresFCh7=WaitChDemOverp8=WaitChDemCH9=WaitChDemEndDhw10=CoolingHSOff11=CoolingHSOn12=DhwWhileCool13=CoolingDhw14=StandbyHSOff15=DhwWhileStandby,,,b509,0d9100,value,,UCH,,,
@@ -48,8 +50,10 @@ r,,,FrostOverRideTime,FrostOverRideTime: frost over ride time,,,b509,0d2e00,valu
 w,,install,FrostOverRideTime,FrostOverRideTime: frost over ride time,,,b509,0e2e00,value,,UCH,,h,hours
 r,,,EhpBackupRelease,EhpBackupHeaterRelease: backup heater release,,,b509,0d7100,value,,UCH,0=off;1=on,,
 r,,,EhpTimeOfPredictedPowerCut,EhpTimeOfPredictedPowerCut: time of the next predicted power cut,,,b509,0d7300,value,,VTI,,,time
-r,,,TempFailDetectTime,TempFailDetectTime: temperature fail detection time,,,b509,0d3300,value,,UCH,,°C,temperature
-w,,install,TempFailDetectTime,TempFailDetectTime: temperature fail detection time,,,b509,0e3300,value,,UCH,,°C,temperature
+r,,,TempFailDetectTime,TempFailDetectTime: temperature fail detection time,,,b509,0d3300,value,,UCH,,,
+w,,install,TempFailDetectTime,TempFailDetectTime: temperature fail detection time,,,b509,0e3300,value,,UCH,,,
+r,,,LcdContrastPwmValue,LcdContrastPwmValue: contrast for the display,,,b509,0d3600,value,,UCH,,,display contrast
+w,,install,LcdContrastPwmValue,LcdContrastPwmValue: contrast for the display,,,b509,0e3600,value,,UCH,,,display contrast
 r,,,EhpHeatBufferAvailable,EhpHeatBufferAvailable: heat buffer is available,,,b509,0d5c00,value,,UCH,0=off;1=on,,
 w,,install,EhpHeatBufferAvailable,EhpHeatBufferAvailable: heat buffer is available,,,b509,0e5c00,value,,UCH,0=off;1=on,,
 r,,,HcName2,aaucHcNames CH2: name of CH2,,,b509,0d4108,value,,STR:11,,,heat circuit name

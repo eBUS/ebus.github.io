@@ -10,30 +10,30 @@ r,,,Hg03,HG 03 - Obere Geblaesedrehzahl Warmwasser,,,5022,005901,value,,UIN,,%,p
 r,,,Hg04,HG 04 - Obere Geblaesedrehzahl Heizung (1-100),,,5022,003f01,value,,UIN,,%,percent
 r,,,Hg06,HG 06 - Heizkreispumpenbetriebsart (0-2),,,5022,004101,value,,UIN,,,
 w,,,Hg06,HG 06 - Heizkreispumpenbetriebsart (0-2),,03,5023,004101,value,,UIN,,,,suffix,,HEX:4,=9d010000,,
-r,,,Hg07,HG 07 - Heizkreispumpennachlauf (0-30),,,5022,004201,value,,UIN,,minutes,Minuten
-w,,,Hg07,HG 07 - Heizkreispumpennachlauf (0-30),,03,5023,004201,value,,UIN,,minutes,Minuten,suffix,,HEX:4,=9d010000,,
+r,,,Hg07,HG 07 - Heizkreispumpennachlauf (0-30),,,5022,004201,value,,UIN,,min,Minuten
+w,,,Hg07,HG 07 - Heizkreispumpennachlauf (0-30),,03,5023,004201,value,,UIN,,min,Minuten,suffix,,HEX:4,=9d010000,,
 r,,,Hg08,HG 08 - Maximale Vorlaufsolltemperatur (40-90),,,5022,008402,value,,UIN,10,°C,Temperatur
 w,,,Hg08,HG 08 - Maximale Vorlaufsolltemperatur (40-90),,03,5023,008402,value,,UIN,10,°C,Temperatur,suffix,,HEX:4,=9d010000,,
-r,,,Hg09,HG 09 - Taktsperre (1-30),,,5022,004301,value,,UIN,,minutes,Minuten
-w,,,Hg09,HG 09 - Taktsperre (1-30),,03,5023,004301,value,,UIN,,minutes,Minuten,suffix,,HEX:4,=9d010000,,
+r,,,Hg09,HG 09 - Taktsperre (1-30),,,5022,004301,value,,UIN,,min,Minuten
+w,,,Hg09,HG 09 - Taktsperre (1-30),,03,5023,004301,value,,UIN,,min,Minuten,suffix,,HEX:4,=9d010000,,
 r,,,Hg10,HG 10 - eBus-Adresse,,,5022,007801,value,,UIN,,,
 r,,,Hg11,HG 11 - Warmwasserschnellstart,,,5022,006a01,value,,UIN,10,°C,Temperatur
 r,,,Hg12,HG 12 - Gasart,,,5022,006b01,value,,UIN,,,
 r,,,Hg15,HG 15 - Speicherhysterese (1-30),,,5022,004001,value,,UIN,10,°C,Temperatur
 w,,,Hg15,HG 15 - Speicherhysterese (1-30),,03,5023,004001,value,,UIN,10,°C,Temperatur,suffix,,HEX:4,=9d010000,,
-r,,,Hg16,HG 16 - Pumpenleistung HK minimal (20-100),,,5022,005501,value,,UIN,,minutes,Minuten
-w,,,Hg16,HG 16 - Pumpenleistung HK minimal (20-100),,03,5023,005501,value,,UIN,,minutes,Minuten,suffix,,HEX:4,=9d010000,,
-r,,,Hg17,HG 17 - Pumpenleistung HK maximal (20-100),,,5022,005601,value,,UIN,,minutes,Minuten
-w,,,Hg17,HG 17 - Pumpenleistung HK maximal (20-100),,03,5023,005601,value,,UIN,,minutes,Minuten,suffix,,HEX:4,=9d010000,,
+r,,,Hg16,HG 16 - Pumpenleistung HK minimal (20-100),,,5022,005501,value,,UIN,,min,Minuten
+w,,,Hg16,HG 16 - Pumpenleistung HK minimal (20-100),,03,5023,005501,value,,UIN,,min,Minuten,suffix,,HEX:4,=9d010000,,
+r,,,Hg17,HG 17 - Pumpenleistung HK maximal (20-100),,,5022,005601,value,,UIN,,min,Minuten
+w,,,Hg17,HG 17 - Pumpenleistung HK maximal (20-100),,03,5023,005601,value,,UIN,,min,Minuten,suffix,,HEX:4,=9d010000,,
 r,,,Hg21,HG 21 - Kesselminimaltemperatur,,,5022,001f00,value,,UIN,10,°C,Temperatur
 w,,,Hg21,HG 21 - Kesselminimaltemperatur,,03,5023,001f00,value,,UIN,10,°C,Temperatur,suffix,,HEX:4,=9d010000,,
 r,,,Hg22,HG 22 - Kesselmaximaltemperatur,,,5022,002700,value,,UIN,10,°C,Temperatur
 w,,,Hg22,HG 22 - Kesselmaximaltemperatur,,03,5023,002700,value,,UIN,10,°C,Temperatur,suffix,,HEX:4,=9d010000,,
-r,,,Hg73,HG 73 - Io-Istwert,,,5022,007001,value,,UIN,,minutes,Minuten
+r,,,Hg73,HG 73 - Io-Istwert,,,5022,007001,value,,UIN,,min,Minuten
 r,,,Hg74,HG 74 - Geblaesedrehzahl,,,5022,00f601,value,,UIN,,U/sec,
-r,,,Hg75,HG 75 - Warmwasserdurchsatz,,,5022,006c01,value,,UIN,,minutes,Minuten
-r,,,Hg9x,HG 9x - Netzbetriebsstunden,,,5022,002802,value,,UIN,,hours,Stunden
-r,,,Hg90,HG 90 - Brennerbetriebsstunden,,,5022,002a02,value,,UIN,,hours,Stunden
+r,,,Hg75,HG 75 - Warmwasserdurchsatz,,,5022,006c01,value,,UIN,,min,Minuten
+r,,,Hg9x,HG 9x - Netzbetriebsstunden,,,5022,002802,value,,UIN,,h,Stunden
+r,,,Hg90,HG 90 - Brennerbetriebsstunden,,,5022,002a02,value,,UIN,,h,Stunden
 r,,,Hg91,HG 91 - Brennerstarts,,,5022,002602,value,,UIN,,,
 r,,,Flowtempdesired,Vorlauf Sollwert,,,5022,000200,value,,UIN,10,°C,Temperatur
 r,,,Flowtemp,Vorlauf Istwert,,,5022,000d00,value,,UIN,10,°C,Temperatur

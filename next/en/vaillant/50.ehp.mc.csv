@@ -59,7 +59,7 @@ r,,,FlowTempMin,MinFlowTemp: BMR:Minimum Flow Temperature for circuit,,,b509,0d3
 w,,install,FlowTempMin,MinFlowTemp: BMR:Minimum Flow Temperature for circuit,,,b509,0e3000,value,,UCH,,°C,temperature
 r,,,FlowTempDesired,Flow setpoint: BMR:flow temperature that is actually desired by circuit,,,b509,0d4600,value,,D1C,,°C,temperature
 w,,,FlowTempDesired,Flow setpoint: BMR:flow temperature that is actually desired by circuit,,,b509,0e4600,value,,D1C,,°C,temperature
-u,,,FlowTempDesired,Flow setpoint: BMR:flow temperature that is actually desired by circuit,,,b509,294600,value,,IGN:2,,,,value,,D1C,,°C,temperature
+u,,,FlowTempDesired,Flow setpoint: BMR:flow temperature that is actually desired by circuit,,,b509,294600,ign,,IGN:2,,,,value,,D1C,,°C,temperature
 r,,,FlowTempMax,MaxFlowTemp: BMR:Maximum Flow Temperature for circuit,,,b509,0d3100,value,,UCH,,°C,temperature
 w,,install,FlowTempMax,MaxFlowTemp: BMR:Maximum Flow Temperature for circuit,,,b509,0e3100,value,,UCH,,°C,temperature
 r,,,HcMaxPreHeating,HcMaxPreHeating: BMR: Maximum Preheating time in minutes,,,b509,0d3800,value,,UCH,-5,min,minutes

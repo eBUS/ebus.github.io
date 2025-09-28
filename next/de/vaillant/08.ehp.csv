@@ -6,14 +6,14 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *[Ehp_heatpumptype],Ehp,,heatpumptype,,value
 *[id_sw],scan,,,,SW
 [Ehp_heatpumptype=3]r,,,SourceTempOutput,"Austrittstemp: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,0d0800,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=3]u,,,SourceTempOutput,"Austrittstemp: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=3]u,,,SourceTempOutput,"Austrittstemp: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=3]r,,,Source,Quellenpumpe,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=3]u,,,Source,Quellenpumpe,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=3]u,,,Source,Quellenpumpe,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=3]r,,,Source2Pump,Brine2_P: Status externe Quellenpumpe: AN/AUS,,,b509,0d1a00,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=3]r,,,SourceSwitch,Status interner Strömungsschalter,,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=3]u,,,SourceSwitch,Status interner Strömungsschalter,,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=3]u,,,SourceSwitch,Status interner Strömungsschalter,,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=3]r,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,0d0d00,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=3]u,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,290d00,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=3]u,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,290d00,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=3]r,,,OverpressureThreshold,Abschaltgrenze Hochdruck nach Warmwasserbereitung,,,b509,0d7701,value,,ULG,,mbar,Druck
 [Ehp_heatpumptype=3]w,,service,OverpressureThreshold,Abschaltgrenze Hochdruck nach Warmwasserbereitung,,,b509,0e7701,value,,ULG,,mbar,Druck
 [Ehp_heatpumptype=3]r,,,DeltaTempT6T7,Zul. Temp.Spreizung: Zul. Temp.-Spreizung: Max. zulässige Differenz der Wärmequellenein-und austrittstemperatur. Bei Überschreitung erscheint eine Fehlermeldung und der Kompressor schaltet sich ab.,,,b509,0d6e00,value,,D2C,,°C,Temperatur
@@ -24,14 +24,14 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=3]w,,install,SourceTempOutputOffset,"Austrittstemp: Manuelle Anpassung der angezeigten Temperaturen.Kalibrier-VerstellbereichAußentemperatur: +/- 5 K, Schrittweite 1,0 K.alle anderen: +/- 3 K, Schrittweite 0,5 K.",,,b509,0ec900,value,,D2C,,K,
 [Ehp_heatpumptype=3]r,,,EvaporatorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,0d0500,value,,D2C,,°C,Temperatur
 [Ehp_heatpumptype=2]r,,,SourceTempOutput,"Soleaustrittstemp.: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,0d0800,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=2]u,,,SourceTempOutput,"Soleaustrittstemp.: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=2]u,,,SourceTempOutput,"Soleaustrittstemp.: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=2]r,,,SourcePress,Druck Wärmequelle: Druck der Wärmequelle (Drucksensor Wärmequellenkreis),,,b509,0d1600,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=2]r,,,Source,Quellenpumpe,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=2]u,,,Source,Quellenpumpe,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=2]u,,,Source,Quellenpumpe,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=2]r,,,SourceSwitch,Status externer Soledruckschalter:ok = Soledruckschalter geschlossen oder gebrückt (Zustand ab Werk)Fehler: = Soledruckschalter geöffnet (Soledruck zu hoch),,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=2]u,,,SourceSwitch,Status externer Soledruckschalter:ok = Soledruckschalter geschlossen oder gebrückt (Zustand ab Werk)Fehler: = Soledruckschalter geöffnet (Soledruck zu hoch),,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=2]u,,,SourceSwitch,Status externer Soledruckschalter:ok = Soledruckschalter geschlossen oder gebrückt (Zustand ab Werk)Fehler: = Soledruckschalter geöffnet (Soledruck zu hoch),,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=2]r,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,0d0d00,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=2]u,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,290d00,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=2]u,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,290d00,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=2]r,,,OverpressureThreshold,Abschaltgrenze Hochdruck nach Warmwasserbereitung,,,b509,0d7701,value,,ULG,,mbar,Druck
 [Ehp_heatpumptype=2]w,,service,OverpressureThreshold,Abschaltgrenze Hochdruck nach Warmwasserbereitung,,,b509,0e7701,value,,ULG,,mbar,Druck
 [Ehp_heatpumptype=2]r,,,DeltaTempT6T7,Zul. Temp.Spreizung: Zul. Temp.-Spreizung: Max. zulässige Differenz der Wärmequellenein-und austrittstemperatur. Bei Überschreitung erscheint eine Fehlermeldung und der Kompressor schaltet sich ab.,,,b509,0d6e00,value,,D2C,,°C,Temperatur
@@ -44,15 +44,15 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=2]w,,install,FlowtempCoolingMin,Kühlungsvorlaufsollwert: Fester Vorlauftemperatursollwert für den Kühlbetrieb. Beachten Sie die Kondensationsgefahr bei niedrigen Vorlaufsolltemperaturen!,,,b509,0e7401,value,,UCH,,°C,Temperatur
 [Ehp_heatpumptype=2]r,,,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,0d1300,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=2]w,,install,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,0e1300,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=2]u,,,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,291300,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=2]u,,,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,291300,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=2]r,,,SourceTempOutputOffset,"Austrittstemp: Manuelle Anpassung der angezeigten Temperaturen.Kalibrier-VerstellbereichAußentemperatur: +/- 5 K, Schrittweite 1,0 K.alle anderen: +/- 3 K, Schrittweite 0,5 K.",,,b509,0dc900,value,,D2C,,K,
 [Ehp_heatpumptype=2]w,,install,SourceTempOutputOffset,"Austrittstemp: Manuelle Anpassung der angezeigten Temperaturen.Kalibrier-VerstellbereichAußentemperatur: +/- 5 K, Schrittweite 1,0 K.alle anderen: +/- 3 K, Schrittweite 0,5 K.",,,b509,0ec900,value,,D2C,,K,
 [Ehp_heatpumptype=1]r,,,SourceTempOutput,Fortlufttemperatur,,,b509,0d0800,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=1]u,,,SourceTempOutput,Fortlufttemperatur,,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=1]u,,,SourceTempOutput,Fortlufttemperatur,,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=1]r,,,Source,Lüfter,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=1]u,,,Source,Lüfter,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=1]u,,,Source,Lüfter,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=1]r,,,SourceSwitch,"Kontakt Lüfter: Motorschutzthermostat des Lüfters (ok = geschlossen, offen =Überhitzung der Motorwicklung)",,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=1]u,,,SourceSwitch,"Kontakt Lüfter: Motorschutzthermostat des Lüfters (ok = geschlossen, offen =Überhitzung der Motorwicklung)",,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=1]u,,,SourceSwitch,"Kontakt Lüfter: Motorschutzthermostat des Lüfters (ok = geschlossen, offen =Überhitzung der Motorwicklung)",,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=1]r,,,EvaporatorTemp,Verdampfertemperatur: Verdampfertemp: Temperatur am Austritt des Verdampfers T7,,,b509,0d0500,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=1]r,,,CoolValve,V_Cool: Status 4-Wege-Ventil. Es kann zwei Zustände einnehmen:– Heizen (Normalbetrieb)– Abtauen (Abtaubetrieb),,,b509,0d1c00,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=1]r,,,OverpressureThreshold,Hochdruck Abschaltgrenze bei Luft/Wasser Maschinen,,,b509,0dfa00,value,,ULG,,mbar,Druck
@@ -63,14 +63,14 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=1]r,,,SourceTempOutputOffset,"Fortlufttemperatur: Manuelle Anpassung der angezeigten Temperaturen.Kalibrier-VerstellbereichAußentemperatur: +/- 5 K, Schrittweite 1,0 K.alle anderen: +/- 3 K, Schrittweite 0,5 K.",,,b509,0dc900,value,,D2C,,K,
 [Ehp_heatpumptype=1]w,,install,SourceTempOutputOffset,"Fortlufttemperatur: Manuelle Anpassung der angezeigten Temperaturen.Kalibrier-VerstellbereichAußentemperatur: +/- 5 K, Schrittweite 1,0 K.alle anderen: +/- 3 K, Schrittweite 0,5 K.",,,b509,0ec900,value,,D2C,,K,
 [Ehp_heatpumptype=5]r,,,SourceTempOutput,"Soleaustrittstemp.: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,0d0800,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=5]u,,,SourceTempOutput,"Soleaustrittstemp.: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=5]u,,,SourceTempOutput,"Soleaustrittstemp.: Wärmequellentemperatur am Austritt der Wärmepumpe, T8",,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=5]r,,,SourcePress,Druck Wärmequelle: Druck der Wärmequelle (Drucksensor Wärmequellenkreis),,,b509,0d1600,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=5]r,,,Source,Quellenpumpe,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=5]u,,,Source,Quellenpumpe,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=5]u,,,Source,Quellenpumpe,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=5]r,,,SourceSwitch,Status externer Soledruckschalter:ok = Soledruckschalter geschlossen oder gebrückt (Zustand ab Werk)Fehler: = Soledruckschalter geöffnet (Soledruck zu hoch),,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=5]u,,,SourceSwitch,Status externer Soledruckschalter:ok = Soledruckschalter geschlossen oder gebrückt (Zustand ab Werk)Fehler: = Soledruckschalter geöffnet (Soledruck zu hoch),,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=5]u,,,SourceSwitch,Status externer Soledruckschalter:ok = Soledruckschalter geschlossen oder gebrückt (Zustand ab Werk)Fehler: = Soledruckschalter geöffnet (Soledruck zu hoch),,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=5]r,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,0d0d00,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-[Ehp_heatpumptype=5]u,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,290d00,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+[Ehp_heatpumptype=5]u,,,CondensorTemp,TEV-Eintritt: Temperatur am Eintritt des thermischen Expansionsventils,,,b509,290d00,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 [Ehp_heatpumptype=5]r,,,OverpressureThreshold,Abschaltgrenze Hochdruck nach Warmwasserbereitung,,,b509,0d7701,value,,ULG,,mbar,Druck
 [Ehp_heatpumptype=5]w,,service,OverpressureThreshold,Abschaltgrenze Hochdruck nach Warmwasserbereitung,,,b509,0e7701,value,,ULG,,mbar,Druck
 [Ehp_heatpumptype=5]r,,,DeltaTempT6T7,Zul. Temp.Spreizung: Zul. Temp.-Spreizung: Max. zulässige Differenz der Wärmequellenein-und austrittstemperatur. Bei Überschreitung erscheint eine Fehlermeldung und der Kompressor schaltet sich ab.,,,b509,0d6e00,value,,D2C,,°C,Temperatur
@@ -79,7 +79,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=5]w,,install,SourcePumpPrerunTime,"Vorlauf Quellenpumpe: Zeitspanne, um die sich die Quellenpumpe vor dem Kompressor einschaltet",,,b509,0e7600,value,,ULG,120,min,Minuten
 [Ehp_heatpumptype=5]r,,,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,0d1300,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]w,,install,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,0e1300,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=5]u,,,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,291300,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=5]u,,,Bleeding,Entlüftung Sole: Solepumpe ist abwechselnd 50 min in Betrieb und 10 min aus,,,b509,291300,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]r,,,StartDeicing,Start Defrosting,,,b509,0d7100,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]w,,install,StartDeicing,Start Defrosting,,,b509,0e7100,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]r,,,SourceTempOutputOffset,"Austrittstemp: Manuelle Anpassung der angezeigten Temperaturen.Kalibrier-VerstellbereichAußentemperatur: +/- 5 K, Schrittweite 1,0 K.alle anderen: +/- 3 K, Schrittweite 0,5 K.",,,b509,0dc900,value,,D2C,,K,
@@ -89,7 +89,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=414]r,,,HysteresisTimeDelay,hysteresis_time_delay: defined time delay until backup heater hysteresis becomes valid,,,b509,0de001,value,,UCH,,min,Minuten
 [id_sw>=414]w,,install,HysteresisTimeDelay,hysteresis_time_delay: defined time delay until backup heater hysteresis becomes valid,,,b509,0ee001,value,,UCH,,min,Minuten
 [id_sw>=414]r,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,0de201,value,,UCH,10,kW,environment power in higher resolution (100W)
-[id_sw>=414]u,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,29e201,value,,IGN:2,,,,value,,UCH,10,kW,environment power in higher resolution (100W)
+[id_sw>=414]u,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,29e201,ign,,IGN:2,,,,value,,UCH,10,kW,environment power in higher resolution (100W)
 [id_sw>=414]r,,,BivalentMode,BivalentMode: reserved for special bivalent setting,,,b509,0de301,value,,UCH,,,
 [id_sw>=414]w,,install,BivalentMode,BivalentMode: reserved for special bivalent setting,,,b509,0ee301,value,,UCH,,,
 [id_sw>=415]r,,,SourceLimitAtMaxFlow,BrineLimitAtMaxFlow: lowest allowed brine temperature to achieve max. flow temperature,,,b509,0de401,value,,SCH,,,
@@ -119,7 +119,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=5][id_sw>=403]w,,install,Hc1PumpPrerunTime,Interne Heizkreispumpe Vorlaufzeit: Prerun time of the internal heat circuit pump in s. Relative to the heat source pump prerun time.,,,b509,0ec901,value,,ULG,2,s,Sekunden
 [Ehp_heatpumptype=2][id_sw>=350]r,,,SourcePumpCoolingHours,Solepumpengesamtlaufzeit Kühlbetrieb: Solepumpengesamtlaufzeit während Kühlbetrieb,,,b509,0d7d01,value,,ULG,,h,Stunden
 [id_sw>=407]r,,,SourcePumpStatus,BrinePumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP,,,b509,0db801,value,,UCH,,,
-[id_sw>=407]u,,,SourcePumpStatus,BrinePumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP,,,b509,29b801,value,,IGN:2,,,,value,,UCH,,,
+[id_sw>=407]u,,,SourcePumpStatus,BrinePumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP,,,b509,29b801,ign,,IGN:2,,,,value,,UCH,,,
 [id_sw>=407]r,,,SourcePumpPWM,BrinePumpPWM: actual speed of brine pump (7%=off),,,b509,0dac01,value,,UCH,,%,
 [id_sw>=407]r,,,SourcePumpSpeedControlHeating,BrinePumpSpeedControlHeating: brine pump speed setpoint when compressor=on,,,b509,0dae01,value,,UCH,,%,
 [id_sw>=407]w,,install,SourcePumpSpeedControlHeating,BrinePumpSpeedControlHeating: brine pump speed setpoint when compressor=on,,,b509,0eae01,value,,UCH,,%,
@@ -140,10 +140,10 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=5][id_sw>=407]r,,,STBErrorOMU2,VWLS_STBError_OMU2: defroster STB error OMU 2,,,b509,0db701,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,BadWeather,VWLS_BadWeather: ambient too cold OMU 1,,,b509,0da401,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,BadWeatherOMU2,VWLS_BadWeather_OMU2: ambient too cold OMU 2,,,b509,0db901,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=5][id_sw>=407]u,,,BadWeatherOMU2,VWLS_BadWeather_OMU2: ambient too cold OMU 2,,,b509,29b901,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=5][id_sw>=407]u,,,BadWeatherOMU2,VWLS_BadWeather_OMU2: ambient too cold OMU 2,,,b509,29b901,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,HotSummer,VWLS_HotSummer: ambient too hot OMU 1,,,b509,0db501,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,HotSummerOMU2,VWLS_HotSummer_OMU2: ambient too hot OMU 2,,,b509,0db801,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=5][id_sw>=407]u,,,HotSummerOMU2,VWLS_HotSummer_OMU2: ambient too hot OMU 2,,,b509,29b801,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=5][id_sw>=407]u,,,HotSummerOMU2,VWLS_HotSummer_OMU2: ambient too hot OMU 2,,,b509,29b801,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 r,,,HeatpumpType,heatpump type,,,b509,0d7601,value,,UCH,1=airtowater;2=brinetowater;3=watertowater;4=indirectwatertowater;5=airtobrinetowater,,heatpump type
 r,,,CompStartsHwc,Compressor_Commutations_DHW: Number of commutations of,,,b509,0da800,value,,ULG,,,Anzahl Starts
 r,,,CompStartsHc,Compressor_Commutations_CH: Number of commutations of,,,b509,0da900,value,,ULG,,,Anzahl Starts
@@ -158,59 +158,59 @@ r,,,CompCutPressLowCount,Compressor_Cut_LP_No: shows how often the compressor ha
 r,,,CompCutTempCount,Compressor_Cut_T_No: shows how often the compressor has been stopped due to outlet temperature exceeding,,,b509,0db600,value,,ULG,,,
 r,,,YieldTotal,Gesamtsumme Energieertrag,,,b509,0dbc00,value,,ULG,,kWh,
 w,,service,YieldTotal,Gesamtsumme Energieertrag,,,b509,0ebc00,value,,ULG,,kWh,
-u,,,YieldTotal,Gesamtsumme Energieertrag,,,b509,29bc00,value,,IGN:2,,,,value,,ULG,,kWh,
+u,,,YieldTotal,Gesamtsumme Energieertrag,,,b509,29bc00,ign,,IGN:2,,,,value,,ULG,,kWh,
 r,,,SourceTempInput,"Quellentemperatur: Wärmequellentemperatur am Eintritt zurWärmepumpe, T3",,,b509,0d0f00,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,SourceTempInput,"Quellentemperatur: Wärmequellentemperatur am Eintritt zurWärmepumpe, T3",,,b509,290f00,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,SourceTempInput,"Quellentemperatur: Wärmequellentemperatur am Eintritt zurWärmepumpe, T3",,,b509,290f00,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,CompPressHigh,Hochdruck Kältekr.: Anzeige Kältemitteldruck Kompressorausgang.,,,b509,0d1400,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,CompPressHigh,Hochdruck Kältekr.: Anzeige Kältemitteldruck Kompressorausgang.,,,b509,291400,value,,IGN:2,,,,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,CompPressHigh,Hochdruck Kältekr.: Anzeige Kältemitteldruck Kompressorausgang.,,,b509,291400,ign,,IGN:2,,,,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,CompPressLow,Niederdr. Kältekr.: Niederdruck Kältekr.: Anzeige Kältemitteldruck Kompressoreingang.,,,b509,0d1500,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,CompPressLow,Niederdr. Kältekr.: Niederdruck Kältekr.: Anzeige Kältemitteldruck Kompressoreingang.,,,b509,291500,value,,IGN:2,,,,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,CompPressLow,Niederdr. Kältekr.: Niederdruck Kältekr.: Anzeige Kältemitteldruck Kompressoreingang.,,,b509,291500,ign,,IGN:2,,,,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,Superheat,Überhitzung des Kältemittels berechnet aus T2 und Niederdrucksensor,,,b509,0d8d00,value,,D2C,,°C,Temperatur
 r,,,Subcooling,Unterkühlung des Kältemittels berechnet aus T4 und Hochdrucksensor,,,b509,0d8e00,value,,D2C,,°C,Temperatur
 r,,,Integral,Das Energie-Integral ist die aufsummierte Differenz zwischen Vorlauftemperatur IST und Vorlauftemperatur SOLL pro Minute. Bei einem bestimmten Wärmedefizit startet die Wärmepumpe.,,,b509,0d8000,value,,SIN,,°min,
 r,,,TempInput,Kompressor Eintritt: Anzeige Temperaturfühler T1. Kompressoreinlasstemperatur,,,b509,0d0200,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,TempInput,Kompressor Eintritt: Anzeige Temperaturfühler T1. Kompressoreinlasstemperatur,,,b509,290200,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,TempInput,Kompressor Eintritt: Anzeige Temperaturfühler T1. Kompressoreinlasstemperatur,,,b509,290200,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,TempOutput,Kompressor Austritt: Anzeige Temperaturfühler T2. Kompressorauslasstemperatur,,,b509,0d0400,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,TempOutput,Kompressor Austritt: Anzeige Temperaturfühler T2. Kompressorauslasstemperatur,,,b509,290400,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,TempOutput,Kompressor Austritt: Anzeige Temperaturfühler T2. Kompressorauslasstemperatur,,,b509,290400,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,PressSwitch,Pressostate: Hochdruck- und Niederdruck-Pressostat:ok = Pressostat ist in Ordnungoffen = Hochdruck- oder Niederdruck-Pressostat haben den Kältekreis abgeschaltet,,,b509,0d2500,value,,UCH,0=ok;1=error,,
-u,,,PressSwitch,Pressostate: Hochdruck- und Niederdruck-Pressostat:ok = Pressostat ist in Ordnungoffen = Hochdruck- oder Niederdruck-Pressostat haben den Kältekreis abgeschaltet,,,b509,292500,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+u,,,PressSwitch,Pressostate: Hochdruck- und Niederdruck-Pressostat:ok = Pressostat ist in Ordnungoffen = Hochdruck- oder Niederdruck-Pressostat haben den Kältekreis abgeschaltet,,,b509,292500,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 r,,,Comp,Status Kompressor: AN/AUS,,,b509,0d1d00,value,,UCH,0=off;1=on,,
-u,,,Comp,Status Kompressor: AN/AUS,,,b509,291d00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,Comp,Status Kompressor: AN/AUS,,,b509,291d00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,Backup,Zusatzheizung: Status Zusatzheizer,,,b509,0d5f00,value,,UCH,0=off;1=on,,
-u,,,Backup,Zusatzheizung: Status Zusatzheizer,,,b509,295f00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,Backup,Zusatzheizung: Status Zusatzheizer,,,b509,295f00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,HcFlowTemp,Vorlauftemp. IST: Aktuelle Vorlauftemperatur T6 - interner Vorlauffühler,,,b509,0d0900,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,HcReturnTemp,Rücklauftemp. IST: Aktuelle Rücklauftemperatur T5 - interner Rücklauffühler,,,b509,0d0a00,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,HcReturnTemp,Rücklauftemp. IST: Aktuelle Rücklauftemperatur T5 - interner Rücklauffühler,,,b509,290a00,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,HcReturnTemp,Rücklauftemp. IST: Aktuelle Rücklauftemperatur T5 - interner Rücklauffühler,,,b509,290a00,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,HcPress,Heizanlagendruck (Drucksensor Heizkreis),,,b509,0d1200,press,,FLT,,bar,Druck,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,Hc1Pump,Status Heizkreispumpe: AN/AUS,,,b509,0d1700,value,,UCH,0=off;1=on,,
-u,,,Hc1Pump,Status Heizkreispumpe: AN/AUS,,,b509,291700,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,Hc1Pump,Status Heizkreispumpe: AN/AUS,,,b509,291700,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,StorageTempTop,Vorlauffühler VF1: Pufferspeicher-Kopftemperaturfühler VF1,,,b509,0d0100,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,StorageTempTop,Vorlauffühler VF1: Pufferspeicher-Kopftemperaturfühler VF1,,,b509,290100,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,StorageTempTop,Vorlauffühler VF1: Pufferspeicher-Kopftemperaturfühler VF1,,,b509,290100,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,StorageTempBottom,Rücklauffühler RF1: Pufferspeicher-Bodentemperatur fühler RF1,,,b509,0d0700,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,StorageTempBottom,Rücklauffühler RF1: Pufferspeicher-Bodentemperatur fühler RF1,,,b509,290700,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,StorageTempBottom,Rücklauffühler RF1: Pufferspeicher-Bodentemperatur fühler RF1,,,b509,290700,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,FlowTemp,Vorlauftemp. IST: Aktuelle Vorlauftemperatur VF2,,,b509,0d0300,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,FlowTemp,Vorlauftemp. IST: Aktuelle Vorlauftemperatur VF2,,,b509,290300,value,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,FlowTemp,Vorlauftemp. IST: Aktuelle Vorlauftemperatur VF2,,,b509,290300,ign,,IGN:2,,,,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,Mixer1DutyCycle,"Mischerstatus: Status des Mischers; -100:Geschlossen, 0:Keine Ansteuerung, +100:offen. Achtung: die Anzeige -100 oder +100 für Auffahren oder Schließen des Mischers wird zeitversetzt um ca. 10–15 Sekunden angezeigt und ist daher nur bedingt aussagekräftig.",,,b509,0d0e00,value,,SCH,,%,
 r,,,Hc2Pump,"Pumpenstatus zeigt an, ob die externe Keizkreispumpe an- oder ausgeschaltet ist (AN/AUS)",,,b509,0d1800,value,,UCH,0=off;1=on,,
 r,,,HwcTemp,Speichertemp. IST,,,b509,0d0000,temp,,D2C,,°C,Speichertemp. IST: Temperatur im Warmwasserspeicher.,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-u,,,HwcTemp,Speichertemp. IST,,25,b509,290000,value,,IGN:2,,,,temp,,D2C,,°C,Speichertemp. IST: Temperatur im Warmwasserspeicher.,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+u,,,HwcTemp,Speichertemp. IST,,25,b509,290000,ign,,IGN:2,,,,temp,,D2C,,°C,Speichertemp. IST: Temperatur im Warmwasserspeicher.,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,CirPump,ZP: = Status der Zirkulationspumpe (AN/AUS),,,b509,0d0c00,value,,UCH,0=off;1=on,,
-u,,,CirPump,ZP: = Status der Zirkulationspumpe (AN/AUS),,,b509,290c00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,CirPump,ZP: = Status der Zirkulationspumpe (AN/AUS),,,b509,290c00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,HwcHcValve,"Umschaltventil Heizen/Warmwasser, UV1",,,b509,0d1000,value,,UCH,0=off;1=on,,
-u,,,HwcHcValve,"Umschaltventil Heizen/Warmwasser, UV1",,,b509,291000,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,HwcHcValve,"Umschaltventil Heizen/Warmwasser, UV1",,,b509,291000,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,HwcSwitch,Status des 1xZP Eingangs,,,b509,0d0b00,value,,UCH,0=off;1=on,,
 r,,,PowerCut,"Status Stromunterbrechung durch Ansteuerung des EVUKontaktes (Sperrzeit durch Versorgungsnetzbetreiber): „nein“ = keine Sperrzeit, „ja“ = Sperrzeit aktiv, Ansteuerung z. B. über Rundsteuerempfänger/ Rundsteuersignal.",,,b509,0d1100,value,,UCH,0=no;1=yes,,
 r,,,PhaseStatus,Phasen Status: Status der 3 Phasen. 0 = Phase fehlt1 = Phase ist da,,,b509,0d8800,phase,,BI0,0=missing;1=present,,Status Phase 1,phase_1,,BI1,0=missing;1=present,,Status Phase 2,phase_2,,BI2,0=missing;1=present,,Status Phase 3
-u,,,PhaseStatus,Phasen Status: Status der 3 Phasen. 0 = Phase fehlt1 = Phase ist da,,,b509,298800,value,,IGN:2,,,,phase,,BI0,0=missing;1=present,,Status Phase 1,phase_1,,BI1,0=missing;1=present,,Status Phase 2,phase_2,,BI2,0=missing;1=present,,Status Phase 3
+u,,,PhaseStatus,Phasen Status: Status der 3 Phasen. 0 = Phase fehlt1 = Phase ist da,,,b509,298800,ign,,IGN:2,,,,phase,,BI0,0=missing;1=present,,Status Phase 1,phase_1,,BI1,0=missing;1=present,,Status Phase 2,phase_2,,BI2,0=missing;1=present,,Status Phase 3
 r,,,PhaseOrder,"Drehfeld Status: angezeigt wird, ob die Drehfeld richtung in Ordnung ist (OK/Fehler)",,,b509,0d5701,value,,UCH,0=error;7=ok,,Phasenstatus
-u,,,PhaseOrder,"Drehfeld Status: angezeigt wird, ob die Drehfeld richtung in Ordnung ist (OK/Fehler)",,,b509,295701,value,,IGN:2,,,,value,,UCH,0=error;7=ok,,Phasenstatus
+u,,,PhaseOrder,"Drehfeld Status: angezeigt wird, ob die Drehfeld richtung in Ordnung ist (OK/Fehler)",,,b509,295701,ign,,IGN:2,,,,value,,UCH,0=error;7=ok,,Phasenstatus
 r,,,ICLOut,Anlaufstrombegrenzer Ausgang,,,b509,0d3f00,value,,UCH,0=off;1=on,,
-u,,,ICLOut,Anlaufstrombegrenzer Ausgang,,,b509,293f00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,ICLOut,Anlaufstrombegrenzer Ausgang,,,b509,293f00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,OutsideTemp,Aussentemperatursensor: Meßwert des externen Außentemperaturfühlers,,,b509,0d0600,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,ActualEnvironmentPower,ActualEnvironmentPower: only for graphic display: the environmental power that is actually displayed in kW,,,b509,0dba00,value,,UCH,,kW,
-u,,,ActualEnvironmentPower,ActualEnvironmentPower: only for graphic display: the environmental power that is actually displayed in kW,,,b509,29ba00,value,,IGN:2,,,,value,,UCH,,kW,
+u,,,ActualEnvironmentPower,ActualEnvironmentPower: only for graphic display: the environmental power that is actually displayed in kW,,,b509,29ba00,ign,,IGN:2,,,,value,,UCH,,kW,
 r,,,ActualEnvironmentPowerPercentage,ActualEnvironmentPowerPercentage: only for graphic display: amount of filling of the big energy arrow,,,b509,0dbb00,value,,UCH,,%,
-u,,,ActualEnvironmentPowerPercentage,ActualEnvironmentPowerPercentage: only for graphic display: amount of filling of the big energy arrow,,,b509,29bb00,value,,IGN:2,,,,value,,UCH,,%,
+u,,,ActualEnvironmentPowerPercentage,ActualEnvironmentPowerPercentage: only for graphic display: amount of filling of the big energy arrow,,,b509,29bb00,ign,,IGN:2,,,,value,,UCH,,%,
 r,,,SourcePort,Fan_Brine_Port: port feedback; only needed by UI in actuator test,,,b509,0d3701,value,,UCH,0=off;1=on,,
 r,,,Hc1PumpPort,CH1_P_Port: port feedback; only needed by UI in actuator test,,,b509,0d3801,value,,UCH,0=off;1=on,,
 r,,,Injection,Injection,,,b509,0d1f00,value,,UCH,0=off;1=on,,
@@ -219,7 +219,7 @@ r,,,CompDemand,Kompressoranforderung: shows that regulation wants to start the h
 r,,,Weekday,Aktueller Wochentag,,,b509,0d2a00,value,,BDY,,,Wochentag
 r,,,Time,Aktuelle Zeit,,,b509,0d2800,value,,VTI,,,Uhrzeit
 r,,,HeatPumpStatus,Wärmepumpenstatus: contains the status of the heatpump shown to the installer. Values do not fit here. Please ask R&D for values.,,,b509,0dd000,value,,UCH,0=off;3=heat;6=standby;7=otshutdown;8=water,,Heizstatus
-u,,,HeatPumpStatus,Wärmepumpenstatus: contains the status of the heatpump shown to the installer. Values do not fit here. Please ask R&D for values.,,,b509,29d000,value,,IGN:2,,,,value,,UCH,0=off;3=heat;6=standby;7=otshutdown;8=water,,Heizstatus
+u,,,HeatPumpStatus,Wärmepumpenstatus: contains the status of the heatpump shown to the installer. Values do not fit here. Please ask R&D for values.,,,b509,29d000,ign,,IGN:2,,,,value,,UCH,0=off;3=heat;6=standby;7=otshutdown;8=water,,Heizstatus
 r,,,BackupType,"Zusatzheizung: Eingestellt wird, ob und wo eine Zusatzheizung hydraulisch angebunden ist:- intern (Elektro-Zusatzheizung in der Wärmepumpe)- WW + HK: externe Zusatzheizung WWHeizung- keine Zusatzheizung- WarmW: externe Zusatzheizung WW",,,b509,0d9200,value,,UCH,0=not_present;1=externalheat;2=externalwater;3=externalheatandwater;4=internalheatandwater,,
 w,,install,BackupType,"Zusatzheizung: Eingestellt wird, ob und wo eine Zusatzheizung hydraulisch angebunden ist:- intern (Elektro-Zusatzheizung in der Wärmepumpe)- WW + HK: externe Zusatzheizung WWHeizung- keine Zusatzheizung- WarmW: externe Zusatzheizung WW",,,b509,0e9200,value,,UCH,0=not_present;1=externalheat;2=externalwater;3=externalheatandwater;4=internalheatandwater,,
 r,,,BivalentTemp,Bivalenz Punkt: Bivalenzpunkt: Nur unterhalb dieser Außen temperatur ist die Zusatzheizung zur Nach erwärmung im Heizbetrieb freigeschaltet,,,b509,0d6500,value,,D2C,,°C,Temperatur
@@ -252,15 +252,15 @@ r,,,BackupHoursHwc,Backup_Hours_DHW: operating hours of Backup Heater for DHW,,,
 r,,,BackupStarts,Zusatzhzg. Starts: Anzahl der Starts der Zusatzheizung,,,b509,0db100,value,,ULG,,,Anzahl Starts
 r,,,ApplianceCode,Wärmepumpen Typ: appliance code,,,b509,0d4301,value,,UCH,,,
 w,,install,ApplianceCode,Wärmepumpen Typ: appliance code,,,b509,0e4301,value,,UCH,,,
-u,,,ApplianceCode,Wärmepumpen Typ: appliance code,,,b509,294301,value,,IGN:2,,,,value,,UCH,,,
+u,,,ApplianceCode,Wärmepumpen Typ: appliance code,,,b509,294301,ign,,IGN:2,,,,value,,UCH,,,
 r,,,ElectricWiringDiagram,Elektroplan: represents the electrical installation (plan 1...3),,,b509,0d8700,value,,UCH,,,
 w,,service,ElectricWiringDiagram,Elektroplan: represents the electrical installation (plan 1...3),,,b509,0e8700,value,,UCH,,,
-u,,,ElectricWiringDiagram,Elektroplan: represents the electrical installation (plan 1...3),,,b509,298700,value,,IGN:2,,,,value,,UCH,,,
+u,,,ElectricWiringDiagram,Elektroplan: represents the electrical installation (plan 1...3),,,b509,298700,ign,,IGN:2,,,,value,,UCH,,,
 r,,,StateSoftwareCode,Software-Status: Der Status gibt Auskunft über den Betriebszustand der Wärmepumpen-Software (nur für Entwickler),,,b509,0dcf00,value,,ULG,,,
-u,,,StateSoftwareCode,Software-Status: Der Status gibt Auskunft über den Betriebszustand der Wärmepumpen-Software (nur für Entwickler),,,b509,29cf00,value,,IGN:2,,,,value,,ULG,,,
+u,,,StateSoftwareCode,Software-Status: Der Status gibt Auskunft über den Betriebszustand der Wärmepumpen-Software (nur für Entwickler),,,b509,29cf00,ign,,IGN:2,,,,value,,ULG,,,
 r,,,AccelerationTestMode,Schnelltest. Bei Servicezeit AN werden die Zeitschritte für das Energiebilanz-Integral von 1 min auf 1 sec umgestellt und damit die Energiebilanzierung um den Faktor 60 beschleunigt. Die Mindestlaufzeiten des Kompressors werden nicht verändert.,,,b509,0d6600,value,,UCH,0=no;1=yes,,
 w,,install,AccelerationTestMode,Schnelltest. Bei Servicezeit AN werden die Zeitschritte für das Energiebilanz-Integral von 1 min auf 1 sec umgestellt und damit die Energiebilanzierung um den Faktor 60 beschleunigt. Die Mindestlaufzeiten des Kompressors werden nicht verändert.,,,b509,0e6600,value,,UCH,0=no;1=yes,,
-u,,,AccelerationTestMode,Schnelltest. Bei Servicezeit AN werden die Zeitschritte für das Energiebilanz-Integral von 1 min auf 1 sec umgestellt und damit die Energiebilanzierung um den Faktor 60 beschleunigt. Die Mindestlaufzeiten des Kompressors werden nicht verändert.,,,b509,296600,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+u,,,AccelerationTestMode,Schnelltest. Bei Servicezeit AN werden die Zeitschritte für das Energiebilanz-Integral von 1 min auf 1 sec umgestellt und damit die Energiebilanzierung um den Faktor 60 beschleunigt. Die Mindestlaufzeiten des Kompressors werden nicht verändert.,,,b509,296600,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 r,,,Code1,"Code 1: together with code 2, this enables/disables several sw features, in hex format",,,b509,0d9700,value,,PIN,,,
 w,,install,Code1,"Code 1: together with code 2, this enables/disables several sw features, in hex format",,,b509,0e9700,value,,PIN,,,
 r,,,Code2,"Code 2: together with code 1, this enables/disables several sw features, in hex format",,,b509,0d9800,value,,PIN,,,
@@ -290,7 +290,7 @@ r,,,T19MaxToCompOff,T19_Max_To_Compressor_Off: limit on compressor outlet temp t
 r,,,EnergyBalancingRelease,read/write register,,,b509,0dd100,value,,UCH,0=off;1=on,,
 w,,,EnergyBalancingRelease,read/write register,,,b509,0ed100,value,,UCH,0=off;1=on,,
 r,,,TimeOfNextPredictedPowerCut,read only updated register,,,b509,0dd300,value,,VTI,,,Uhrzeit
-u,,,TimeOfNextPredictedPowerCut,read only updated register,,,b509,29d300,value,,IGN:2,,,,value,,VTI,,,Uhrzeit
+u,,,TimeOfNextPredictedPowerCut,read only updated register,,,b509,29d300,ign,,IGN:2,,,,value,,VTI,,,Uhrzeit
 r,,,PowerCutPreloading,,,,b509,0df400,value,,UCH,0=off;1=on,,
 w,,,PowerCutPreloading,,,25,b509,0ef400,value,,UCH,0=off;1=on,,
 r,,,HcParallelStorageFillingEnabled,"Parallele Speicherladung: BMR: indicates that heating circuits can keep running at dhw loading; for heatpumps, this is 1 if there is a heat buffer, 0 otherwise",,,b509,0d5500,value,,UCH,0=no;1=yes,,
@@ -325,5 +325,5 @@ uw,,,SetMode,Betriebsmodus,,,b510,00,hcmode,,UCH,0=auto;1=off;2=heat;3=water,,Bo
 w,,install,SetMode,Betriebsmodus,,,b510,00,hcmode,,UCH,0=auto;1=off;2=heat;3=water,,Boiler Modus,flowtempdesired,,D1C,,°C,Temperatur,hwctempdesired,,D1C,,°C,Temperatur,hwcflowtempdesired,,UCH,,°C,Temperatur,ign,,IGN:1,,,,disablehc,,BI0,,,,disablehwctapping,,BI1,,,,disablehwcload,,BI2,,,,ign_1,,IGN:1,,,,remotecontrolhcpump,,BI0,,,,releasebackup,,BI1,,,,releasecooling,,BI2,,,
 r,,,Status01,Vorlauftemperatur/Rücklauftemperatur/Aussentemperatur/WW Temperatur/Speichertemperatur/Pumpenstatus,,,b511,01,temp,,D1C,,°C,Temperatur,temp_1,,D1C,,°C,Temperatur,temp_2,,D2B,,°C,Temperatur,temp_3,,D1C,,°C,Temperatur,temp_4,,D1C,,°C,Temperatur,pumpstate,,UCH,0=off;1=on;2=overrun;4=hwc,,Pumpenstatus
 r,,,Status02,Betriebsart/Maximaltemperatur/ReglerCurrentTemp/Maximaltemperatur/ReglerCurrentTemp,,,b511,02,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,temp,,UCH,,°C,Temperatur,temp_1,,D1C,,°C,Temperatur,temp_2,,UCH,,°C,Temperatur,temp_3,,D1C,,°C,Temperatur
-r,,,Status,Status,,,b511,03,temp,,D2C,,°C,Temperatur,press,,FLT,,bar,Druck,press_1,,FLT,,bar,Druck,hcmode,,UCH,0=off;3=heat;4=water,,Boiler Modus,hex,,HEX,,,
+r,,,Status,Status,,,b511,03,temp,,D2C,,°C,Temperatur,press,,FLT,,bar,Druck,press_1,,FLT,,bar,Druck,hcmode,,UCH,0=off;1=cooling;3=heat;4=water,,Boiler Modus,hex,,HEX,,,
 uw,,,StatusCirPump,Status Zirkulationspumpe,,,b512,00,value,,UCH,0=off;100=on,,

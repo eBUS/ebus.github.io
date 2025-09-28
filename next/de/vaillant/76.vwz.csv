@@ -2,8 +2,8 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *w,
 *r,
 w,,service,EnableTestThreeWayValve,enable test 3 way valve,,,b514,0502,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestThreeWayValve,3 way valve,,,b514,0502,value,,IGN:2,,,,value,,UCH,0=heating;1=dhw,,
+r,,service,TestThreeWayValve,3 way valve,,,b514,0502,ign,,IGN:2,,,,value,,UCH,0=heating;1=dhw,,
 w,,service,EnableTestHwcTemp,enable test hwc temperature,,,b514,052c,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestHwcTemp,hwc temperature,,,b514,052c,value,,IGN:2,,,,value,,SIN,10,°C,Temperatur
+r,,service,TestHwcTemp,hwc temperature,,,b514,052c,ign,,IGN:2,,,,value,,SIN,10,°C,Temperatur
 w,,service,EnableTestOutdoorTemp,enable test outdoor temperature,,,b514,05,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestOutdoorTemp,outdoor temperature,,,b514,0545,value,,IGN:2,,,,value,,SIN,10,°C,Temperatur
+r,,service,TestOutdoorTemp,outdoor temperature,,,b514,0545,ign,,IGN:2,,,,value,,SIN,10,°C,Temperatur

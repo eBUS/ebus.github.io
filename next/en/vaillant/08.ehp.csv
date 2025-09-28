@@ -6,14 +6,14 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *[Ehp_heatpumptype],Ehp,,heatpumptype,,value
 *[id_sw],scan,,,,SW
 [Ehp_heatpumptype=3]r,,,SourceTempOutput,OutletTemperature: heat source outlet temperature for water to water machines,,,b509,0d0800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=3]u,,,SourceTempOutput,OutletTemperature: heat source outlet temperature for water to water machines,,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=3]u,,,SourceTempOutput,OutletTemperature: heat source outlet temperature for water to water machines,,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=3]r,,,Source,HeatSourcePump WW: Brine_Pump WW,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=3]u,,,Source,HeatSourcePump WW: Brine_Pump WW,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=3]u,,,Source,HeatSourcePump WW: Brine_Pump WW,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=3]r,,,Source2Pump,Brine2_P: external Brine or water pump,,,b509,0d1a00,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=3]r,,,SourceSwitch,FlowSwitch: water flow switch; 1 = switch has tripped,,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=3]u,,,SourceSwitch,FlowSwitch: water flow switch; 1 = switch has tripped,,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=3]u,,,SourceSwitch,FlowSwitch: water flow switch; 1 = switch has tripped,,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=3]r,,,CondensorTemp,T_Condensor_WW: Condensor temperature sensor WW,,,b509,0d0d00,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=3]u,,,CondensorTemp,T_Condensor_WW: Condensor temperature sensor WW,,,b509,290d00,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=3]u,,,CondensorTemp,T_Condensor_WW: Condensor temperature sensor WW,,,b509,290d00,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=3]r,,,OverpressureThreshold,Overpressure_WW: limit for compressor high pressure which is considered an overpressure situation (for Water/Water machines),,,b509,0d7701,value,,ULG,,mbar,pressure
 [Ehp_heatpumptype=3]w,,service,OverpressureThreshold,Overpressure_WW: limit for compressor high pressure which is considered an overpressure situation (for Water/Water machines),,,b509,0e7701,value,,ULG,,mbar,pressure
 [Ehp_heatpumptype=3]r,,,DeltaTempT6T7,Delta_T6_T7_WW: Maximum temperature difference between heat source outlet and inlet - WW,,,b509,0d6e00,value,,D2C,,°C,temperature
@@ -24,14 +24,14 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=3]w,,install,SourceTempOutputOffset,OutletTemperature: Offset for heat source outlet temperature sensor - WW,,,b509,0ec900,value,,D2C,,K,
 [Ehp_heatpumptype=3]r,,,EvaporatorTemp,T_Condensor_WW: Condensor temperature sensor WW,,,b509,0d0500,value,,D2C,,°C,temperature
 [Ehp_heatpumptype=2]r,,,SourceTempOutput,BrineOutlet: heat source outlet temperature for brine to water machines,,,b509,0d0800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=2]u,,,SourceTempOutput,BrineOutlet: heat source outlet temperature for brine to water machines,,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=2]u,,,SourceTempOutput,BrineOutlet: heat source outlet temperature for brine to water machines,,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=2]r,,,SourcePress,P_Brine: Brine pressure sensor,,,b509,0d1600,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=2]r,,,Source,HeatSourcePump BW: Brine Pump BW,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=2]u,,,Source,HeatSourcePump BW: Brine Pump BW,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=2]u,,,Source,HeatSourcePump BW: Brine Pump BW,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=2]r,,,SourceSwitch,BrineSwitch: brine pressure switch; 1 = switch has tripped,,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=2]u,,,SourceSwitch,BrineSwitch: brine pressure switch; 1 = switch has tripped,,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=2]u,,,SourceSwitch,BrineSwitch: brine pressure switch; 1 = switch has tripped,,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=2]r,,,CondensorTemp,T_Condensor_BW: Condensor temperature sensor BW,,,b509,0d0d00,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=2]u,,,CondensorTemp,T_Condensor_BW: Condensor temperature sensor BW,,,b509,290d00,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=2]u,,,CondensorTemp,T_Condensor_BW: Condensor temperature sensor BW,,,b509,290d00,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=2]r,,,OverpressureThreshold,Overpressure_BW: limit for compressor high pressure which is considered an overpressure situation (for Brine/Water machines),,,b509,0d7701,value,,ULG,,mbar,pressure
 [Ehp_heatpumptype=2]w,,service,OverpressureThreshold,Overpressure_BW: limit for compressor high pressure which is considered an overpressure situation (for Brine/Water machines),,,b509,0e7701,value,,ULG,,mbar,pressure
 [Ehp_heatpumptype=2]r,,,DeltaTempT6T7,Delta_T6_T7_BW: Maximum temperature difference between heat source outlet and inlet - BW,,,b509,0d6e00,value,,D2C,,°C,temperature
@@ -44,15 +44,15 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=2]w,,install,FlowtempCoolingMin,MinFlowtempCooling: flow temperature that must be exceeded to start cooling,,,b509,0e7401,value,,UCH,,°C,temperature
 [Ehp_heatpumptype=2]r,,,Bleeding,Initiates and indicates the bleeding function,,,b509,0d1300,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=2]w,,install,Bleeding,Initiates and indicates the bleeding function,,,b509,0e1300,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=2]u,,,Bleeding,Initiates and indicates the bleeding function,,,b509,291300,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=2]u,,,Bleeding,Initiates and indicates the bleeding function,,,b509,291300,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=2]r,,,SourceTempOutputOffset,BrineOutlet: Offset for heat source outlet temperature sensor - BW,,,b509,0dc900,value,,D2C,,K,
 [Ehp_heatpumptype=2]w,,install,SourceTempOutputOffset,BrineOutlet: Offset for heat source outlet temperature sensor - BW,,,b509,0ec900,value,,D2C,,K,
 [Ehp_heatpumptype=1]r,,,SourceTempOutput,AirOutlet: heat source outlet temperature for air to water machines,,,b509,0d0800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=1]u,,,SourceTempOutput,AirOutlet: heat source outlet temperature for air to water machines,,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=1]u,,,SourceTempOutput,AirOutlet: heat source outlet temperature for air to water machines,,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=1]r,,,Source,Fan AW,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=1]u,,,Source,Fan AW,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=1]u,,,Source,Fan AW,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=1]r,,,SourceSwitch,FanContact: Fan overheat thermostat; 1 = switch has tripped,,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=1]u,,,SourceSwitch,FanContact: Fan overheat thermostat; 1 = switch has tripped,,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=1]u,,,SourceSwitch,FanContact: Fan overheat thermostat; 1 = switch has tripped,,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=1]r,,,EvaporatorTemp,T_Evaporator: Internal evaporator temperature sensor,,,b509,0d0500,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=1]r,,,CoolValve,V_Cool: Refrigerant circuit reversion valve,,,b509,0d1c00,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=1]r,,,OverpressureThreshold,Overpressure_Threshold_AW: limit for high pressure when Overpressure should be indicated on A/W machines,,,b509,0dfa00,value,,ULG,,mbar,pressure
@@ -63,14 +63,14 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=1]r,,,SourceTempOutputOffset,AirOutlet: Offset for air outlet temperature sensor,,,b509,0dc900,value,,D2C,,K,
 [Ehp_heatpumptype=1]w,,install,SourceTempOutputOffset,AirOutlet: Offset for air outlet temperature sensor,,,b509,0ec900,value,,D2C,,K,
 [Ehp_heatpumptype=5]r,,,SourceTempOutput,BrineOutlet: heat source outlet temperature for brine to water machines,,,b509,0d0800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=5]u,,,SourceTempOutput,BrineOutlet: heat source outlet temperature for brine to water machines,,,b509,290800,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=5]u,,,SourceTempOutput,BrineOutlet: heat source outlet temperature for brine to water machines,,,b509,290800,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=5]r,,,SourcePress,P_Brine: Brine pressure sensor,,,b509,0d1600,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=5]r,,,Source,HeatSourcePump BW: Brine Pump BW,,,b509,0d1900,value,,UCH,0=off;1=on,,
-[Ehp_heatpumptype=5]u,,,Source,HeatSourcePump BW: Brine Pump BW,,,b509,291900,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+[Ehp_heatpumptype=5]u,,,Source,HeatSourcePump BW: Brine Pump BW,,,b509,291900,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 [Ehp_heatpumptype=5]r,,,SourceSwitch,BrineSwitch: brine pressure switch; 1 = switch has tripped,,,b509,0d2600,value,,UCH,0=ok;1=error,,
-[Ehp_heatpumptype=5]u,,,SourceSwitch,BrineSwitch: brine pressure switch; 1 = switch has tripped,,,b509,292600,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+[Ehp_heatpumptype=5]u,,,SourceSwitch,BrineSwitch: brine pressure switch; 1 = switch has tripped,,,b509,292600,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 [Ehp_heatpumptype=5]r,,,CondensorTemp,T_Condensor_BW: Condensor temperature sensor BW,,,b509,0d0d00,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-[Ehp_heatpumptype=5]u,,,CondensorTemp,T_Condensor_BW: Condensor temperature sensor BW,,,b509,290d00,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+[Ehp_heatpumptype=5]u,,,CondensorTemp,T_Condensor_BW: Condensor temperature sensor BW,,,b509,290d00,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 [Ehp_heatpumptype=5]r,,,OverpressureThreshold,Overpressure_BW: limit for compressor high pressure which is considered an overpressure situation (for Brine/Water machines),,,b509,0d7701,value,,ULG,,mbar,pressure
 [Ehp_heatpumptype=5]w,,service,OverpressureThreshold,Overpressure_BW: limit for compressor high pressure which is considered an overpressure situation (for Brine/Water machines),,,b509,0e7701,value,,ULG,,mbar,pressure
 [Ehp_heatpumptype=5]r,,,DeltaTempT6T7,Delta_T6_T7_BW: Maximum temperature difference between heat source outlet and inlet - BW,,,b509,0d6e00,value,,D2C,,°C,temperature
@@ -79,7 +79,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=5]w,,install,SourcePumpPrerunTime,HS_Pump_Prerun_BW: Heat source pump prerun in heat source circuit - BW,,,b509,0e7600,value,,ULG,120,min,minutes
 [Ehp_heatpumptype=5]r,,,Bleeding,Initiates and indicates the bleeding function,,,b509,0d1300,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]w,,install,Bleeding,Initiates and indicates the bleeding function,,,b509,0e1300,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=5]u,,,Bleeding,Initiates and indicates the bleeding function,,,b509,291300,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=5]u,,,Bleeding,Initiates and indicates the bleeding function,,,b509,291300,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]r,,,StartDeicing,Start Defrosting,,,b509,0d7100,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]w,,install,StartDeicing,Start Defrosting,,,b509,0e7100,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5]r,,,SourceTempOutputOffset,BrineOutlet: Offset for heat source outlet temperature sensor - BW,,,b509,0dc900,value,,D2C,,K,
@@ -89,7 +89,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=414]r,,,HysteresisTimeDelay,hysteresis_time_delay: defined time delay until backup heater hysteresis becomes valid,,,b509,0de001,value,,UCH,,min,minutes
 [id_sw>=414]w,,install,HysteresisTimeDelay,hysteresis_time_delay: defined time delay until backup heater hysteresis becomes valid,,,b509,0ee001,value,,UCH,,min,minutes
 [id_sw>=414]r,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,0de201,value,,UCH,10,kW,environment power in higher resolution (100W)
-[id_sw>=414]u,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,29e201,value,,IGN:2,,,,value,,UCH,10,kW,environment power in higher resolution (100W)
+[id_sw>=414]u,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,29e201,ign,,IGN:2,,,,value,,UCH,10,kW,environment power in higher resolution (100W)
 [id_sw>=414]r,,,BivalentMode,BivalentMode: reserved for special bivalent setting,,,b509,0de301,value,,UCH,,,
 [id_sw>=414]w,,install,BivalentMode,BivalentMode: reserved for special bivalent setting,,,b509,0ee301,value,,UCH,,,
 [id_sw>=415]r,,,SourceLimitAtMaxFlow,BrineLimitAtMaxFlow: lowest allowed brine temperature to achieve max. flow temperature,,,b509,0de401,value,,SCH,,,
@@ -119,7 +119,7 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=5][id_sw>=403]w,,install,Hc1PumpPrerunTime,BW_WW_CH1P_Prerun_Time: Prerun time of the internal heat circuit pump in s. Relative to the heat source pump prerun time.,,,b509,0ec901,value,,ULG,2,s,seconds
 [Ehp_heatpumptype=2][id_sw>=350]r,,,SourcePumpCoolingHours,Brine_P_Cooling_Hours: Brine pump run time during cooling,,,b509,0d7d01,value,,ULG,,h,hours
 [id_sw>=407]r,,,SourcePumpStatus,BrinePumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP,,,b509,0db801,value,,UCH,,,
-[id_sw>=407]u,,,SourcePumpStatus,BrinePumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP,,,b509,29b801,value,,IGN:2,,,,value,,UCH,,,
+[id_sw>=407]u,,,SourcePumpStatus,BrinePumpStatus: 0=HEP_ok: 1= HEP_error; >=2=noHEP,,,b509,29b801,ign,,IGN:2,,,,value,,UCH,,,
 [id_sw>=407]r,,,SourcePumpPWM,BrinePumpPWM: actual speed of brine pump (7%=off),,,b509,0dac01,value,,UCH,,%,
 [id_sw>=407]r,,,SourcePumpSpeedControlHeating,BrinePumpSpeedControlHeating: brine pump speed setpoint when compressor=on,,,b509,0dae01,value,,UCH,,%,
 [id_sw>=407]w,,install,SourcePumpSpeedControlHeating,BrinePumpSpeedControlHeating: brine pump speed setpoint when compressor=on,,,b509,0eae01,value,,UCH,,%,
@@ -140,10 +140,10 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [Ehp_heatpumptype=5][id_sw>=407]r,,,STBErrorOMU2,VWLS_STBError_OMU2: defroster STB error OMU 2,,,b509,0db701,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,BadWeather,VWLS_BadWeather: ambient too cold OMU 1,,,b509,0da401,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,BadWeatherOMU2,VWLS_BadWeather_OMU2: ambient too cold OMU 2,,,b509,0db901,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=5][id_sw>=407]u,,,BadWeatherOMU2,VWLS_BadWeather_OMU2: ambient too cold OMU 2,,,b509,29b901,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=5][id_sw>=407]u,,,BadWeatherOMU2,VWLS_BadWeather_OMU2: ambient too cold OMU 2,,,b509,29b901,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,HotSummer,VWLS_HotSummer: ambient too hot OMU 1,,,b509,0db501,value,,UCH,0=no;1=yes,,
 [Ehp_heatpumptype=5][id_sw>=407]r,,,HotSummerOMU2,VWLS_HotSummer_OMU2: ambient too hot OMU 2,,,b509,0db801,value,,UCH,0=no;1=yes,,
-[Ehp_heatpumptype=5][id_sw>=407]u,,,HotSummerOMU2,VWLS_HotSummer_OMU2: ambient too hot OMU 2,,,b509,29b801,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+[Ehp_heatpumptype=5][id_sw>=407]u,,,HotSummerOMU2,VWLS_HotSummer_OMU2: ambient too hot OMU 2,,,b509,29b801,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 r,,,HeatpumpType,heatpump type,,,b509,0d7601,value,,UCH,1=airtowater;2=brinetowater;3=watertowater;4=indirectwatertowater;5=airtobrinetowater,,heatpump type
 r,,,CompStartsHwc,Compressor_Commutations_DHW: Number of commutations of,,,b509,0da800,value,,ULG,,,start count
 r,,,CompStartsHc,Compressor_Commutations_CH: Number of commutations of,,,b509,0da900,value,,ULG,,,start count
@@ -158,59 +158,59 @@ r,,,CompCutPressLowCount,Compressor_Cut_LP_No: shows how often the compressor ha
 r,,,CompCutTempCount,Compressor_Cut_T_No: shows how often the compressor has been stopped due to outlet temperature exceeding,,,b509,0db600,value,,ULG,,,
 r,,,YieldTotal,EarnedEnvironmentEnergy: sum of earned environmental energy in kWh,,,b509,0dbc00,value,,ULG,,kWh,
 w,,service,YieldTotal,EarnedEnvironmentEnergy: sum of earned environmental energy in kWh,,,b509,0ebc00,value,,ULG,,kWh,
-u,,,YieldTotal,EarnedEnvironmentEnergy: sum of earned environmental energy in kWh,,,b509,29bc00,value,,IGN:2,,,,value,,ULG,,kWh,
+u,,,YieldTotal,EarnedEnvironmentEnergy: sum of earned environmental energy in kWh,,,b509,29bc00,ign,,IGN:2,,,,value,,ULG,,kWh,
 r,,,SourceTempInput,T_Brine_Warm: Brine inlet temperature sensor,,,b509,0d0f00,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,SourceTempInput,T_Brine_Warm: Brine inlet temperature sensor,,,b509,290f00,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,SourceTempInput,T_Brine_Warm: Brine inlet temperature sensor,,,b509,290f00,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,CompPressHigh,P_Comp_High: High pressure value - Value of high pressure sensor at compressor outlet,,,b509,0d1400,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,CompPressHigh,P_Comp_High: High pressure value - Value of high pressure sensor at compressor outlet,,,b509,291400,value,,IGN:2,,,,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,CompPressHigh,P_Comp_High: High pressure value - Value of high pressure sensor at compressor outlet,,,b509,291400,ign,,IGN:2,,,,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,CompPressLow,P_Comp_Low: Low pressure value - Value of low pressure sensor at compressor inlet,,,b509,0d1500,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,CompPressLow,P_Comp_Low: Low pressure value - Value of low pressure sensor at compressor inlet,,,b509,291500,value,,IGN:2,,,,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,CompPressLow,P_Comp_Low: Low pressure value - Value of low pressure sensor at compressor inlet,,,b509,291500,ign,,IGN:2,,,,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,Superheat,superheat of refrigerant circuit,,,b509,0d8d00,value,,D2C,,°C,temperature
 r,,,Subcooling,subcooling of refrigerant circuit,,,b509,0d8e00,value,,D2C,,°C,temperature
 r,,,Integral,actual energy balancing integral,,,b509,0d8000,value,,SIN,,°min,
 r,,,TempInput,T_Inlet: Internal compressor inlet temperature sensor,,,b509,0d0200,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,TempInput,T_Inlet: Internal compressor inlet temperature sensor,,,b509,290200,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,TempInput,T_Inlet: Internal compressor inlet temperature sensor,,,b509,290200,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,TempOutput,T_Outlet: Internal compressor outlet temperature sensor,,,b509,0d0400,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,TempOutput,T_Outlet: Internal compressor outlet temperature sensor,,,b509,290400,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,TempOutput,T_Outlet: Internal compressor outlet temperature sensor,,,b509,290400,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,PressSwitch,P_Switch: Compressor High/Low pressure switch chain; 1 = switch chain has tripped,,,b509,0d2500,value,,UCH,0=ok;1=error,,
-u,,,PressSwitch,P_Switch: Compressor High/Low pressure switch chain; 1 = switch chain has tripped,,,b509,292500,value,,IGN:2,,,,value,,UCH,0=ok;1=error,,
+u,,,PressSwitch,P_Switch: Compressor High/Low pressure switch chain; 1 = switch chain has tripped,,,b509,292500,ign,,IGN:2,,,,value,,UCH,0=ok;1=error,,
 r,,,Comp,Compressor,,,b509,0d1d00,value,,UCH,0=off;1=on,,
-u,,,Comp,Compressor,,,b509,291d00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,Comp,Compressor,,,b509,291d00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,Backup,Backup heater output,,,b509,0d5f00,value,,UCH,0=off;1=on,,
-u,,,Backup,Backup heater output,,,b509,295f00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,Backup,Backup heater output,,,b509,295f00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,HcFlowTemp,T_Flow_CH: Internal Flow temperature sensor,,,b509,0d0900,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,HcReturnTemp,T_Return_CH: Internal return temperature sensor,,,b509,0d0a00,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,HcReturnTemp,T_Return_CH: Internal return temperature sensor,,,b509,290a00,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,HcReturnTemp,T_Return_CH: Internal return temperature sensor,,,b509,290a00,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,HcPress,P_CH: Heating Circuit Pressure sensor,,,b509,0d1200,press,,FLT,,bar,pressure,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,Hc1Pump,CH1_P: internal CH pump,,,b509,0d1700,value,,UCH,0=off;1=on,,
-u,,,Hc1Pump,CH1_P: internal CH pump,,,b509,291700,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,Hc1Pump,CH1_P: internal CH pump,,,b509,291700,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,StorageTempTop,T_HB_Top: Heat Buffer Top external temperature sensor,,,b509,0d0100,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,StorageTempTop,T_HB_Top: Heat Buffer Top external temperature sensor,,,b509,290100,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,StorageTempTop,T_HB_Top: Heat Buffer Top external temperature sensor,,,b509,290100,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,StorageTempBottom,T_HB_Bottom: External Heat buffer bottom temperature sensor,,,b509,0d0700,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,StorageTempBottom,T_HB_Bottom: External Heat buffer bottom temperature sensor,,,b509,290700,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,StorageTempBottom,T_HB_Bottom: External Heat buffer bottom temperature sensor,,,b509,290700,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,FlowTemp,"T_Flow_Mixed: External flow temperature sensor - VF2 (flow into the heating system, radiators or floor heating)",,,b509,0d0300,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,FlowTemp,"T_Flow_Mixed: External flow temperature sensor - VF2 (flow into the heating system, radiators or floor heating)",,,b509,290300,value,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,FlowTemp,"T_Flow_Mixed: External flow temperature sensor - VF2 (flow into the heating system, radiators or floor heating)",,,b509,290300,ign,,IGN:2,,,,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,Mixer1DutyCycle,"Mixer1DutyCycle: Opening/Closing status of mixing valve HK2, -100%...+100%",,,b509,0d0e00,value,,SCH,,%,
 r,,,Hc2Pump,CH2_P: external CH pump (HK2P),,,b509,0d1800,value,,UCH,0=off;1=on,,
 r,,,HwcTemp,T_DHW,,,b509,0d0000,temp,,D2C,,°C,External DHW temperature sensor,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-u,,,HwcTemp,T_DHW,,25,b509,290000,value,,IGN:2,,,,temp,,D2C,,°C,External DHW temperature sensor,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+u,,,HwcTemp,T_DHW,,25,b509,290000,ign,,IGN:2,,,,temp,,D2C,,°C,External DHW temperature sensor,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,CirPump,CirculationPump: circulation pump,,,b509,0d0c00,value,,UCH,0=off;1=on,,
-u,,,CirPump,CirculationPump: circulation pump,,,b509,290c00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,CirPump,CirculationPump: circulation pump,,,b509,290c00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,HwcHcValve,V_DHW_CH: UV 1,,,b509,0d1000,value,,UCH,0=off;1=on,,
-u,,,HwcHcValve,V_DHW_CH: UV 1,,,b509,291000,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,HwcHcValve,V_DHW_CH: UV 1,,,b509,291000,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,HwcSwitch,DHW_Switch: one time circulation switch Main PCB input,,,b509,0d0b00,value,,UCH,0=off;1=on,,
 r,,,PowerCut,Power_Cut: indicator that EVU has cut the power (according EWD),,,b509,0d1100,value,,UCH,0=no;1=yes,,
 r,,,PhaseStatus,"Phase_Status: 3 flags indicating the statuses of the 3 phases at the 380V input (1= phase is there, 0 = phase is missing)",,,b509,0d8800,phase,,BI0,0=missing;1=present,,phase 1 state,phase_1,,BI1,0=missing;1=present,,phase 2 state,phase_2,,BI2,0=missing;1=present,,phase 3 state
-u,,,PhaseStatus,"Phase_Status: 3 flags indicating the statuses of the 3 phases at the 380V input (1= phase is there, 0 = phase is missing)",,,b509,298800,value,,IGN:2,,,,phase,,BI0,0=missing;1=present,,phase 1 state,phase_1,,BI1,0=missing;1=present,,phase 2 state,phase_2,,BI2,0=missing;1=present,,phase 3 state
+u,,,PhaseStatus,"Phase_Status: 3 flags indicating the statuses of the 3 phases at the 380V input (1= phase is there, 0 = phase is missing)",,,b509,298800,ign,,IGN:2,,,,phase,,BI0,0=missing;1=present,,phase 1 state,phase_1,,BI1,0=missing;1=present,,phase 2 state,phase_2,,BI2,0=missing;1=present,,phase 3 state
 r,,,PhaseOrder,Phase_Order: shows the order of the 3 phases; 7=OK,,,b509,0d5701,value,,UCH,0=error;7=ok,,phase state
-u,,,PhaseOrder,Phase_Order: shows the order of the 3 phases; 7=OK,,,b509,295701,value,,IGN:2,,,,value,,UCH,0=error;7=ok,,phase state
+u,,,PhaseOrder,Phase_Order: shows the order of the 3 phases; 7=OK,,,b509,295701,ign,,IGN:2,,,,value,,UCH,0=error;7=ok,,phase state
 r,,,ICLOut,ICL_Out: inrush current limiter,,,b509,0d3f00,value,,UCH,0=off;1=on,,
-u,,,ICLOut,ICL_Out: inrush current limiter,,,b509,293f00,value,,IGN:2,,,,value,,UCH,0=off;1=on,,
+u,,,ICLOut,ICL_Out: inrush current limiter,,,b509,293f00,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,
 r,,,OutsideTemp,T_Outside: External outside temperature sensor,,,b509,0d0600,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,ActualEnvironmentPower,ActualEnvironmentPower: only for graphic display: the environmental power that is actually displayed in kW,,,b509,0dba00,value,,UCH,,kW,
-u,,,ActualEnvironmentPower,ActualEnvironmentPower: only for graphic display: the environmental power that is actually displayed in kW,,,b509,29ba00,value,,IGN:2,,,,value,,UCH,,kW,
+u,,,ActualEnvironmentPower,ActualEnvironmentPower: only for graphic display: the environmental power that is actually displayed in kW,,,b509,29ba00,ign,,IGN:2,,,,value,,UCH,,kW,
 r,,,ActualEnvironmentPowerPercentage,ActualEnvironmentPowerPercentage: only for graphic display: amount of filling of the big energy arrow,,,b509,0dbb00,value,,UCH,,%,
-u,,,ActualEnvironmentPowerPercentage,ActualEnvironmentPowerPercentage: only for graphic display: amount of filling of the big energy arrow,,,b509,29bb00,value,,IGN:2,,,,value,,UCH,,%,
+u,,,ActualEnvironmentPowerPercentage,ActualEnvironmentPowerPercentage: only for graphic display: amount of filling of the big energy arrow,,,b509,29bb00,ign,,IGN:2,,,,value,,UCH,,%,
 r,,,SourcePort,Fan_Brine_Port: port feedback; only needed by UI in actuator test,,,b509,0d3701,value,,UCH,0=off;1=on,,
 r,,,Hc1PumpPort,CH1_P_Port: port feedback; only needed by UI in actuator test,,,b509,0d3801,value,,UCH,0=off;1=on,,
 r,,,Injection,Injection,,,b509,0d1f00,value,,UCH,0=off;1=on,,
@@ -219,7 +219,7 @@ r,,,CompDemand,Compressor_Demand: shows that regulation wants to start the heat 
 r,,,Weekday,Actual Weekday,,,b509,0d2a00,value,,BDY,,,weekday
 r,,,Time,Actual Time,,,b509,0d2800,value,,VTI,,,time
 r,,,HeatPumpStatus,Heat_Pump_Status: contains the status of the heatpump shown to the installer. Values do not fit here. Please ask R&D for values.,,,b509,0dd000,value,,UCH,0=off;3=heat;6=standby;7=otshutdown;8=water,,heating state
-u,,,HeatPumpStatus,Heat_Pump_Status: contains the status of the heatpump shown to the installer. Values do not fit here. Please ask R&D for values.,,,b509,29d000,value,,IGN:2,,,,value,,UCH,0=off;3=heat;6=standby;7=otshutdown;8=water,,heating state
+u,,,HeatPumpStatus,Heat_Pump_Status: contains the status of the heatpump shown to the installer. Values do not fit here. Please ask R&D for values.,,,b509,29d000,ign,,IGN:2,,,,value,,UCH,0=off;3=heat;6=standby;7=otshutdown;8=water,,heating state
 r,,,BackupType,Ext_Backup: Configuration of backup heater installation location,,,b509,0d9200,value,,UCH,0=not_present;1=externalheat;2=externalwater;3=externalheatandwater;4=internalheatandwater,,
 w,,install,BackupType,Ext_Backup: Configuration of backup heater installation location,,,b509,0e9200,value,,UCH,0=not_present;1=externalheat;2=externalwater;3=externalheatandwater;4=internalheatandwater,,
 r,,,BivalentTemp,Bivalent_Temperature: outside temperature must be lower than this temperature in order to use backup heater for CH,,,b509,0d6500,value,,D2C,,°C,temperature
@@ -252,15 +252,15 @@ r,,,BackupHoursHwc,Backup_Hours_DHW: operating hours of Backup Heater for DHW,,,
 r,,,BackupStarts,Backup_Commutations: Number of commutations of backup heater,,,b509,0db100,value,,ULG,,,start count
 r,,,ApplianceCode,Appliance_Code: appliance code,,,b509,0d4301,value,,UCH,,,
 w,,install,ApplianceCode,Appliance_Code: appliance code,,,b509,0e4301,value,,UCH,,,
-u,,,ApplianceCode,Appliance_Code: appliance code,,,b509,294301,value,,IGN:2,,,,value,,UCH,,,
+u,,,ApplianceCode,Appliance_Code: appliance code,,,b509,294301,ign,,IGN:2,,,,value,,UCH,,,
 r,,,ElectricWiringDiagram,Electric_Wiring_Diagram: represents the electrical installation (plan 1...3),,,b509,0d8700,value,,UCH,,,
 w,,service,ElectricWiringDiagram,Electric_Wiring_Diagram: represents the electrical installation (plan 1...3),,,b509,0e8700,value,,UCH,,,
-u,,,ElectricWiringDiagram,Electric_Wiring_Diagram: represents the electrical installation (plan 1...3),,,b509,298700,value,,IGN:2,,,,value,,UCH,,,
+u,,,ElectricWiringDiagram,Electric_Wiring_Diagram: represents the electrical installation (plan 1...3),,,b509,298700,ign,,IGN:2,,,,value,,UCH,,,
 r,,,StateSoftwareCode,State_Software_Code: contains several detail information about the actual status of the heatpump for the developer,,,b509,0dcf00,value,,ULG,,,
-u,,,StateSoftwareCode,State_Software_Code: contains several detail information about the actual status of the heatpump for the developer,,,b509,29cf00,value,,IGN:2,,,,value,,ULG,,,
+u,,,StateSoftwareCode,State_Software_Code: contains several detail information about the actual status of the heatpump for the developer,,,b509,29cf00,ign,,IGN:2,,,,value,,ULG,,,
 r,,,AccelerationTestMode,Acceleration_Test_Mode: initiates/indicates acceleration of several internal timings,,,b509,0d6600,value,,UCH,0=no;1=yes,,
 w,,install,AccelerationTestMode,Acceleration_Test_Mode: initiates/indicates acceleration of several internal timings,,,b509,0e6600,value,,UCH,0=no;1=yes,,
-u,,,AccelerationTestMode,Acceleration_Test_Mode: initiates/indicates acceleration of several internal timings,,,b509,296600,value,,IGN:2,,,,value,,UCH,0=no;1=yes,,
+u,,,AccelerationTestMode,Acceleration_Test_Mode: initiates/indicates acceleration of several internal timings,,,b509,296600,ign,,IGN:2,,,,value,,UCH,0=no;1=yes,,
 r,,,Code1,"Code1: together with code 2, this enables/disables several sw features, in hex format",,,b509,0d9700,value,,PIN,,,
 w,,install,Code1,"Code1: together with code 2, this enables/disables several sw features, in hex format",,,b509,0e9700,value,,PIN,,,
 r,,,Code2,"Code2: together with code 1, this enables/disables several sw features, in hex format",,,b509,0d9800,value,,PIN,,,
@@ -290,7 +290,7 @@ r,,,T19MaxToCompOff,T19_Max_To_Compressor_Off: limit on compressor outlet temp t
 r,,,EnergyBalancingRelease,read/write register,,,b509,0dd100,value,,UCH,0=off;1=on,,
 w,,,EnergyBalancingRelease,read/write register,,,b509,0ed100,value,,UCH,0=off;1=on,,
 r,,,TimeOfNextPredictedPowerCut,read only updated register,,,b509,0dd300,value,,VTI,,,time
-u,,,TimeOfNextPredictedPowerCut,read only updated register,,,b509,29d300,value,,IGN:2,,,,value,,VTI,,,time
+u,,,TimeOfNextPredictedPowerCut,read only updated register,,,b509,29d300,ign,,IGN:2,,,,value,,VTI,,,time
 r,,,PowerCutPreloading,,,,b509,0df400,value,,UCH,0=off;1=on,,
 w,,,PowerCutPreloading,,,25,b509,0ef400,value,,UCH,0=off;1=on,,
 r,,,HcParallelStorageFillingEnabled,"HcParallelTankFillingEnabled: BMR: indicates that heating circuits can keep running at dhw loading; for heatpumps, this is 1 if there is a heat buffer, 0 otherwise",,,b509,0d5500,value,,UCH,0=no;1=yes,,
@@ -325,5 +325,5 @@ uw,,,SetMode,Operation mode,,,b510,00,hcmode,,UCH,0=auto;1=off;2=heat;3=water,,b
 w,,install,SetMode,Operation mode,,,b510,00,hcmode,,UCH,0=auto;1=off;2=heat;3=water,,boiler mode,flowtempdesired,,D1C,,°C,temperature,hwctempdesired,,D1C,,°C,temperature,hwcflowtempdesired,,UCH,,°C,temperature,ign,,IGN:1,,,,disablehc,,BI0,,,,disablehwctapping,,BI1,,,,disablehwcload,,BI2,,,,ign_1,,IGN:1,,,,remotecontrolhcpump,,BI0,,,,releasebackup,,BI1,,,,releasecooling,,BI2,,,
 r,,,Status01,Vorlauftemperatur/Rücklauftemperatur/Aussentemperatur/WW Temperatur/Speichertemperatur/Pumpenstatus,,,b511,01,temp,,D1C,,°C,temperature,temp_1,,D1C,,°C,temperature,temp_2,,D2B,,°C,temperature,temp_3,,D1C,,°C,temperature,temp_4,,D1C,,°C,temperature,pumpstate,,UCH,0=off;1=on;2=overrun;4=hwc,,pump state
 r,,,Status02,Betriebsart/Maximaltemperatur/ReglerCurrentTemp/Maximaltemperatur/ReglerCurrentTemp,,,b511,02,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,temp,,UCH,,°C,temperature,temp_1,,D1C,,°C,temperature,temp_2,,UCH,,°C,temperature,temp_3,,D1C,,°C,temperature
-r,,,Status,Status,,,b511,03,temp,,D2C,,°C,temperature,press,,FLT,,bar,pressure,press_1,,FLT,,bar,pressure,hcmode,,UCH,0=off;3=heat;4=water,,boiler mode,hex,,HEX,,,
+r,,,Status,Status,,,b511,03,temp,,D2C,,°C,temperature,press,,FLT,,bar,pressure,press_1,,FLT,,bar,pressure,hcmode,,UCH,0=off;1=cooling;3=heat;4=water,,boiler mode,hex,,HEX,,,
 uw,,,StatusCirPump,Status circulation pump,,,b512,00,value,,UCH,0=off;100=on,,
