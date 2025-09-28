@@ -6,4 +6,4 @@ for file in `find . -maxdepth 1 -type f`; do
     touch -d "@$t" -c -m "$file"
   fi
 done
-(ls *.csv; ls -d */ 2>/dev/null)|tr -d "\r"|tr "\n" "#"|sed -e 's/#$//' -e 's/#/\\n/g' -e 's#^#"#' -e 's#$#"#' > index.json
+(ls *.csv; ls -d */ 2>/dev/null)|sort|tr -d "\r"|tr "\n" "#"|sed -e 's/#$//' -e 's/#/\\n/g' -e 's#^#"#' -e 's#$#"#' > index.json
