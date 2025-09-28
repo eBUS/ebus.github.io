@@ -2,8 +2,8 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *r,
 *w,
 *[id_sw],scan,,,,SW
-[id_sw>=200]r,,,ComErrorDelay,,,,b509,0d4300,value,,UIN,,Control interface,
-[id_sw>=200]w,,service,ComErrorDelay,,,,b509,0e4300,value,,UIN,,Control interface,
+[id_sw>=200]r,,,ComErrorDelay,,,,b509,0d4300,value,,UIN,,,Control interface
+[id_sw>=200]w,,service,ComErrorDelay,,,,b509,0e4300,value,,UIN,,,Control interface
 r,,,SoftwareVersion,,,,b509,0d0000,value,,HEX:4,,,
 w,,install,SoftwareVersion,,,,b509,0e0000,value,,HEX:4,,,
 r,,,EnableMonitoring,,,,b509,0d0100,value,,HEX:5,,,

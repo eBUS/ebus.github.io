@@ -40,11 +40,11 @@ r,,,SolControlDiff,D_SolarControl,,,b509,0d2a00,value,,SIN,,,
 r,,,MonitorBufferPIDValue,MonitorBufferPIDValue,,,b509,0d2b00,value,,SIN,,,
 r,,,MonitorSolPIDValue,MonitorSolarPIDValue,,,b509,0d2c00,value,,SIN,,,
 r,,,FlowSensorFrequency,FlowSensorFrequency,,,b509,0d2d00,value,,UIN,,,
-r,,,CurrentFlow,CurrentFlow,,,b509,0d2e00,value,,UIN,,ml / min,Flow thru buffer circuit if loading the storage
+r,,,CurrentFlow,CurrentFlow,,,b509,0d2e00,value,,UIN,1000,l/min,Flow thru buffer circuit if loading the storage
 r,,,Variante,Variante: 1: VMS 30 2: VPM 20 S 3: VPM 60 S (identified by resistor in harness),,,b509,0d3000,value,,UCH,,,
 r,,,CurrentSystemMode,"CurrentSystemMode: 1: Standalone, 3: With external control",,,b509,0d3300,value,,UCH,,,
-r,,,InternalHwcTempDesired,InternalDHWSetpoint: Temperature target for DHW loading if solar module is in stand alone appliccation without external control,,,b509,0d3500,value,,UCH,,,
-r,,,InternalHcTempDesired,InternalCHSetpoint: Temperature target for CW loading if solar module is in stand alone appliccation without external control,,,b509,0d3600,value,,UCH,,,
+r,,,InternalHwcTempDesired,InternalDHWSetpoint: Temperature target for DHW loading if solar module is in stand alone appliccation without external control,,,b509,0d3500,value,,UCH,,°C,temperature
+r,,,InternalHcTempDesired,InternalCHSetpoint: Temperature target for CW loading if solar module is in stand alone appliccation without external control,,,b509,0d3600,value,,UCH,,°C,temperature
 r,,,ASIDetected,ASIDetected,,,b509,0d3800,value,,UCH,0=off;1=on,,
 r,,,CountryZone,CountryZone: Location for calculation of sun calender. See list in control manual (default = 2: Germany),,,b509,0d3900,value,,UCH,,,
 w,,install,CountryZone,CountryZone: Location for calculation of sun calender. See list in control manual (default = 2: Germany),,,b509,0e3900,value,,UCH,,,
@@ -55,7 +55,7 @@ r,,,PowerOnCounter,PowerOnCounter,,,b509,0d3f00,value,,UIN,,,
 r,,,RTCLowVoltageCounter,RTCLowVoltageCounter,,,b509,0d4000,value,,UIN,,,
 r,,,ForceStartSolPumpKick,"ForceStartSolarPumpKick: Start solar pump for max. 5min to check collector temperature 0: OFF, 1: ON",,,b509,0d4700,value,,UCH,0=off;1=on,,
 r,,,MonitorMatlabState,MonitorMatlabState: main states: 201: Waiting; 209: Loading; 41: Night Modus,,,b509,0d4800,value,,UCH,,,
-r,,,CurrentBufferTempDesired,CurrentBufferSetpoint: Temperature target in buffer circuit at sensor Ntc3Sensor,,,b509,0d4900,value,,SIN,,,
+r,,,CurrentBufferTempDesired,CurrentBufferSetpoint: Temperature target in buffer circuit at sensor Ntc3Sensor,,,b509,0d4900,value,,SIN,,°C,temperature
 r,,,RunTimeBufferPumpMinutes,RunTimeBufferPump_Minutes: Runtime of buffer pump in minutes,,,b509,0d4b00,value,,UCH,,min,minutes
 r,,,RunTimeBufferPumpHours,RunTimeBufferPump_Hours: Runtime of buffer pump in hours,,,b509,0d4c00,value,,UIN,,h,hours
 r,,,MonitorOverheatState,MonitorOverheatState: 111: Waiting; 112 and 113: Temperature to high; 220 and 221: In Overheat protection,,,b509,0d4f00,value,,UCH,,,

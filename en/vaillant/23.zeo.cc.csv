@@ -11,7 +11,7 @@ r,,,FlowTempDesired,Flow setpoint: 1/2 °C resolution,,,b509,0d1f02,value,,D1C,,
 r,,,CleaningLady,"CleaningLady: 0,5h",,,b509,0d2302,value,,UCH,,,
 r,,,ActualTempDesired,ActualDesiredTemp: 1/2°C Auflösung,,,b509,0d3302,value,,D1C,,°C,temperature
 r,,,DateTime,date/time,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF receiver state,btime,,BTI,,,time,bdate,,BDA,,,date,temp,,D2B,,°C,temperature
-r,,,Mode,Operation mode,,,b504,01,temp,,UCH,,°C,temperature,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,mixer type,hex,,HEX,,,,daynight,,UCH,0=night;1=day;7=floorpaving,,day/night mode
+r,,,Mode,Operation mode,,,b504,01,temp,,UCH,,°C,temperature,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,mixer type,hex,,HEX,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,day/night mode
 w,,,SetTempDesired,Set desired temperature,,,b505,01,value,,UCH,,°C,temperature
 w,,,SetMode,Set operation mode,,,b505,02,value,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode
 w,,,SetFlowTempMin,Set min flow temperature,,,b505,0e,value,,UCH,,°C,temperature

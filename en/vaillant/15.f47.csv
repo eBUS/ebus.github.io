@@ -20,8 +20,8 @@ w,,,Hc1DayTemp,HC1_DaySetTemp: day setpoint,,,b509,0e2700,value,,D1C,,°C,temper
 r,,,Hc1NightTemp,HC1_NightSetTemp: lowering temperature setpoint of the first heating circuit,,,b509,0d3000,value,,D1C,,°C,temperature
 w,,,Hc1NightTemp,HC1_NightSetTemp: lowering temperature setpoint of the first heating circuit,,,b509,0e3000,value,,D1C,,°C,temperature
 r,,,Hc1QuickVetoTemp,HC1_QuickVetoTemp: manual override setpoint of the first heating circuit,,,b509,0d3c00,value,,D1C,,°C,temperature
-r,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0d4000,value,,D1C,,,
-w,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0e4000,value,,D1C,,,
+r,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0d4000,value,,D1C,,°C,temperature
+w,,,Hc1HolidayRoomTemp,"HC1_HolidayRoomSetTemp: 4.5=frostprotect, room setpoint during holidays",,,b509,0e4000,value,,D1C,,°C,temperature
 r,,,Hc1SFMode,HC1_SFMode,,,b509,0d5d00,value,,UCH,0=none;1=party;2=onedaybankholiday;3=onedayholiday;4=holiday;5=bankholiday;6=quickveto;7=onetimeventilation;8=onetimewater,,activated special function of first heating circuit
 w,,,Hc1SFMode,HC1_SFMode,,,b509,0e5d00,value,,UCH,0=none;1=party;2=onedaybankholiday;3=onedayholiday;4=holiday;5=bankholiday;6=quickveto;7=onetimeventilation;8=onetimewater,,activated special function of first heating circuit
 r,,,Hc1HolidayStartPeriod,HC1HolidayStartPeriod: first heating circuit's start date of holidays,,,b509,0d1100,value,,HDA:3,,,date
@@ -167,13 +167,13 @@ r,,,PumpEnergySaveStateMonitor,PumpEnergySaveStateMonitor: monitoring of the pum
 r,,,PumpEnergySaveCalculatedTimeMonitor,PumpEnergySaveCalculatedTimeMonitor: calculated time for the heating circuit's pump's switch off time during pump energy saving function (depends on outside temperature),,,b509,0d9200,value,,UCH,,min,minutes
 r,,,ActoSTOROPMode,actoSTOR_OPMode: state diagram actoSTOR control,,,b509,0d9400,value,,UCH,,,
 r,,,ClockSwitchSummerWinterDone,ClockSwitchSummerWinterDone: automatic switching over to/from daylight saving's time has been done,,,b509,0d7800,value,,UCH,0=no;1=yes,,
-r,,,MonitorEEpromInkonsiNumber,MonitorEEpromInkonsiNumber,,,b509,0d9f00,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
+r,,,MonitorEEpromInconsCnt,MonitorEEpromInkonsiNumber,,,b509,0d9f00,value,,HEX:8,,,identification of the last eight EEPROM inconsistencies
 r,,,MonitorCurrentIPart,MonitorCurrent_I_Anteil: current i-control value; updated every 3 minutes,,,b509,0d3300,value,,D2C,,°C,temperature
 r,,,CountryVariant,"CountryVariant: country variant (0 = west, 1 = east, 2 = all)",,,b509,0d1700,value,,UCH,,,
 r,,,DisplayedRoomTemp,DisplayedRoomTemp: displayed room temperature,,,b509,0d8000,value,,D2C,,°C,temperature
-r,,,RaumtempIstOben,RaumtempIstOben,,,b509,0dc000,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,RoomTempUpper,RaumtempIstOben,,,b509,0dc000,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,ADCValueTempabove,ADCValue_T_above,,,b509,0d2d00,value,,UIN,,,
-r,,,RaumtempIstUnten,RaumtempIstUnten,,,b509,0dc100,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,RoomTempLower,RaumtempIstUnten,,,b509,0dc100,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,ADCValueTempbelow,ADCValue_T_below,,,b509,0d4e00,value,,UIN,,,
 r9,,,YieldThisYear,yield this year,,,b509,0d3d00:2;0d3d08:2;0d3d10:2;0d3d18:2;0d3d20:2;0d3d28:2;0d3d30:2;0d3d38:2;0d3d40:2;0d3d48:2;0d3d50:2;0d3d58:2,energy,,UIN,,kWh,,energy_1,,UIN,,kWh,,energy_2,,UIN,,kWh,,energy_3,,UIN,,kWh,,energy_4,,UIN,,kWh,,energy_5,,UIN,,kWh,,energy_6,,UIN,,kWh,,energy_7,,UIN,,kWh,,energy_8,,UIN,,kWh,,energy_9,,UIN,,kWh,,energy_10,,UIN,,kWh,,energy_11,,UIN,,kWh,
 r,,,YieldLastYear,yield last year,,,b509,0d4300:2;0d4308:2;0d4310:2;0d4318:2;0d4320:2;0d4328:2;0d4330:2;0d4338:2;0d4340:2;0d4348:2;0d4350:2;0d4358:2,energy,,UIN,,kWh,,energy_1,,UIN,,kWh,,energy_2,,UIN,,kWh,,energy_3,,UIN,,kWh,,energy_4,,UIN,,kWh,,energy_5,,UIN,,kWh,,energy_6,,UIN,,kWh,,energy_7,,UIN,,kWh,,energy_8,,UIN,,kWh,,energy_9,,UIN,,kWh,,energy_10,,UIN,,kWh,,energy_11,,UIN,,kWh,

@@ -5,8 +5,8 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *[id_sw],scan,,,,SW
 [id_sw>=104]r,,,SourceInputSensorOffset,AirInletSensor_Offset: calibration value for air inlet sensor,,,b509,0d4a00,value,,D2C,,°C,temperature
 [id_sw>=104]w,,install,SourceInputSensorOffset,AirInletSensor_Offset: calibration value for air inlet sensor,,,b509,0e4a00,value,,D2C,,°C,temperature
-[id_sw>=104]r,,,Parametersandinformation_SourceInputSensorOffset,Brine_warmSensor_Offset: calibration value for brine sensor,,,b509,0d4b00,value,,D2C,,°C,temperature
-[id_sw>=104]w,,install,Parametersandinformation_SourceInputSensorOffset,Brine_warmSensor_Offset: calibration value for brine sensor,,,b509,0e4b00,value,,D2C,,°C,temperature
+[id_sw>=104]r,,,SourceInputSensorOffsetBrine,Brine_warmSensor_Offset: calibration value for brine sensor,,,b509,0d4b00,value,,D2C,,°C,temperature
+[id_sw>=104]w,,install,SourceInputSensorOffsetBrine,Brine_warmSensor_Offset: calibration value for brine sensor,,,b509,0e4b00,value,,D2C,,°C,temperature
 [id_sw>=104]r,,,DeiceTimeMax,"MaxDeiceTime: max. deicing time. By exceeding this value, message unsuccessful deicing is released",,,b509,0d4500,value,,UIN,,min,minutes
 [id_sw>=104]w,,install,DeiceTimeMax,"MaxDeiceTime: max. deicing time. By exceeding this value, message unsuccessful deicing is released",,,b509,0e4500,value,,UIN,,min,minutes
 [id_sw>=104]r,,,DeicePeriodMin,"MinDeicePeriod: Min. time between deicings. If time is shorter, something is wrong",,,b509,0d4600,value,,UIN,,min,minutes
@@ -30,19 +30,19 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=104]r,,,FrostProtection,FrostProtection: copy from AMU: frost protection,,,b509,0d4100,value,,D2C,,°C,temperature
 [id_sw>=104]r,,,SyncHeaterDeicing,SyncHeaterDeicing: synchronize heater while deicing,,,b509,0d4700,value,,UCH,0=no;1=yes,,
 [id_sw>=104]r,,,SyncDeicing,SyncDeicing: synchronize deicing process,,,b509,0d4900,value,,UCH,0=no;1=yes,,
-[id_sw>=104]r,,,RelayStarts,RelayCommutations: reserved,,,b509,0d4d00,value,,ULG,,,
+[id_sw>=104]r,,,RelayStarts,RelayCommutations: reserved,,,b509,0d4d00,value,,ULG,,,start count
 [id_sw>=104]r,,,CheckByte,CheckByte: factory EOL test,,,b509,0d5500,value,,UCH,,,
 [id_sw>=104]r,,,LEDBlinkProgram,LEDBlinkProgram: LED error message,,,b509,0d5600,value,,UIN,,,
 [id_sw>=104]r,,,TestHeater,Test_Heater: reserved,,,b509,0d4800,value,,UCH,,,
 [id_sw>=104]r,,,SourceTempMin,T_AirMin: minimum allowed air temperature,,,b509,0d2500,value,,D2C,,°C,temperature
 [id_sw>=104]r,,,FanRuntimeMinutes,FanRuntimeMinutes,,,b509,0d4c00,value,,ULG,,min,fan run time
 [id_sw>=104]r,,,HeaterRuntimeMinutes,HeaterRuntimeMinutes,,,b509,0d4e00,value,,ULG,,min,defroster run time
-[id_sw>=104]r,,,HeaterStarts,HeaterCommutations: defroster cycles,,,b509,0d4f00,value,,ULG,,,
-[id_sw>=104]r,,,DeicingStarts,DeicingCommutations: deicing cycles,,,b509,0d5100,value,,ULG,,,
+[id_sw>=104]r,,,HeaterStarts,HeaterCommutations: defroster cycles,,,b509,0d4f00,value,,ULG,,,start count
+[id_sw>=104]r,,,DeicingStarts,DeicingCommutations: deicing cycles,,,b509,0d5100,value,,ULG,,,start count
 [id_sw>=104]r,,,DeicingRuntimeMinutes,DeicingRuntimeMinutes,,,b509,0d5200,value,,ULG,,min,deicing run time
-[id_sw>=104]r,,,DeiceErrorStarts,DeiceErrorCommutations: deice error cycles,,,b509,0d5300,value,,ULG,,,
-[id_sw>=104]r,,,STBErrorStarts,STBErrorCommutations: STB cycles,,,b509,0d5000,value,,ULG,,,
-[id_sw>=104]r,,,PowerOnStarts,PowerOnCommutations: power on cycles,,,b509,0d5400,value,,ULG,,,
+[id_sw>=104]r,,,DeiceErrorStarts,DeiceErrorCommutations: deice error cycles,,,b509,0d5300,value,,ULG,,,start count
+[id_sw>=104]r,,,STBErrorStarts,STBErrorCommutations: STB cycles,,,b509,0d5000,value,,ULG,,,start count
+[id_sw>=104]r,,,PowerOnStarts,PowerOnCommutations: power on cycles,,,b509,0d5400,value,,ULG,,,start count
 [id_sw>=130]r,,,CoolingActive,CoolingActive,,,b509,0d5900,value,,UCH,0=no;1=yes,,
 [id_sw>=130]r,,,CoolingFanStartTemp,CoolingFanStartTemp: brine temperature to start fan while cooling,,,b509,0d5a00,value,,UCH,,°C,temperature
 [id_sw>=130]w,,install,CoolingFanStartTemp,CoolingFanStartTemp: brine temperature to start fan while cooling,,,b509,0e5a00,value,,UCH,,°C,temperature
@@ -52,13 +52,13 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=130]w,,install,CoolingMaxFanSpeed,CoolingMaxFanSpeed: max. fan speed while cooling,,,b509,0e5c00,value,,UCH,,%,
 [id_sw>=130]r,,,CoolingTest,CoolingTest: reserved,,,b509,0d5d00,value,,UCH,,,
 [id_sw>=130]w,,install,CoolingTest,CoolingTest: reserved,,,b509,0e5d00,value,,UCH,,,
-[id_sw<131]uw,,,OMUControl,Control command from HMU to OMU,,,b521,00,newstatus,,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,new status,ign,,IGN:3,,,,status,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,current status,laststatus,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,last status,brineoutlettemp,s,D2C,16,°C,brine outlet temperature,tempairinlet,s,D2C,16,°C,air inlet temperature,ign_1,s,IGN,,,,fanspeed,s,UCH,-10,/min,fan speed,fanpower,s,UCH,,%,fan power
-[id_sw>=131]uw,,,OMUControl,Control command from HMU to OMU,,,b521,00,newstatus,,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,new status,ign,,IGN:7,,,,status,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,current status,laststatus,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,last status,brineoutlettemp,s,D2C,16,°C,brine outlet temperature,tempairinlet,s,D2C,16,°C,air inlet temperature,ign_1,s,IGN,,,,fanspeed,s,UCH,-10,/min,fan speed,fanpower,s,UCH,,%,fan power
+[id_sw<131]uw,,,OMUControl,Control command from HMU to OMU,,,b521,00,newstatus,,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,new status,ign,,IGN:3,,,,status,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,current status,laststatus,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,last status,brineoutlettemp,s,D2C,16,°C,brine outlet temperature,tempairinlet,s,D2C,16,°C,air inlet temperature,ign_1,s,IGN,,,,fanspeed,s,UCH,-10,rpm,fan speed,fanpower,s,UCH,,%,fan power
+[id_sw>=131]uw,,,OMUControl,Control command from HMU to OMU,,,b521,00,newstatus,,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,new status,ign,,IGN:7,,,,status,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,current status,laststatus,s,UCH,0=off;1=prerun;2=pump_prerun;3=ignition;4=on;5=overrun;6=fan_overrun;7=pump_overrun;8=shutdown;9=measure;10=hwc_desired;11=hwc_prerun;12=hwc_pump_prerun;13=hwc_ignition;14=hwc_on;15=hwc_overrun;16=hwc_fan_overrun;17=hwc_pump_overrun;18=hwc_shutdown;34=frost_protect,,last status,brineoutlettemp,s,D2C,16,°C,brine outlet temperature,tempairinlet,s,D2C,16,°C,air inlet temperature,ign_1,s,IGN,,,,fanspeed,s,UCH,-10,rpm,fan speed,fanpower,s,UCH,,%,fan power
 r,,,Out1230V,Out1_230V,,,b509,0d1800,value,,UCH,0=off;1=on,,
 r,,,SourceFlowReversed,BrineFlowReversed,,,b509,0d4400,value,,UCH,0=off;1=on,,
 r,,,ODUSourceInput,ODU_air_inlet: air inlet sensor on ODU,,,b509,0d0500,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,Parametersandinformation_ODUSourceInput,ODU_brine_Warm: brine_warm sensor on ODU,,,b509,0d0600,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,FanSpeedIs,Fan_Speed_Is,,,b509,0d3900,value,,UCH,-10,/min,actual fan speed
+r,,,ODUSourceInputBrine,ODU_brine_Warm: brine_warm sensor on ODU,,,b509,0d0600,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,FanSpeedIs,Fan_Speed_Is,,,b509,0d3900,value,,UCH,-10,rpm,actual fan speed
 r,,,FanIsRunning,FanIsRunning: fan started successful,,,b509,0d3b00,value,,UCH,0=no;1=yes,,
 r,,,DeiceRequest,DeiceRequest: defrosting requested,,,b509,0d1b00,value,,UCH,0=no;1=yes,,
 r,,,ManualDeiceRequest,ManualDeiceRequest: start manual defrosting,,,b509,0d1a00,value,,UCH,0=no;1=yes,,
@@ -98,7 +98,7 @@ r,,,RelaisOut,RelaisOut: reserved,,,b509,0d1e00,value,,UCH,0=off;1=on,,
 r,,,PumpSpeedControl,PumpSpeedControl: reserved,,,b509,0d1900,value,,UIN,,,
 r,,,FanPWM,fan_PWM: PWM value from hardware,,,b509,0d1400,value,,UCH,,,
 r,,,DateTime,date/time,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF receiver state,btime,,BTI,,,time,bdate,,BDA,,,date,temp,,D2B,,°C,temperature
-r,,,Mode,Operation mode,,,b504,01,temp,,UCH,,°C,temperature,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,mixer type,hex,,HEX,,,,daynight,,UCH,0=night;1=day;7=floorpaving,,day/night mode
+r,,,Mode,Operation mode,,,b504,01,temp,,UCH,,°C,temperature,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,mixer type,hex,,HEX,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,day/night mode
 w,,,SetTempDesired,Set desired temperature,,,b505,01,value,,UCH,,°C,temperature
 w,,,SetMode,Set operation mode,,,b505,02,value,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode
 w,,,SetFlowTempMin,Set min flow temperature,,,b505,0e,value,,UCH,,°C,temperature

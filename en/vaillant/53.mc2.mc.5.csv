@@ -2,12 +2,12 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *r,
 *w,
 r,,,StatPowerOn,StatPowerOn,,,b509,0dcc00,value,,UIN,,,
-r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,,
+r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,h,hours
 r,,,StatMonthOfInstallation,StatMonthOfInstallation,,,b509,0dce00,value,,UCH,,,
 r,,,StatYearOfInstallation,StatYearOfInstallation,,,b509,0dcf00,value,,UCH,,,
 r,,,Stat15MinBusTimeout,Stat15MinBusTimeout,,,b509,0dd000,value,,UCH,,,
 r,,,StatRTOSErrorcode,StatRTOSErrorcode,,,b509,0dd100,value,,UIN,,,
-r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,
+r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,start count
 r,,,StatRTOSErrorCounter,StatRTOSErrorCounter,,,b509,0dd300,value,,UIN,,,
 r,,,FlowTempDesired,DesiredFlowTemperature3: Desired flow temperature of MK2,,,b509,0d4600,value,,D1C,,°C,temperature
 r,,,FlowTemp,Flow2Sensor3: Flow temperature,,,b509,0d0300,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
@@ -52,7 +52,7 @@ w,,,CoolingStartOffset,CoolingStartOffset,,,b509,0eba00,value,,D1C,,,
 r,,,CoolingModeStateCounter,CoolingModeStateCounter,,,b509,0dc000,value,,UCH,,,
 r,,,CoolingEfficiencyState,CoolingEfficiencyState,,,b509,0dbd00,value,,UCH,,,
 r,,,EfficiencyHysteresisMin,MinEfficiencyHysteresis,,,b509,0dbe00,value,,D1C,,,
-r,,,TempDiffInOutdoor,TemperaturDiffInOutdoor,,,b509,0dc100,value,,D1C,,,
+r,,,TempDiffInOutdoor,TemperaturDiffInOutdoor,,,b509,0dc100,value,,D1C,,°C,temperature
 r,,,HcManualWorkingModeTriggeringActive,HCManualWorkingModeTriggeringActive,,,b509,0dc200,value,,UCH,,,
 r,,,HcMode,HeatCircuitMode,,,b509,0dc300,value,,UCH,,,
 r,,,HcModeAutomaticState,HeatCircuitModeAutomaticState,,,b509,0dc400,value,,UCH,,,
@@ -76,7 +76,7 @@ w,,,CoolingTimer_Saturday,Periods Saturday,,,b515,0503,from,,TTM,,,from,to,,TTM,
 r,,,CoolingTimer_Sunday,Periods Sunday,,,b515,0603,value,,IGN:1,,,,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
 w,,,CoolingTimer_Sunday,Periods Sunday,,,b515,0603,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
 r,,,DateTime,date/time,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF receiver state,btime,,BTI,,,time,bdate,,BDA,,,date,temp,,D2B,,°C,temperature
-r,,,Mode,Operation mode,,,b504,01,tempdesired,,UCH,,°C,temperature,mcmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,mixer mode,floorpavingdryingday,,UCH,,,days,floorpavingdryingtemp,,UCH,,°C,temperature,teleswitchmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,mixer mode,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,mixer type,ign,,IGN,,,,daynight,,UCH,0=night;1=day;7=floorpaving,,day/night mode
+r,,,Mode,Operation mode,,,b504,01,tempdesired,,UCH,,°C,temperature,mcmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,mixer mode,floorpavingdryingday,,UCH,,,days,floorpavingdryingtemp,,UCH,,°C,temperature,teleswitchmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,mixer mode,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,mixer type,ign,,IGN,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,day/night mode
 w,,,SetTempDesired,Set desired temperature,,,b505,01,value,,UCH,,°C,temperature
 w,,,SetMode,Set operation mode,,,b505,02,value,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,mixer mode
 w,,,SetFloorPavingDryingDay,Set floor paving drying day,,,b505,03,value,,UCH,,,days

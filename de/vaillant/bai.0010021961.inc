@@ -30,12 +30,12 @@ r,,,HwcDemand,d.22 WW Anforderung: Brauchwasseranforderung (Zapfung oder Schalts
 r,,,HeatingSwitch,d.23 Winterbetrieb,,,b509,0df203,value,,UCH,0=off;1=on,,Wintermodus aktiv (Heizbetrieb und Warmwasser)
 w,,install_NOT_YET_CONFIRMED,HeatingSwitch,d.23 Winterbetrieb,,,b509,0ef203,value,,UCH,0=off;1=on,,Wintermodus aktiv (Heizbetrieb und Warmwasser)
 r,,,StoragereleaseClock,d.25 Speicherfreigabe: Freigabe der Speichrladung oder des Warmstartspeichers durcheinen eBUS Regler,,,b509,0d4704,value,,UCH,0=no;1=yes,,
-r,,,TargetFanSpeed,d.33 Lüfter Solldrehzahl,,,b509,0d2400,value,,UIN,,1/min,Drehzahlsollwert des Lüfters
-r,,,FanSpeed,d.34 Lüfteristdrehzahl,,,b509,0d8300,value,,UIN,,1/min,Aktuelle Lüfterdrehzahl
+r,,,TargetFanSpeed,d.33 Lüfter Solldrehzahl,,,b509,0d2400,value,,UIN,,rpm,Drehzahlsollwert des Lüfters
+r,,,FanSpeed,d.34 Lüfteristdrehzahl,,,b509,0d8300,value,,UIN,,rpm,Aktuelle Lüfterdrehzahl
 r,,,PositionValveSet,d.35 Position VUV: Position des 3-Wege Ventil: 100=Warmwasser 0=Heizbetrieb 40=Mittenstellung,,,b509,0d5400,value,,UCH,,,
 r,,,HwcWaterflow,d.36 Zapfmenge: WW Durchflußsensor,,,b509,0d5500,value,,UIN,100,,
 r,,,FlowTemp,d.40 Vorlauftemperatur,,,b509,0d1800,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-r,,,ReturnTemp,d.41 Rücklauftemperatur,,,b509,0d9800,temp,,D2C,,°C,Temperatur,tempmirror,,UIN,,,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
+r,,,ReturnTemp,d.41 Rücklauftemperatur,,,b509,0d9800,temp,,D2C,,°C,Temperatur,tempmirror,,UIN,,°C,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,IonisationVoltageLevel,d.44 Spannungspegel Ionisationssignal,,,b509,0da400,value,,SIN,10,,Ionisationsspannung: größer 80 = keine Flammekleiner 40 = gutes Flammensignal
 r,,,OutdoorstempSensor,d.47 Außentemperaturfühler: Außentemperaturwert (ohne Korrekturwert) und Sensorstatus,,,b509,0d7600,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,RemainingBoilerblocktime,d.67 Verbleibende Brennersperrzeit,,,b509,0d3800,value,,UCH,,min,Minuten
@@ -47,7 +47,7 @@ r,,,Flame,Flammensignal,,,b509,0d0500,value,,UCH,240=off;15=on,,
 r,,,ChangesDSN,Anzhl der DSN Änderungen: Anzahl der DSN (Gerätekennung) Änderungen,,,b509,0d0c00,value,,UCH,,,
 r,,,GasvalveUC,Schaltsignal für das Gasventil,,,b509,0d0d00,value,,UCH,240=off;15=on,,
 r,,,VolatileLockout,Verriegelnde Störabschaltungen: WAHR: STB Fehler sind verriegelnd,,,b509,0d1000,value,,UCH,240=no;15=yes,,
-r,,,ModulationTempDesired,Modulationssollwert,,,b509,0d2e00,value,,SIN,10,%,Modulationssollwert
+r,,,ModulationDesired,Modulationssollwert,,,b509,0d2e00,value,,SIN,10,%,Modulationssollwert
 r,,,FlameSensingASIC,SD_Flame_Sensing_ASIC: Ioni/ADC Wert vom Flammenwächter,,,b509,0d2f00,value,,UIN,,,
 r,,,HcUnderHundredStarts,HZ_UnderHundred_SwiActi: Heat switch cycles under hundred,,,b509,0d3000,value,,UCH,,,
 r,,,HwcUnderHundredStarts,BW_UnderHundred_SwiActi: DHW switch cycles under hundred,,,b509,0d3100,value,,UCH,,,
@@ -69,7 +69,7 @@ r,,,EbusVoltage,Rückmeldung der eBUS Spannung,,,b509,0d7f00,value,,UCH,0=off;1=
 r,,,FluegasvalveOpen,Abgasklappe offen: Rückmeldung Flüssiggasventil,,,b509,0d8900,value,,UCH,0=off;1=on,,
 r,,,Testbyte,Testbyte (relevant for the Tester),,,b509,0d9900,value,,UCH,,,
 r,,,DSN,DSN: Device Specific number,,,b509,0d9a00,value,,UIN,,,
-r,,,TargetFanSpeedOutput,Lüfterdrehzahl,,,b509,0d9f00,value,,UIN,,1/min,Lüfterdrehzahl
+r,,,TargetFanSpeedOutput,Lüfterdrehzahl,,,b509,0d9f00,value,,UIN,,rpm,Lüfterdrehzahl
 r,,,PowerValue,Leistungsdaten,,,b509,0daa00,value,,HEX:6,,,Geräteleistung (min und max)
 r,,,Statenumber,Statenumber: status number,,,b509,0dab00,value,,UCH,,,
 r,,,WaterpressureBranchControlOff,Drucksprungerkennung ausschalten: Überwachung der Druckänderung beim Schalten der Pumpe kann hiermit aktiviert oder deaktiviert werden,,,b509,0daf00,value,,UCH,0=off;1=on,,
@@ -83,8 +83,8 @@ r,,,DisplayMode,DisplayMode: Display mode of the aplliance,,,b509,0dda00,value,,
 r,,,Gasvalve3UC,Gasventil 3: Gasventil Schaltsignal (vom Prozessor),,,b509,0ddb00,value,,UCH,240=off;15=on,,
 r,,,InitialisationEEPROM,InitialisationEEPROM: EEPROM Initialisierung (für die Produktion),,,b509,0ddc00,value,,UCH,0=no;1=yes,,
 r,,,TimerInputHc,Eingang Schaltuhr: timer input (block heatdemand),,,b509,0dde00,value,,UCH,0=off;1=on,,
-r,,,FanMinSpeedOperation,Min. Lüfterdrehzahl,,,b509,0ddf00,value,,UIN,,1/min,Lüfter Minimaldrehzahl
-r,,,FanMaxSpeedOperation,Max. Lüfterdrehzahl,,,b509,0de000,value,,UIN,,1/min,Lüfter Maximaldrehzahl
+r,,,FanMinSpeedOperation,Min. Lüfterdrehzahl,,,b509,0ddf00,value,,UIN,,rpm,Lüfter Minimaldrehzahl
+r,,,FanMaxSpeedOperation,Max. Lüfterdrehzahl,,,b509,0de000,value,,UIN,,rpm,Lüfter Maximaldrehzahl
 r,,,ExternGasvalve,Ext. Gasventil: Externes Magnetventil,,,b509,0de400,value,,UCH,0=off;1=on,,
 r,,,DCFTimeDate,DCF Datum/Uhrzeit,,,b509,0de500,vti,,VTI,,,,hda,,HDA,,,
 r,,,HwcSwitch,Wasserschalter,,,b509,0df303,value,,UCH,0=off;1=on,,WW aus/ein
@@ -103,10 +103,10 @@ r,,,AccessoriesOne,d.27 Zubehörrelais 1,,,b509,0db900,value,,UCH,1=circulationp
 w,,install_NOT_YET_CONFIRMED,AccessoriesOne,d.27 Zubehörrelais 1,,,b509,0eb900,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Funktion des Zubehörrelais 1
 r,,,AccessoriesTwo,d.28 Zubehörrelais 2,,,b509,0dba00,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Funktion des Zubehörrelais 2
 w,,install_NOT_YET_CONFIRMED,AccessoriesTwo,d.28 Zubehörrelais 2,,,b509,0eba00,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Funktion des Zubehörrelais 2
-r,,,FanSpeedOffsetMin,d.50 Offset min. Lüfterdrehzahl,,,b509,0da700,value,,SIN,,1/min,Offset min. Drehzahl
-w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMin,d.50 Offset min. Lüfterdrehzahl,,,b509,0ea700,value,,SIN,,1/min,Offset min. Drehzahl
-r,,,FanSpeedOffsetMax,d.51 Offset max. Lüfterdrehzahl,,,b509,0da800,value,,SIN,,1/min,Offset max. Drehzahl
-w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMax,d.51 Offset max. Lüfterdrehzahl,,,b509,0ea800,value,,SIN,,1/min,Offset max. Drehzahl
+r,,,FanSpeedOffsetMin,d.50 Offset min. Lüfterdrehzahl,,,b509,0da700,value,,SIN,,rpm,Offset min. Drehzahl
+w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMin,d.50 Offset min. Lüfterdrehzahl,,,b509,0ea700,value,,SIN,,rpm,Offset min. Drehzahl
+r,,,FanSpeedOffsetMax,d.51 Offset max. Lüfterdrehzahl,,,b509,0da800,value,,SIN,,rpm,Offset max. Drehzahl
+w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMax,d.51 Offset max. Lüfterdrehzahl,,,b509,0ea800,value,,SIN,,rpm,Offset max. Drehzahl
 r,,,SolPostHeat,d.58 Solarbetriebsart,,,b509,0d7304,value,,UCH,,,Spezielle WW Funktionen:0 = Solarfunktion deaktiviert (default)1 = Solarfunktion aktiviert und WW Sollwert minimal 60°C2 = Solarfunktion aktiviert und WW Sollwert min. 35°C3 = WW Sollwert minimum 60°C
 w,,install_NOT_YET_CONFIRMED,SolPostHeat,d.58 Solarbetriebsart,,,b509,0e7304,value,,UCH,,,Spezielle WW Funktionen:0 = Solarfunktion deaktiviert (default)1 = Solarfunktion aktiviert und WW Sollwert minimal 60°C2 = Solarfunktion aktiviert und WW Sollwert min. 35°C3 = WW Sollwert minimum 60°C
 r,,,DeactivationsTemplimiter,d.60 STB Abschaltungen: Anzahl der Abschaltungen durch den Sicherheitstemperaturbgrenzers,,,b509,0d2000,value,,UCH,,,
@@ -136,8 +136,8 @@ r,,,HcStarts,d.82 Schaltspiele Heizbetrieb,,,b509,0d2900,value,,UIN,-100,,Schalt
 r,,,HwcStarts,d.83 Schaltspiele BW Betrieb,,,b509,0d2300,value,,UIN,-100,,Schaltspiele WW Betrieb
 r,,,HoursTillService,d.84 Stunden bis Wartung,,,b509,0dac00,value,,UIN,,h,Wartungsintervall:Anzahl der Stunden bis zur nächsten Wartung
 w,,install_NOT_YET_CONFIRMED,HoursTillService,d.84 Stunden bis Wartung,,,b509,0eac00,value,,UIN,,h,Wartungsintervall:Anzahl der Stunden bis zur nächsten Wartung
-r,,,AntiCondensValue,d.85 Minimale Leistung zur Vermeidung von Kondensation,,,b509,0dec00,value,,UCH,,kW / %,Anhebung der minimalen Leistung
-w,,install_NOT_YET_CONFIRMED,AntiCondensValue,d.85 Minimale Leistung zur Vermeidung von Kondensation,,,b509,0eec00,value,,UCH,,kW / %,Anhebung der minimalen Leistung
+r,,,AntiCondensValue,d.85 Minimale Leistung zur Vermeidung von Kondensation,,,b509,0dec00,value,,UCH,,kW,Anhebung der minimalen Leistung
+w,,install_NOT_YET_CONFIRMED,AntiCondensValue,d.85 Minimale Leistung zur Vermeidung von Kondensation,,,b509,0eec00,value,,UCH,,kW,Anhebung der minimalen Leistung
 r,,,SpecialAdj,d.88 SpecialAdj,,,b509,0d7604,value,,UCH,,,"switching on threshold for recognition of water tapping0 = 1,5 l/min and no delay, 1 = 3,7 l/min and 2s delay"
 w,,install_NOT_YET_CONFIRMED,SpecialAdj,d.88 SpecialAdj,,,b509,0e7604,value,,UCH,,,"switching on threshold for recognition of water tapping0 = 1,5 l/min and no delay, 1 = 3,7 l/min and 2s delay"
 r,,,DSNOffset,d.93 Gerätekennung,,,b509,0d3004,value,,UCH,,,Gerätekennung (DSN)
@@ -188,7 +188,7 @@ r,,,WaterpressureVariantSum,WaterpressureVariantSum: Wartungsdaten,,,b509,0df000
 r,,,WaterpressureMeasureCounter,WaterpressureMeasureCounter: Wartungsdaten,,,b509,0df100,value,,UCH,,,
 r,,,PrAPSCounter,PrAPSCounter: Wartungsdaten,,,b509,0df200,value,,UCH,,,
 r,,,PrAPSSum,PrAPSSum: Wartungsdaten,,,b509,0df300,value,,UIN,,s,Sekunden
-r,,,PrVortexFlowSensorValue,PrVortexFlowSensorValue,,,b509,0df400,value,,SIN,,ADC,Wartungsdaten
+r,,,PrVortexFlowSensorValue,PrVortexFlowSensorValue,,,b509,0df400,value,,SIN,,,Wartungsdaten
 r,,,PrEnergySumHc1,PrEnergySumCH1,,,b509,0df500,value,,ULG,,,Wartungsdaten
 w,,install_NOT_YET_CONFIRMED,PrEnergySumHc1,PrEnergySumCH1,,,b509,0ef500,value,,ULG,,,Wartungsdaten
 r,,,PrEnergyCountHc1,PrEnergyCountCH1,,,b509,0df600,value,,ULG,,,Wartungsdaten

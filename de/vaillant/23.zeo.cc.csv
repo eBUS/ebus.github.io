@@ -11,7 +11,7 @@ r,,,FlowTempDesired,Vorlaufsolltemperatur: 1/2 °C resolution,,,b509,0d1f02,valu
 r,,,CleaningLady,"Sparfunktion: 0,5h",,,b509,0d2302,value,,UCH,,,
 r,,,ActualTempDesired,Akt. Solltemperatur: 1/2°C Auflösung,,,b509,0d3302,value,,D1C,,°C,Temperatur
 r,,,DateTime,Datum Uhrzeit,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF Empfängerstatus,btime,,BTI,,,Uhrzeit,bdate,,BDA,,,Datum,temp,,D2B,,°C,Temperatur
-r,,,Mode,Betriebsmodus,,,b504,01,temp,,UCH,,°C,Temperatur,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,hex,,HEX,,,,daynight,,UCH,0=night;1=day;7=floorpaving,,Tag-/Nachtmodus
+r,,,Mode,Betriebsmodus,,,b504,01,temp,,UCH,,°C,Temperatur,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,ign,,IGN:2,,,,hwcmode_1,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,hex,,HEX,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,Tag-/Nachtmodus
 w,,,SetTempDesired,Solltemperatur setzen,,,b505,01,value,,UCH,,°C,Temperatur
 w,,,SetMode,Betriebsart setzen,,,b505,02,value,,UCH,0=disabled;1=on;2=off;3=auto,,Warmwasser Modus
 w,,,SetFlowTempMin,Minimalen Vorlaufsollwert setzen,,,b505,0e,value,,UCH,,°C,Temperatur

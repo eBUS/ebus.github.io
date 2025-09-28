@@ -30,8 +30,8 @@ r,,,OutsideTempOffset,OutDoorTempCorr: outside temperature correction,,,b509,0d0
 w,,install,OutsideTempOffset,OutDoorTempCorr: outside temperature correction,,,b509,0e0400,value,,D2C,,°C,temperature
 r,,,HeatingCurve,heating curve (only relevant if an outside temperature sensor is connected to the BMU),,,b509,0d2300,value,,UIN,100,,Heating curve
 w,,install,HeatingCurve,heating curve (only relevant if an outside temperature sensor is connected to the BMU),,,b509,0e2300,value,,UIN,100,,Heating curve
-r,,,ZweipunktAnalogSlct,ZweipunktAnalogSlct,,,b509,0d2900,value,,UCH,0=two_point_control;1=analogue_control,,two-point / analogue control
-w,,install,ZweipunktAnalogSlct,ZweipunktAnalogSlct,,,b509,0e2900,value,,UCH,0=two_point_control;1=analogue_control,,two-point / analogue control
+r,,,TwoPointAnalogCtrl,two point analog control,,,b509,0d2900,value,,UCH,0=two_point_control;1=analogue_control,,two-point / analogue control
+w,,install,TwoPointAnalogCtrl,two point analog control,,,b509,0e2900,value,,UCH,0=two_point_control;1=analogue_control,,two-point / analogue control
 r,,,WeekDayProgSwitch,WeekDayProgSwitch,,,b509,0d2b00,value,,UCH,1=daily;7=weekly,,switch from weekly program over to a daily one
 w,,install,WeekDayProgSwitch,WeekDayProgSwitch,,,b509,0e2b00,value,,UCH,1=daily;7=weekly,,switch from weekly program over to a daily one
 r,,,StackeBUSTaskMax,MaxStackeBUSTask: maximum number of bytes needed for the eBUS task stack,,,b509,0d1800,value,,UCH,,,
@@ -39,7 +39,7 @@ r,,,StackMainTaskMax,MaxStackMainTask: maximum number of bytes needed for the ma
 r,,,StackLifeCheckTaskMax,MaxStackLifeCheckTask: maximum number of bytes needed for the life check task stack,,,b509,0d1a00,value,,UCH,,,
 r,,,EBUSFifoDiffCntMax,eBUSFifoDiffCntMax: max. eBUS-fifo level,,,b509,0d2800,value,,UCH,,,
 r,,,RTCAdjustment,RTCAdjustment: adjustment value for RTC-timer (add or subtract 1sec in RTC-synchronisation time every x minute(s); add: positive value; sub: negative value),,,b509,0d2c00,value,,SIN,,,
-r,,,EEpromMaxInkonsCnt,EEpromMaxInkonsCnt: EEPROM inconsistency counter,,,b509,0d2d00,value,,UIN,,,
+r,,,EEpromMaxInconsCnt,EEpromMaxInkonsCnt: EEPROM inconsistency counter,,,b509,0d2d00,value,,UIN,,,
 r,,,POCResetCnt,POCResetCnt: power on resets,,,b509,0d2e00,value,,UIN,,,
 r,,,WDResetCnt,WDResetCnt: watchdog resets,,,b509,0d2f00,value,,UIN,,,
 r,,,LVResetCnt,LVResetCnt: low voltage resets,,,b509,0d3000,value,,UIN,,,

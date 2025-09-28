@@ -2,8 +2,8 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *w,
 *r,
 w,,,SetActorState,,,,b523,01,r1,,UCH,0=off;20=on,,,r2,,UCH,0=off;20=on,,,r3,,UCH,0=off;20=on,,,r4,,UCH,0=off;20=on,,,r5,,UCH,0=off;20=on,,,r6,,UCH,0=off;20=on,,,s7,,UCH,0=off;20=on,,
-w,,,Mc1FlowTempDesired,,,,b523,0200,ftstatus,,UCH,0=off;1=on,,,ftdesired,,D1C,,°C,temperature,mixerstatus,s,UCH,0=off;1=on,,,mixermovement,s,SCH,,%,
-w,,,Mc2FlowTempDesired,,,,b523,0201,ftstatus,,UCH,0=off;1=on,,,ftdesired,,D1C,,°C,temperature,mixerstatus,s,UCH,0=off;1=on,,,mixermovement,s,SCH,,%,
+w,,,Mc1Operation,,,,b523,0200,status,,UCH,0=off;1=on,,,flowtempdesired,,D1C,,°C,temperature,pump,s,UCH,0=off;1=on,,,mixer,s,SCH,,%,
+w,,,Mc2Operation,,,,b523,0201,status,,UCH,0=off;1=on,,,flowtempdesired,,D1C,,°C,temperature,pump,s,UCH,0=off;1=on,,,mixer,s,SCH,,%,
 r,,,SensorData,,,,b523,03,s1,,D2C,,°C,temperature,s2,,D2C,,°C,temperature,s3,,D2C,,°C,temperature,s4,,D2C,,°C,temperature,s5,,D2C,,°C,temperature,s6,,D2C,,°C,temperature,ignore,,HEX:3,,,
 r,,,Currenterror,Current errors,,,b503,0001,error,,UIN,,,error number,error_1,,UIN,,,error number,error_2,,UIN,,,error number,error_3,,UIN,,,error number,error_4,,UIN,,,error number
 r,,,Errorhistory,Error_History,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,time,date,,HDA:3,,,date,error,,UIN,,,error number

@@ -25,11 +25,11 @@ w,,install,Time,time,,,b509,0e2300,value,,VTI,,,time
 r,,,Date,date,,,b509,0d2400,value,,HDA:3,,,date
 w,,install,Date,date,,,b509,0e2400,value,,HDA:3,,,date
 r,,,FlowSensorFrequency,FlowSensorFrequency,,,b509,0d2d00,value,,UIN,,,
-r,,,CurrentFlow,CurrentFlow,,,b509,0d2e00,value,,UIN,,ml / min,Flow thru buffer circuit if loading the storage
+r,,,CurrentFlow,CurrentFlow,,,b509,0d2e00,value,,UIN,1000,l/min,Flow thru buffer circuit if loading the storage
 r,,,Variante,Variante: 1: VMS 30 2: VPM 20 S 3: VPM 60 S (identified by resistor in harness),,,b509,0d3000,value,,UCH,,,
 r,,,CurrentSystemMode,"CurrentSystemMode: 1: Standalone, 3: With external control",,,b509,0d3300,value,,UCH,,,
-r,,,InternalHwcTempDesired,InternalDHWSetpoint: Temperature target for DHW loading if solar module is in stand alone appliccation without external control,,,b509,0d3500,value,,UCH,,,
-r,,,InternalHcTempDesired,InternalCHSetpoint: Temperature target for CW loading if solar module is in stand alone appliccation without external control,,,b509,0d3600,value,,UCH,,,
+r,,,InternalHwcTempDesired,InternalDHWSetpoint: Temperature target for DHW loading if solar module is in stand alone appliccation without external control,,,b509,0d3500,value,,UCH,,°C,temperature
+r,,,InternalHcTempDesired,InternalCHSetpoint: Temperature target for CW loading if solar module is in stand alone appliccation without external control,,,b509,0d3600,value,,UCH,,°C,temperature
 r,,,ASIDetected,ASIDetected,,,b509,0d3800,value,,UCH,0=off;1=on,,
 r,,,CountryZone,CountryZone: Location for calculation of sun calender. See list in control manual (default = 2: Germany),,,b509,0d3900,value,,UCH,,,
 w,,install,CountryZone,CountryZone: Location for calculation of sun calender. See list in control manual (default = 2: Germany),,,b509,0e3900,value,,UCH,,,

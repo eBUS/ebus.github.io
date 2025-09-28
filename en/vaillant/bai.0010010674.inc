@@ -22,10 +22,10 @@ r,,,HwcDemand,d.22 DHW demand: domestic hot water (tapping or tank contact) dema
 r,,,HeatingSwitch,d.23 operation mode: Wintermode active,,,b509,0df203,value,,UCH,0=off;1=on,,
 r,,,StoragereleaseClock,d.25 DHW demand enabled: hot water release (tank storage) via eBus Control,,,b509,0d4704,value,,UCH,0=no;1=yes,,
 r,,,Gasvalve,d.30 Gasvalve: Gasvalve activation signal,,,b509,0dbb00,value,,UCH,240=off;15=on,,
-r,,,TargetFanSpeed,d.33 Target fan speed,,,b509,0d2400,value,,UIN,,1/min,Fan speed setpoint
-r,,,FanSpeed,d.34 Actual fan speed,,,b509,0d8300,value,,UIN,,1/min,fan speed actual value
+r,,,TargetFanSpeed,d.33 Target fan speed,,,b509,0d2400,value,,UIN,,rpm,Fan speed setpoint
+r,,,FanSpeed,d.34 Actual fan speed,,,b509,0d8300,value,,UIN,,rpm,fan speed actual value
 r,,,FlowTemp,d.40 TFT_DK: flow temperature,,,b509,0d1800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,ReturnTemp,d.41 Temp heating return: return temperature,,,b509,0d9800,temp,,D2C,,°C,temperature,tempmirror,,UIN,,,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,ReturnTemp,d.41 Temp heating return: return temperature,,,b509,0d9800,temp,,D2C,,°C,temperature,tempmirror,,UIN,,°C,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,OutdoorstempSensor,d.47 Temp outside: Outside temperature (uncorrected value),,,b509,0d7600,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,FlowHysteresisON,d.54 FlowHysteresis_ON_DK: Adjustment of the switch on hysteresis,,,b509,0d1601,value,,D2C,,°C,temperature
 w,,install,FlowHysteresisON,d.54 FlowHysteresis_ON_DK: Adjustment of the switch on hysteresis,,,b509,0e1601,value,,D2C,,°C,temperature
@@ -56,10 +56,10 @@ w,,install,AccessoriesOne,d.27 Option relais 1,,,b509,0eb900,value,,UCH,1=circul
 r,,,AccessoriesTwo,d.28 Option relais 2,,,b509,0dba00,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Accesory relay 2 function
 w,,install,AccessoriesTwo,d.28 Option relais 2,,,b509,0eba00,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Accesory relay 2 function
 r,,,IonisationVoltageLevel,d.44 Dig. ionisation voltage,,,b509,0da400,value,,SIN,10,,digital ionisation voltage> 80 no flame< 40 good flame
-r,,,FanSpeedOffsetMin,d.50 MinFanSpeedOffset,,,b509,0da700,value,,SIN,,1/min,Offset for minimum fan speed
-w,,install,FanSpeedOffsetMin,d.50 MinFanSpeedOffset,,,b509,0ea700,value,,SIN,,1/min,Offset for minimum fan speed
-r,,,FanSpeedOffsetMax,d.51 MaxFanSpeedOffset,,,b509,0da800,value,,SIN,,1/min,Offset for maximum fan speed
-w,,install,FanSpeedOffsetMax,d.51 MaxFanSpeedOffset,,,b509,0ea800,value,,SIN,,1/min,Offset for maximum fan speed
+r,,,FanSpeedOffsetMin,d.50 MinFanSpeedOffset,,,b509,0da700,value,,SIN,,rpm,Offset for minimum fan speed
+w,,install,FanSpeedOffsetMin,d.50 MinFanSpeedOffset,,,b509,0ea700,value,,SIN,,rpm,Offset for minimum fan speed
+r,,,FanSpeedOffsetMax,d.51 MaxFanSpeedOffset,,,b509,0da800,value,,SIN,,rpm,Offset for maximum fan speed
+w,,install,FanSpeedOffsetMax,d.51 MaxFanSpeedOffset,,,b509,0ea800,value,,SIN,,rpm,Offset for maximum fan speed
 r,,,DeactivationsTemplimiter,d.60 Number STL cut off: Number of safety temperature limiter cut offs,,,b509,0d2000,value,,UCH,,,
 r,,,DeactivationsIFC,"d.61 Number ignition device cut off: number of lock outs (unsuccessfull ignitons in the last attempt, flame failure)",,,b509,0d1f00,value,,UCH,,,
 r,,,AverageIgnitiontime,d.64 average ignition time,,,b509,0d2d00,value,,UCH,10,s,average ignition time
@@ -145,18 +145,18 @@ r,,,ExternalHwcSwitch,DHWSwitch_DK: Demand external tank (via contact),,,b509,0d
 r,,,Flame,Flame,,,b509,0d0500,value,,UCH,240=off;15=on,,
 r,,,IFCFault,SD_IFC_Fault_DK: IFC error,,,b509,0d0700,value,,UCH,240=off;15=on,,
 r,,,ChangesDSN,Changes_DSN_DK: Numbers adjusting (storing) the DSN,,,b509,0d0c00,value,,UCH,,,
-r,,,Brennstoffventil,Brennstoffventil: Activation signal of the gasvalve (activated via micrcontroller),,,b509,0d0d00,value,,UCH,240=off;15=on,,
+r,,,FuelValve,fuel valve: Activation signal of the gasvalve (activated via micrcontroller),,,b509,0d0d00,value,,UCH,240=off;15=on,,
 r,,,VolatileLockout,SD_VolatileLockout_DK: TRUE: STB failures is volatileFALSE: STB failure is not volataile,,,b509,0d1000,value,,UCH,240=no;15=yes,,
 r,,,Faultlist,Faultlist_DK,,,b509,0d2600,value,,HEX:10,,,last 10 fault codes
-r,,,ModulationTempDesired,Modulationsetpoint_DK,,,b509,0d2e00,value,,SIN,10,%,Modulation set point
+r,,,ModulationDesired,Modulationsetpoint_DK,,,b509,0d2e00,value,,SIN,10,%,Modulation set point
 r,,,FlameSensingASIC,SD_Flame_Sensing_ASIC_DK: ioni/adc value from the flame control circuit,,,b509,0d2f00,value,,UIN,,,
 r,,,HcUnderHundredStarts,HZ_UnderHundred_SwiActi_DK: Heat switch cycles under hundred,,,b509,0d3000,value,,UCH,,,
 r,,,HwcUnderHundredStarts,BW_UnderHundred_SwiActi_DK: DHW switch cycles under hundred,,,b509,0d3100,value,,UCH,,,
 r,,,EbusSourceOn,EbusSourceOn_DK: Activation signal of the eBus source,,,b509,0d3400,value,,UCH,0=off;1=on,,
 r,,,Fluegasvalve,Fluegasvalve_DK: flue gasvalve activation signal,,,b509,0d3c00,value,,UCH,0=off;1=on,,
 r,,,ExternalFaultmessage,External_Faultmessage_DK: external fault message,,,b509,0d3e00,value,,UCH,0=off;1=on,,
-r,,,RueckmeldungBrennstoffventil1,Rückmeldung Brennstoffventil 1: feedback gasvalve (from ASIC),,,b509,0d4700,value,,UCH,240=off;15=on,,
-r,,,RueckmeldungBrennstoffventil2,Rückmeldung Brennstoffventil 2: feedback gasvalve (from Microcontroller),,,b509,0d4800,value,,UCH,240=off;15=on,,
+r,,,FuelValveFeedback1,fuel valve feedback 1: feedback gasvalve (from ASIC),,,b509,0d4700,value,,UCH,240=off;15=on,,
+r,,,FuelValveFeedback2,fuel valve feedback 2: feedback gasvalve (from Microcontroller),,,b509,0d4800,value,,UCH,240=off;15=on,,
 r,,,Ignitor,SD_Ignitor_DK: igniton activated,,,b509,0d4900,value,,UCH,240=off;15=on,,
 r,,,Fan,Fan_DK: Fan activation signal,,,b509,0d4a00,value,,UCH,0=no;1=yes,,
 r,,,HwcTypes,DHW_Types_DK: DHW type of the appliance,,,b509,0d4b00,value,,UCH,,,
@@ -179,7 +179,7 @@ r,,,FluegasvalveOpen,FluegasvalveOpen_DK: feedback of the flue gas valve,,,b509,
 r,,,FunctionFault,Function_Fault_DK: boiler stopped by a internal function fault,,,b509,0d9500,value,,UCH,0=no;1=yes,,
 r,,,Testbyte,Testbyte_DK: Testbyte (relevant for the Tester),,,b509,0d9900,value,,UCH,,,
 r,,,DSN,DSN_DK: DSN: Device Specific number,,,b509,0d9a00,value,,UIN,,,
-r,,,TargetFanSpeedOutput,TargetFan_Speed_Output_DK,,,b509,0d9f00,value,,UIN,,1/min,output fan speed
+r,,,TargetFanSpeedOutput,TargetFan_Speed_Output_DK,,,b509,0d9f00,value,,UIN,,rpm,output fan speed
 r,,,Statenumber,Statenumber_DK: status number,,,b509,0dab00,value,,UCH,,,
 r,,,AdvancedPowerValues,AdvancedPowerValues_DK,,,b509,0dae00,value,,HEX:9,,,min. / max powervalues
 r,,,DSNStart,DSN Start adress,,,b509,0dbc00,value,,UIN,,,
@@ -190,13 +190,13 @@ r,,,SRSyphonINSDSwitch,SR_Syphon_IN_SD_Switch_DK: feedback of the syphon switch 
 r,,,TemplimiterWithNTC,SD_STL_with_NTC: Safety temperature limit concept:1 = safety temp. Limit check with NTC0 = safety temp. Limit check with contact,,,b509,0dd200,value,,UCH,240=no;15=yes,,
 r,,,VolatileLockoutIFCGV,SD_VolatileLockout_IFC_GV_DK: all IFC faults are volataile,,,b509,0dd300,value,,UCH,240=no;15=yes,,
 r,,,DisplayMode,DisplayMode_DK: Display mode of the aplliance,,,b509,0dda00,value,,UCH,,,
-r,,,RueckmeldungBrennstoffventil3,Rückmeldung Brennstoffventil 3: Gasvalve activation signal (from Microcontroller),,,b509,0ddb00,value,,UCH,240=off;15=on,,
+r,,,FuelValveFeedback3,fuel valve feedback 3: Gasvalve activation signal (from Microcontroller),,,b509,0ddb00,value,,UCH,240=off;15=on,,
 r,,,InitialisationEEPROM,InitialisationEEPROM: Initialisation off all EEPROM values (done in the production),,,b509,0ddc00,value,,UCH,0=no;1=yes,,
 r,,,DefaultSettingEEPROM,DefaultSettingEEPROM_DK: default value setting off all EEPROM values (done in the production),,,b509,0ddd00,value,,UCH,0=no;1=yes,,
 r,,,TimerInputHc,TimerInputCH_DK: timer input (block heatdemand),,,b509,0dde00,value,,UCH,0=off;1=on,,
-r,,,FanMinSpeedOperation,FanMinSpeedOperation,,,b509,0ddf00,value,,UIN,,1/min,Minimum Fan speed of the appliance
-r,,,FanMaxSpeedOperation,FanMaxSpeedOperation,,,b509,0de000,value,,UIN,,1/min,Maximum Fan speed of the appliance
-r,,,RManagEE_VirtualHcPartloadEnableDTemp,TR_Manag_EE.Virtual_CH_Partload_Enable_DK: enable the adaptive CH-partload calulation,,,b509,0de300,value,,UCH,0=off;1=on,,
+r,,,FanMinSpeedOperation,FanMinSpeedOperation,,,b509,0ddf00,value,,UIN,,rpm,Minimum Fan speed of the appliance
+r,,,FanMaxSpeedOperation,FanMaxSpeedOperation,,,b509,0de000,value,,UIN,,rpm,Maximum Fan speed of the appliance
+r,,,RManagEE_VirtualHcPartloadEnable,TR_Manag_EE.Virtual_CH_Partload_Enable_DK: enable the adaptive CH-partload calulation,,,b509,0de300,value,,UCH,0=off;1=on,,
 r,,,ExternGasvalve,ExternGasvalve_DK: external gasvalve activated,,,b509,0de400,value,,UCH,0=off;1=on,,
 r,,,DCFTimeDate,DCF_TimeDate_DK,,,b509,0de500,btime,,BTI,,,time,bdate,,BDA,,,date
 r,,,ActoSTOREEPreventiveCounter,actoSTOR_EE_PreventiveCounter_DK,,,b509,0dec00,uin,,UIN,,,Predictive maintenance date of the actoSTOR,uin_1,,UIN,,,,uin_2,,UIN,,,
@@ -209,10 +209,10 @@ r,,,SerialNumber,SerialNumber,,,b509,0d3f04,value,,HEX:8,,,serial number of AI
 r,,,BoilerType2,BoilerType_2_DK: second Boiler typ of the bmu,,,b509,0d0c01,value,,ULG,,,
 r,,,StatusList,StatusList_DK,,,b509,0d1101,value,,HEX:10,,,List of the last 10 status numbers
 r,,,LimpHomeModeEEHistoryList,LimpHomeMode_EE_History_List_DK,,,b509,0d8b01,uin,,UIN,,,history of the last 5 limp home modes,uin_1,,UIN,,,,uin_2,,UIN,,,,uin_3,,UIN,,,,uin_4,,UIN,,,
-r,,,AWPCEEMinThreshold,AWPC_EE_MinThreshold_DK,,,b509,0d1201,value,,SIN,10,bar/10,minimum waterpressure threshold
-w,,install,AWPCEEMinThreshold,AWPC_EE_MinThreshold_DK,,,b509,0e1201,value,,SIN,10,bar/10,minimum waterpressure threshold
-r,,,AWPCEEMaxThreshold,AWPC_EE_MaxThreshold_DK,,,b509,0d1301,value,,SIN,10,bar/10,maximum waterpressure threshold
-w,,install,AWPCEEMaxThreshold,AWPC_EE_MaxThreshold_DK,,,b509,0e1301,value,,SIN,10,bar/10,maximum waterpressure threshold
+r,,,AWPCEEMinThreshold,AWPC_EE_MinThreshold_DK,,,b509,0d1201,value,,SIN,10,bar,minimum waterpressure threshold
+w,,install,AWPCEEMinThreshold,AWPC_EE_MinThreshold_DK,,,b509,0e1201,value,,SIN,10,bar,minimum waterpressure threshold
+r,,,AWPCEEMaxThreshold,AWPC_EE_MaxThreshold_DK,,,b509,0d1301,value,,SIN,10,bar,maximum waterpressure threshold
+w,,install,AWPCEEMaxThreshold,AWPC_EE_MaxThreshold_DK,,,b509,0e1301,value,,SIN,10,bar,maximum waterpressure threshold
 r,,,Currenterror,Current errors,,,b503,0001,error,,UIN,,,error number,error_1,,UIN,,,error number,error_2,,UIN,,,error number,error_3,,UIN,,,error number,error_4,,UIN,,,error number
 r,,,Errorhistory,Error_History,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,time,date,,HDA:3,,,date,error,,UIN,,,error number
 w,,install,Clearerrorhistory,Clear error history,,,b503,0201,cleared,s,UCH,0=no;1=yes,,

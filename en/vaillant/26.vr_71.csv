@@ -2,9 +2,9 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *w,
 *r,
 w,,,SetActorState,,,,b523,05,r1,,UCH,0=off;20=on,,,r2,,UCH,0=off;20=on,,,r3,,UCH,0=off;20=on,,,r4,,UCH,0=off;20=on,,,r5,,UCH,0=off;20=on,,,r6,,UCH,0=off;20=on,,,r7,,UCH,0=off;20=on,,,r8,,UCH,0=off;20=on,,,r9,,UCH,0=off;20=on,,,r10,,UCH,0=off;20=on,,,r11,,UCH,0=off;20=on,,,r12,,UCH,0=off;20=on,,,rx,,HEX:2,,,
-w,,,Mc1FlowTempDesired,,,,b523,0200,ftstatus,,UCH,0=off;1=on,,,ftdesired,,D1C,,°C,temperature,mixerstatus,s,UCH,0=off;1=on,,,mixermovement,s,SCH,,%,
-w,,,Mc2FlowTempDesired,,,,b523,0201,ftstatus,,UCH,0=off;1=on,,,ftdesired,,D1C,,°C,temperature,mixerstatus,s,UCH,0=off;1=on,,,mixermovement,s,SCH,,%,
-w,,,Mc3FlowTempDesired,,,,b523,0202,ftstatus,,UCH,0=off;1=on,,,ftdesired,,D1C,,°C,temperature,mixerstatus,s,UCH,0=off;1=on,,,mixermovement,s,SCH,,%,
+w,,,Mc1Operation,,,,b523,0200,status,,UCH,0=off;1=on,,,flowtempdesired,,D1C,,°C,temperature,pump,s,UCH,0=off;1=on,,,mixer,s,SCH,,%,
+w,,,Mc2Operation,,,,b523,0201,status,,UCH,0=off;1=on,,,flowtempdesired,,D1C,,°C,temperature,pump,s,UCH,0=off;1=on,,,mixer,s,SCH,,%,
+w,,,Mc3Operation,,,,b523,0202,status,,UCH,0=off;1=on,,,flowtempdesired,,D1C,,°C,temperature,pump,s,UCH,0=off;1=on,,,mixer,s,SCH,,%,
 r,,,SensorData1,,,,b523,06,s1,,D2C,,°C,temperature,s2,,D2C,,°C,temperature,s3,,D2C,,°C,temperature,s4,,D2C,,°C,temperature,s5,,D2C,,°C,temperature,s6,,D2C,,°C,temperature,s7,,D2C,,°C,temperature,ignore,,HEX:2,,,
 r,,,SensorData2,,,,b523,07,s8,,D2C,,°C,temperature,s9,,D2C,,°C,temperature,s10,,D2C,,°C,temperature,s11,,D2C,,°C,temperature,s12,,D2C,,°C,temperature,sx,,D2C,,°C,temperature,ignore,,HEX:3,,,
 r,,,Currenterror,Current errors,,,b503,0001,error,,UIN,,,error number,error_1,,UIN,,,error number,error_2,,UIN,,,error number,error_3,,UIN,,,error number,error_4,,UIN,,,error number

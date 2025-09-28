@@ -8,21 +8,21 @@ r,,,TempDesired,Solltemperatur: 1/2 °C resolution,,,b509,0d0d04,value,,D1C,,°C
 r,,,TempDesiredLow,Absenksollwert: 1/2 °C resolution,,,b509,0d0e00,value,,D1C,,°C,Temperatur
 r,,,HcMaxPreHeating,Max. Voraufheizung: 0..5h,,,b509,0d1300,value,,UCH,,,
 r,,,FloorPavingDryingDay,Estrichtrocknung Tag,,,b509,0d1600,value,,UCH,,,
-r,,,Kreisart,Kreisart: 1=Brennerkreis 2=BrennerFestwert,,,b509,0d1700,value,,UCH,,,
-w,,service,Kreisart,Kreisart: 1=Brennerkreis 2=BrennerFestwert,,,b509,0e1700,value,,UCH,,,
+r,,,CircuitType,Kreisart: 1=Brennerkreis 2=BrennerFestwert,,,b509,0d1700,value,,UCH,,,
+w,,service,CircuitType,Kreisart: 1=Brennerkreis 2=BrennerFestwert,,,b509,0e1700,value,,UCH,,,
 r,,,CircuitDiaState,CircuitDiaState,,,b509,0d1804,value,,UCH,,,
 r,,,CleaningLady,"Sparfunktion: 0,5h",,,b509,0d2304,value,,UCH,,,
 r,,,RemoteControlMode,Raumaufschaltung,,,b509,0d2400,value,,UCH,,,
-r,,,RemoteControlRtOffset,"Offset Fernbedienung: 0,5°C",,,b509,0d2500,value,,SCH,,,
+r,,,RemoteControlRtOffset,"Offset Fernbedienung: 0,5°C",,,b509,0d2500,value,,D1C,,°C,Temperatur
 r,,,ActualTempDesired,Akt. Solltemperatur: 1/2°C Auflösung,,,b509,0d3304,value,,D1C,,°C,Temperatur
-r,,,Regelungsart,Regelungsart: 1 : Rücklaufregelung 2 : Vorlaufregelung,,,b509,0d3500,value,,UCH,,,
-w,,service,Regelungsart,Regelungsart: 1 : Rücklaufregelung 2 : Vorlaufregelung,,,b509,0e3500,value,,UCH,,,
-r,,,Konfiguration,Konfiguration,,,b509,0dc400,value,,UCH,,,
-w,,service,Konfiguration,Konfiguration,,,b509,0ec400,value,,UCH,,,
+r,,,ControlMode,Regelungsart: 1 : Rücklaufregelung 2 : Vorlaufregelung,,,b509,0d3500,value,,UCH,,,
+w,,service,ControlMode,Regelungsart: 1 : Rücklaufregelung 2 : Vorlaufregelung,,,b509,0e3500,value,,UCH,,,
+r,,,Configuration,Konfiguration,,,b509,0dc400,value,,UCH,,,
+w,,service,Configuration,Konfiguration,,,b509,0ec400,value,,UCH,,,
 r,,,HzTemp,T_Hz: Vorlauf- oder Rücklauftemperatur je nach gewählter Regelungsart,,,b509,0dd800,value,,D2C,,°C,Temperatur
-r,,,HTSoll,HT_Soll: °C,,,b509,0dd900,value,,D2C,,°C,Temperatur
+r,,,HTDesired,HT_Soll: °C,,,b509,0dd900,value,,D2C,,°C,Temperatur
 r,,,DateTime,Datum Uhrzeit,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF Empfängerstatus,btime,,BTI,,,Uhrzeit,bdate,,BDA,,,Datum,temp,,D2B,,°C,Temperatur
-r,,,Mode,Betriebsmodus,,,b504,01,tempdesired,,UCH,,°C,Temperatur,mcmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus,floorpavingdryingday,,UCH,,,Tage,floorpavingdryingtemp,,UCH,,°C,Temperatur,teleswitchmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,ign,,IGN,,,,daynight,,UCH,0=night;1=day;7=floorpaving,,Tag-/Nachtmodus
+r,,,Mode,Betriebsmodus,,,b504,01,tempdesired,,UCH,,°C,Temperatur,mcmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus,floorpavingdryingday,,UCH,,,Tage,floorpavingdryingtemp,,UCH,,°C,Temperatur,teleswitchmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,ign,,IGN,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,Tag-/Nachtmodus
 w,,,SetTempDesired,Solltemperatur setzen,,,b505,01,value,,UCH,,°C,Temperatur
 w,,,SetMode,Betriebsart setzen,,,b505,02,value,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus
 w,,,SetFloorPavingDryingDay,Estrichtrocknungstag setzen,,,b505,03,value,,UCH,,,Tage

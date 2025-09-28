@@ -24,16 +24,16 @@ r,,,HeatingSwitch,d.23 operation mode: Wintermode active,,,b509,0df203,value,,UC
 r,,,AircontrolOk,d.24 SD_AircontrolOk_DK: Air pressure switch,,,b509,0d0300,value,,UCH,240=off;15=on,,
 r,,,StoragereleaseClock,d.25 DHW demand enabled: hot water release (tank storage) via eBus Control,,,b509,0d4704,value,,UCH,0=no;1=yes,,
 r,,,Gasvalve,d.30 Gasvalve: Gasvalve activation signal,,,b509,0dbb00,value,,UCH,240=off;15=on,,
-r,,,TargetFanSpeed,d.33 Target fan speed,,,b509,0d2400,value,,UIN,,1/min,Fan speed setpoint
-r,,,FanSpeed,d.34 Actual fan speed,,,b509,0d8300,value,,UIN,,1/min,fan speed actual value
+r,,,TargetFanSpeed,d.33 Target fan speed,,,b509,0d2400,value,,UIN,,rpm,Fan speed setpoint
+r,,,FanSpeed,d.34 Actual fan speed,,,b509,0d8300,value,,UIN,,rpm,fan speed actual value
 r,,,PositionValveSet,"d.35 Position TWV: Position of diverter valve; 100 = DHW, 0 = heating, 40 = middle position",,,b509,0d5400,value,,UCH,,,
 r,,,HwcWaterflow,d.36 DHW waterflow: domestic hot water flow sensor,,,b509,0d5500,value,,UIN,100,,
 r,,,FlowTemp,d.40 TFT_DK: flow temperature,,,b509,0d1800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,ReturnTemp,d.41 Temp heating return: return temperature,,,b509,0d9800,temp,,D2C,,°C,temperature,tempmirror,,UIN,,,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,ReturnTemp,d.41 Temp heating return: return temperature,,,b509,0d9800,temp,,D2C,,°C,temperature,tempmirror,,UIN,,°C,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,IonisationVoltageLevel,d.44 Dig. ionisation voltage,,,b509,0da400,value,,SIN,10,,digital ionisation voltage
 r,,,OutdoorstempSensor,d.47 Temp outside: Outside temperature (uncorrected value),,,b509,0d7600,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,AITemp,d.48 SD_TAI_DK: Exhaust sensor (inside the flue pipe),,,b509,0d3300,temp,,D2C,,°C,temperature,tempmirror,,UIN,,,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,AATemp,d.49 SD_TAA_DK: Exhaust sensor (outside the flue pipe),,,b509,0d3200,temp,,D2C,,°C,temperature,tempmirror,,UIN,,,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,AITemp,d.48 SD_TAI_DK: Exhaust sensor (inside the flue pipe),,,b509,0d3300,temp,,D2C,,°C,temperature,tempmirror,,UIN,,°C,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,AATemp,d.49 SD_TAA_DK: Exhaust sensor (outside the flue pipe),,,b509,0d3200,temp,,D2C,,°C,temperature,tempmirror,,UIN,,°C,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,RemainingBoilerblocktime,d.67 Remaining burner block time: Remaining burner anti cycling time,,,b509,0d3800,value,,UCH,,min,minutes
 r,,,EBusHeatcontrol,d.90 Digital control recognized: Digital regulator status,,,b509,0d0004,value,,UCH,0=no;1=yes,,
 r,,,DcfState,d.91 Status DCF 77: DCF status,,,b509,0d6900,value,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF receiver state
@@ -51,8 +51,8 @@ r,,,DSN,DSN_DK: DSN: Device Specific number,,,b509,0d9a00,value,,UIN,,,
 r,,,DSNStart,DSN Start adress,,,b509,0d3104,value,,UIN,,,
 r,,,ChangesDSN,Changes_DSN_DK: Numbers adjusting (storing) the DSN,,,b509,0d0c00,value,,UCH,,,
 r,,,ParamToken,ParamToken_DK: token for parameter managment,,,b509,0d6000,value,,UCH,,,
-r,,,FanMinSpeedOperation,FanMinSpeedOperation,,,b509,0ddf00,value,,UIN,,1/min,Minimum Fan speed of the appliance
-r,,,FanMaxSpeedOperation,FanMaxSpeedOperation,,,b509,0de000,value,,UIN,,1/min,Maximum Fan speed of the appliance
+r,,,FanMinSpeedOperation,FanMinSpeedOperation,,,b509,0ddf00,value,,UIN,,rpm,Minimum Fan speed of the appliance
+r,,,FanMaxSpeedOperation,FanMaxSpeedOperation,,,b509,0de000,value,,UIN,,rpm,Maximum Fan speed of the appliance
 r,,,WaterpressureBranchControlOff,WaterpressureBranchControlOff_DK: water pressure branch control off,,,b509,0daf00,value,,UCH,0=off;1=on,,
 r,,,SerialNumber,SerialNumber,,,b509,0d3f04,value,,HEX:8,,,serial number of AI
 r,,,PartnumberBox,Partnumber_Box,,,b509,0dc000,value,,HEX:5,,,part number of the eBox
@@ -72,7 +72,7 @@ r,,,FlowSetPotmeter,FlowSetPotmeter: flow setpoint potentiometer,,,b509,0df003,v
 r,,,HwcSetPotmeter,DHWSetPotmeter: DHW setpoint potentiometer,,,b509,0df103,value,,D2C,,°C,temperature
 r,,,FloorHeatingContact,Floor heating contact,,,b509,0d7000,value,,UCH,0=off;1=on,,
 r,,,ExternalFlowTempDesired,external flowsetpoint: Flow target temperature from external regulator to terminal 7-8-9,,,b509,0d2500,value,,D2C,,°C,temperature
-r,,,ModulationTempDesired,Modulationsetpoint_DK,,,b509,0d2e00,value,,SIN,10,%,Modulation set point
+r,,,ModulationDesired,Modulationsetpoint_DK,,,b509,0d2e00,value,,SIN,10,%,Modulation set point
 r,,,WPPWMPowerDia,d.14 WP_PWMPowerDia_DK: Set-PWM-Powerrate of electronic-pump,,,b509,0d0a04,value,,UCH,,,
 w,,install,WPPWMPowerDia,d.14 WP_PWMPowerDia_DK: Set-PWM-Powerrate of electronic-pump,,,b509,0e0a04,value,,UCH,,,
 r,,,ReturnRegulation,d.17 Return regulation: heating flow/return regulation activation,,,b509,0d0c04,value,,UCH,0=off;1=on,,
@@ -120,8 +120,8 @@ r,,,HcStarts,d.82 Burner starts heating,,,b509,0d2900,value,,UIN,-100,,cycles in
 r,,,HwcStarts,d.83 Burner starts DHW,,,b509,0d2300,value,,UIN,-100,,Cycles in hot water operation
 r,,,HoursTillService,d.84 Hours till next service: Maintenance indicator:Number of hours until the next maintenance,,,b509,0d2004,value,,UIN,,h,hours
 w,,install,HoursTillService,d.84 Hours till next service: Maintenance indicator:Number of hours until the next maintenance,,,b509,0e2004,value,,UIN,,h,hours
-r,,,AntiCondensValue,d.85 AntiCondensValue,,,b509,0d7704,value,,UCH,,kW / %,increase of minimum power
-w,,install,AntiCondensValue,d.85 AntiCondensValue,,,b509,0e7704,value,,UCH,,kW / %,increase of minimum power
+r,,,AntiCondensValue,d.85 AntiCondensValue: increase of minimum power,,,b509,0d7704,value,,UCH,,kW,
+w,,install,AntiCondensValue,d.85 AntiCondensValue: increase of minimum power,,,b509,0e7704,value,,UCH,,kW,
 r,,,SpecialAdj,"d.88 SpecialAdj: switching on threshold for recognition of water tapping0 = 1,5 l/min and no delay, 1 = 3,7 l/min and 2s delay",,,b509,0d7604,value,,UCH,,,
 w,,install,SpecialAdj,"d.88 SpecialAdj: switching on threshold for recognition of water tapping0 = 1,5 l/min and no delay, 1 = 3,7 l/min and 2s delay",,,b509,0e7604,value,,UCH,,,
 r,,,DSNOffset,d.93 Device specific number: DSN aplliance variant setting,,,b509,0d3004,value,,UCH,,,
@@ -139,7 +139,7 @@ r,,,HwcTypes,DHW_Types_DK: DHW type of the appliance,,,b509,0d4b00,value,,UCH,,,
 r,,,HwcWaterflowMax,DHW Waterflow_max_DK: domestic hot water flow sensor maximum value,,,b509,0d5600,value,,UIN,100,,
 r,,,HwcImpellorSwitch,DHW impellor switch: domestic hot water (tapping) demand,,,b509,0d5700,value,,UCH,0=no;1=yes,,
 r,,,WarmstartDemand,WarmstartDemand: activation of warmstart,,,b509,0d3a04,value,,UCH,0=no;1=yes,,
-r,,,TargetFanSpeedOutput,TargetFan_Speed_Output_DK,,,b509,0d9f00,value,,UIN,,1/min,output fan speed
+r,,,TargetFanSpeedOutput,TargetFan_Speed_Output_DK,,,b509,0d9f00,value,,UIN,,rpm,output fan speed
 r,,,ReduceModulationBlocktime,ReduceModulationBlocktime_DK: Reduced modulation blocking time to fulfil 3-star requirement,,,b509,0d5c00,value,,UCH,,,
 w,,service,ReduceModulationBlocktime,ReduceModulationBlocktime_DK: Reduced modulation blocking time to fulfil 3-star requirement,,,b509,0e5c00,value,,UCH,,,
 r,,,CounterStartAttempts3,CounterStartAttempts3_DK: unsuccessfull ignitions in the third attempt,,,b509,0d8100,value,,UCH,,°C,temperature

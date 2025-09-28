@@ -30,12 +30,12 @@ r,,,HwcDemand,d.22 DHW demand: Domestic hot water demand,,,b509,0d5800,value,,UC
 r,,,HeatingSwitch,d.23 Heating on/off switch,,,b509,0df203,value,,UCH,0=off;1=on,,Central heating on/off switch
 w,,install_NOT_YET_CONFIRMED,HeatingSwitch,d.23 Heating on/off switch,,,b509,0ef203,value,,UCH,0=off;1=on,,Central heating on/off switch
 r,,,StoragereleaseClock,d.25 DHW demand enabled: hot water release (tank storage) via eBus Control,,,b509,0d4704,value,,UCH,0=no;1=yes,,
-r,,,TargetFanSpeed,d.33 Target fan speed,,,b509,0d2400,value,,UIN,,1/min,Fan speed setpoint
-r,,,FanSpeed,d.34 Current fan speed,,,b509,0d8300,value,,UIN,,1/min,Current fan speed
+r,,,TargetFanSpeed,d.33 Target fan speed,,,b509,0d2400,value,,UIN,,rpm,Fan speed setpoint
+r,,,FanSpeed,d.34 Current fan speed,,,b509,0d8300,value,,UIN,,rpm,Current fan speed
 r,,,PositionValveSet,"d.35 Position TWV: Position of diverter valve; 100 = DHW, 0 = heating, 40 = middle position",,,b509,0d5400,value,,UCH,,,
 r,,,HwcWaterflow,d.36 DHW waterflow: domestic hot water flow sensor,,,b509,0d5500,value,,UIN,100,,
 r,,,FlowTemp,d.40 Supply temperature: CH supply temperature sensor (VF2),,,b509,0d1800,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
-r,,,ReturnTemp,d.41 Return temperature: CH return temperature sensor,,,b509,0d9800,temp,,D2C,,°C,temperature,tempmirror,,UIN,,,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
+r,,,ReturnTemp,d.41 Return temperature: CH return temperature sensor,,,b509,0d9800,temp,,D2C,,°C,temperature,tempmirror,,UIN,,°C,,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,IonisationVoltageLevel,d.44 Ionisation voltage,,,b509,0da400,value,,SIN,10,,digital ionisation voltage> 80 no flame< 40 good flame
 r,,,OutdoorstempSensor,d.47 Outdoor temperature: Outdoor temperature sensor (uncorrected value) value and status,,,b509,0d7600,temp,,D2C,,°C,temperature,sensor,,UCH,0=ok;85=circuit;170=cutoff,,sensor status
 r,,,RemainingBoilerblocktime,d.67 Remaining burner block time: Remaining burner anti cycling time,,,b509,0d3800,value,,UCH,,min,minutes
@@ -47,7 +47,7 @@ r,,,Flame,Flame,,,b509,0d0500,value,,UCH,240=off;15=on,,
 r,,,ChangesDSN,Changes_DSN_DK: Numbers adjusting (storing) the DSN,,,b509,0d0c00,value,,UCH,,,
 r,,,GasvalveUC,SD_Gasvalve_uC_DK: Activation signal of the gasvalve (activated via micrcontroller),,,b509,0d0d00,value,,UCH,240=off;15=on,,
 r,,,VolatileLockout,SD_VolatileLockout_DK: TRUE: STB errors are locking,,,b509,0d1000,value,,UCH,240=no;15=yes,,
-r,,,ModulationTempDesired,Modulationsetpoint_DK,,,b509,0d2e00,value,,SIN,10,%,Modulation set point
+r,,,ModulationDesired,Modulationsetpoint_DK,,,b509,0d2e00,value,,SIN,10,%,Modulation set point
 r,,,FlameSensingASIC,SD_Flame_Sensing_ASIC: ioni/adc value from the flame control circuit,,,b509,0d2f00,value,,UIN,,,
 r,,,HcUnderHundredStarts,HZ_UnderHundred_SwiActi: Heat switch cycles under hundred,,,b509,0d3000,value,,UCH,,,
 r,,,HwcUnderHundredStarts,BW_UnderHundred_SwiActi: DHW switch cycles under hundred,,,b509,0d3100,value,,UCH,,,
@@ -69,7 +69,7 @@ r,,,EbusVoltage,eBUS voltage feedback,,,b509,0d7f00,value,,UCH,0=off;1=on,,
 r,,,FluegasvalveOpen,Flue flap open: Exhaust (flue) flap open,,,b509,0d8900,value,,UCH,0=off;1=on,,
 r,,,Testbyte,Testbyte (relevant for testers),,,b509,0d9900,value,,UCH,,,
 r,,,DSN,DSN: Device Specific number,,,b509,0d9a00,value,,UIN,,,
-r,,,TargetFanSpeedOutput,Target fan speed,,,b509,0d9f00,value,,UIN,,1/min,Target fan speed
+r,,,TargetFanSpeedOutput,Target fan speed,,,b509,0d9f00,value,,UIN,,rpm,Target fan speed
 r,,,PowerValue,Power number,,,b509,0daa00,value,,HEX:6,,,Power value of the boiler (minimum and maximum)
 r,,,Statenumber,Statenumber: Status number,,,b509,0dab00,value,,UCH,,,
 r,,,WaterpressureBranchControlOff,WaterpressureBranchControlOff_DK: Water pressure branch control switch,,,b509,0daf00,value,,UCH,0=off;1=on,,
@@ -83,8 +83,8 @@ r,,,DisplayMode,DisplayMode: Display mode of the appliance,,,b509,0dda00,value,,
 r,,,Gasvalve3UC,Gasventil 3: Gas valve switching signal (from the processor),,,b509,0ddb00,value,,UCH,240=off;15=on,,
 r,,,InitialisationEEPROM,InitialisationEEPROM: EEPROM initialization (for production),,,b509,0ddc00,value,,UCH,0=no;1=yes,,
 r,,,TimerInputHc,Eingang Schaltuhr: Timer input (block heatdemand),,,b509,0dde00,value,,UCH,0=off;1=on,,
-r,,,FanMinSpeedOperation,Minimum fan speed,,,b509,0ddf00,value,,UIN,,1/min,Fan minimum speed
-r,,,FanMaxSpeedOperation,Maximum fan speed,,,b509,0de000,value,,UIN,,1/min,Fan maximum speed
+r,,,FanMinSpeedOperation,Minimum fan speed,,,b509,0ddf00,value,,UIN,,rpm,Fan minimum speed
+r,,,FanMaxSpeedOperation,Maximum fan speed,,,b509,0de000,value,,UIN,,rpm,Fan maximum speed
 r,,,ExternGasvalve,External gas valve: External solenoid valve,,,b509,0de400,value,,UCH,0=off;1=on,,
 r,,,DCFTimeDate,DCF date/time,,,b509,0de500,vti,,VTI,,,,hda,,HDA,,,
 r,,,HwcSwitch,DHW switch,,,b509,0df303,value,,UCH,0=off;1=on,,Domestic hot water switch
@@ -103,10 +103,10 @@ r,,,AccessoriesOne,d.27 Accessory relay 1,,,b509,0db900,value,,UCH,1=circulation
 w,,install_NOT_YET_CONFIRMED,AccessoriesOne,d.27 Accessory relay 1,,,b509,0eb900,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of accessory relay 1
 r,,,AccessoriesTwo,d.28 Accessory relay 2,,,b509,0dba00,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of accessory relay 2
 w,,install_NOT_YET_CONFIRMED,AccessoriesTwo,d.28 Accessory relay 2,,,b509,0eba00,value,,UCH,1=circulationpump;2=extheatingpump;3=storagechargingpump;4=fluegasflapextractorhood;5=externalgasvalve;6=externalerrormessage;7=solarpump;8=remotecontrol,,Function of accessory relay 2
-r,,,FanSpeedOffsetMin,d.50 Minimum fan speed offset,,,b509,0da700,value,,SIN,,1/min,Fan minimum speed offset
-w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMin,d.50 Minimum fan speed offset,,,b509,0ea700,value,,SIN,,1/min,Fan minimum speed offset
-r,,,FanSpeedOffsetMax,d.51 Maximum fan speed offset,,,b509,0da800,value,,SIN,,1/min,Fan maximum speed offset
-w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMax,d.51 Maximum fan speed offset,,,b509,0ea800,value,,SIN,,1/min,Fan maximum speed offset
+r,,,FanSpeedOffsetMin,d.50 Minimum fan speed offset,,,b509,0da700,value,,SIN,,rpm,Fan minimum speed offset
+w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMin,d.50 Minimum fan speed offset,,,b509,0ea700,value,,SIN,,rpm,Fan minimum speed offset
+r,,,FanSpeedOffsetMax,d.51 Maximum fan speed offset,,,b509,0da800,value,,SIN,,rpm,Fan maximum speed offset
+w,,install_NOT_YET_CONFIRMED,FanSpeedOffsetMax,d.51 Maximum fan speed offset,,,b509,0ea800,value,,SIN,,rpm,Fan maximum speed offset
 r,,,SolPostHeat,d.58 solar function,,,b509,0d7304,value,,UCH,,,special DHW functions0: solar function deactivated (default)1: solar function activated and DHW setpoint minimum 60°C2: solar function activated and DHW setpoint like combi standard (min 35°)3: DHW setpoint minimum 60°C (poti)
 w,,install_NOT_YET_CONFIRMED,SolPostHeat,d.58 solar function,,,b509,0e7304,value,,UCH,,,special DHW functions0: solar function deactivated (default)1: solar function activated and DHW setpoint minimum 60°C2: solar function activated and DHW setpoint like combi standard (min 35°)3: DHW setpoint minimum 60°C (poti)
 r,,,DeactivationsTemplimiter,d.60 Shutdowns by the temp limiter: Number of shutdowns by the safety temperature limiter,,,b509,0d2000,value,,UCH,,,
@@ -136,8 +136,8 @@ r,,,HcStarts,d.82 CH mode starts,,,b509,0d2900,value,,UIN,-100,,Number of CH mod
 r,,,HwcStarts,d.83 DHW mode starts,,,b509,0d2300,value,,UIN,-100,,Number of DHW mode starts
 r,,,HoursTillService,d.84 Hours till service,,,b509,0dac00,value,,UIN,,h,Hours left before service is needed
 w,,install_NOT_YET_CONFIRMED,HoursTillService,d.84 Hours till service,,,b509,0eac00,value,,UIN,,h,Hours left before service is needed
-r,,,AntiCondensValue,d.85 Minimal power to avoid condensation,,,b509,0dec00,value,,UCH,,kW / %,Minimal power to avoid condensation
-w,,install_NOT_YET_CONFIRMED,AntiCondensValue,d.85 Minimal power to avoid condensation,,,b509,0eec00,value,,UCH,,kW / %,Minimal power to avoid condensation
+r,,,AntiCondensValue,d.85 Minimal power to avoid condensation,,,b509,0dec00,value,,UCH,,kW,Minimal power to avoid condensation
+w,,install_NOT_YET_CONFIRMED,AntiCondensValue,d.85 Minimal power to avoid condensation,,,b509,0eec00,value,,UCH,,kW,Minimal power to avoid condensation
 r,,,SpecialAdj,d.88 SpecialAdj,,,b509,0d7604,value,,UCH,,,"switching on threshold for recognition of water tapping0 = 1,5 l/min and no delay, 1 = 3,7 l/min and 2s delay"
 w,,install_NOT_YET_CONFIRMED,SpecialAdj,d.88 SpecialAdj,,,b509,0e7604,value,,UCH,,,"switching on threshold for recognition of water tapping0 = 1,5 l/min and no delay, 1 = 3,7 l/min and 2s delay"
 r,,,DSNOffset,d.93 Hardware ID,,,b509,0d3004,value,,UCH,,,Hardware ID (DSN)
@@ -188,7 +188,7 @@ r,,,WaterpressureVariantSum,WaterpressureVariantSum: Maintenance data,,,b509,0df
 r,,,WaterpressureMeasureCounter,WaterpressureMeasureCounter: Maintenance data,,,b509,0df100,value,,UCH,,,
 r,,,PrAPSCounter,PrAPSCounter: Maintenance data,,,b509,0df200,value,,UCH,,,
 r,,,PrAPSSum,PrAPSSum: Maintenance data,,,b509,0df300,value,,UIN,,s,seconds
-r,,,PrVortexFlowSensorValue,PrVortexFlowSensorValue,,,b509,0df400,value,,SIN,,ADC,Maintenance data
+r,,,PrVortexFlowSensorValue,PrVortexFlowSensorValue,,,b509,0df400,value,,SIN,,,Maintenance data
 r,,,PrEnergySumHc1,PrEnergySumCH1,,,b509,0df500,value,,ULG,,,Maintenance data
 w,,install_NOT_YET_CONFIRMED,PrEnergySumHc1,PrEnergySumCH1,,,b509,0ef500,value,,ULG,,,Maintenance data
 r,,,PrEnergyCountHc1,PrEnergyCountCH1,,,b509,0df600,value,,ULG,,,Maintenance data

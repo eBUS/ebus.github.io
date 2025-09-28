@@ -88,8 +88,8 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 [id_sw>=403]r,,,CompRestartTimer,Kompressorrestsperrzeit: Verzögerung des nächsten Kompressorstartes. Wird nur aktualisiert wenn der Kompressor angefordert wird aber aufgrund der Laufzeitbedingungen nicht anlaufen darf.,,,b509,0dc501,value,,ULG,120,min,Minuten
 [id_sw>=414]r,,,HysteresisTimeDelay,hysteresis_time_delay: defined time delay until backup heater hysteresis becomes valid,,,b509,0de001,value,,UCH,,min,Minuten
 [id_sw>=414]w,,install,HysteresisTimeDelay,hysteresis_time_delay: defined time delay until backup heater hysteresis becomes valid,,,b509,0ee001,value,,UCH,,min,Minuten
-[id_sw>=414]r,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,0de201,value,,UCH,,hW,environment power in higher resolution (100W)
-[id_sw>=414]u,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,29e201,value,,IGN:2,,,,value,,UCH,,hW,environment power in higher resolution (100W)
+[id_sw>=414]r,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,0de201,value,,UCH,10,kW,environment power in higher resolution (100W)
+[id_sw>=414]u,,,ActualEnvironmentPowerFine,ActualEnvironmentPowerFine,,,b509,29e201,value,,IGN:2,,,,value,,UCH,10,kW,environment power in higher resolution (100W)
 [id_sw>=414]r,,,BivalentMode,BivalentMode: reserved for special bivalent setting,,,b509,0de301,value,,UCH,,,
 [id_sw>=414]w,,install,BivalentMode,BivalentMode: reserved for special bivalent setting,,,b509,0ee301,value,,UCH,,,
 [id_sw>=415]r,,,SourceLimitAtMaxFlow,BrineLimitAtMaxFlow: lowest allowed brine temperature to achieve max. flow temperature,,,b509,0de401,value,,SCH,,,

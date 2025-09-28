@@ -3,18 +3,18 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *w,
 *uw,
 *[id_sw],scan,,,,SW
-[id_sw>=401]r,,,EnergyDemandNotReachedDelay,Verzögerung Fehler Wärmebedarf nicht gedeckt: Delay time for not reached temperature,,,b509,0d7b00,value,,UCH,,h,Stunden
+[id_sw>=401]r,,,FlowDemandNotReachedDelay,FlowDemandNotReachedDelay: Delay time for not reached temperature,,,b509,0d7b00,value,,UCH,,h,Stunden
 [id_sw>=401]r,,,HcMaxPreHeating,Max. Voraufheizung: maximum time central heating is released in advance of the first time window (time is adjusted according to current outside temperature),,,b509,0d3800,value,,UCH,-5,min,Minuten
 [id_sw>=401]w,,install,HcMaxPreHeating,Max. Voraufheizung: maximum time central heating is released in advance of the first time window (time is adjusted according to current outside temperature),,,b509,0e3800,value,,UCH,-5,min,Minuten
 [id_sw<=400]r,,,HcMaxPreHeating,Max. Voraufheizung: The heating start before a time window could shifted forwards maximal this time (related to the outside temperature),,,b509,0d3800,value,,UCH,,h,Stunden
 [id_sw<=400]w,,,HcMaxPreHeating,Max. Voraufheizung: The heating start before a time window could shifted forwards maximal this time (related to the outside temperature),,,b509,0e3800,value,,UCH,,h,Stunden
 r,,,StatPowerOn,StatPowerOn,,,b509,0dcc00,value,,UIN,,,
-r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,,
+r,,,StatOperatingHours,StatOperatingHours,,,b509,0dcd00,value,,UIN,,h,Stunden
 r,,,StatMonthOfInstallation,StatMonthOfInstallation,,,b509,0dce00,value,,UCH,,,
 r,,,StatYearOfInstallation,StatYearOfInstallation,,,b509,0dcf00,value,,UCH,,,
 r,,,Stat15MinBusTimeout,Stat15MinBusTimeout,,,b509,0dd000,value,,UCH,,,
 r,,,StatRTOSErrorcode,StatRTOSErrorcode,,,b509,0dd100,value,,UIN,,,
-r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,
+r,,,StatRestarts,StatRestarts,,,b509,0dd200,value,,UIN,,,Anzahl Starts
 r,,,StatRTOSErrorCounter,StatRTOSErrorCounter,,,b509,0dd300,value,,UIN,,,
 r,,,SumFlowSensor,Temperature measured on VF1,,,b509,0d0400,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
 r,,,OutsideTemp,Außentemperatursensor: Outside temperature,,,b509,0d0600,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
@@ -30,7 +30,7 @@ r,,,BoilerMaxPreShutdown,Kesselvorabschaltung: Maximal Boiler preshutdown time,,
 r,,,HcFlowIncrease,Temperaturüberhöhung: Offset added to flow temperature,,,b509,0d3a00,value,,UCH,,K,
 r,,,FrostProtectDelay,Frostschutz-Verzögerung: Delay time of frost protection,,,b509,0d4900,value,,UCH,,h,Stunden
 r,,,HydraulicScheme,Hydraulikplan,,,b509,0d6000,value,,UCH,,,
-r,,,EnergyDemandPercentage,EnergyDemandPercentage: Flow temperature's maximum deviation from setpoint for set delay time,,,b509,0d7e00,value,,UCH,,%,
+r,,,FlowDemandPercentage,FlowDemandPercentage: Flow temperature's maximum deviation from setpoint for set delay time,,,b509,0d7e00,value,,UCH,,%,
 r,,,OtShutdownLimit,"Außentemp. Abschaltgrenze: For outside temperatures higher than this, there is no heat demand generated anymore",,,b509,0d3600,value,,UCH,,°C,Solltemperatur
 w,,,OtShutdownLimit,"Außentemp. Abschaltgrenze: For outside temperatures higher than this, there is no heat demand generated anymore",,,b509,0e3600,value,,UCH,,°C,Solltemperatur
 r,,,FlowTempMin,Min. Vorlauftemp.: For a heat demand the desired flow temperature will at least be this value,,,b509,0d3000,value,,UCH,,°C,Temperatur
