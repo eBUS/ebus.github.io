@@ -84,7 +84,7 @@ jobs:
         ./.github/workflows/genversions.sh ${subdir}/en
         ./.github/workflows/genversions.sh ${subdir}/de
     - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: conversion_result
         path: |
