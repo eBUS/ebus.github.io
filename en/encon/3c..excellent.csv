@@ -38,7 +38,7 @@ r,,,OutsideTemperature,outside temperature,,,4022,08,value,,SIR,10,°C,
 r,,,OptionTemperature,Option temperature,,,4022,1a,value,,SIR,10,°C,
 r,,,FilterStatus,Filter dirty,,,4022,18,value,,UIR,0=no;1=yes,,
 r,,,RelativeHumidity,Relative Humidity,,,4022,20,value,,SIR,10,%,
-r,,,HumidityBoostState,Humidity Boost State,,,4022,21,value,,UIR,0=Error;1=NotInitialized;2=SensorNotActive;3=PowerUpDelay;4=NormalRH;5=BoostRising;6=BoostStable;7=BoostDecending;8=BoostRHLowLevelStable,Pa,
+r,,,HumidityBoostState,Humidity Boost State,,,4022,21,value,,UIR,0=Error;1=NotInitialized;2=SensorNotActive;3=PowerUpDelay;4=NormalRH;5=BoostRising;6=BoostStable;7=BoostDecending;8=BoostRHLowLevelStable,,
 r,,,PressureInlet,Actual inlet pressure,,,4022,14,value,,UIR,10,Pa,
 r,,,PressureExhaust,Actual exhaust pressure,,,4022,15,value,,UIR,10,Pa,
 r,,,EBusSyncGenErrorCount,EBus SyncGen Errors,,,4022,64,value,,UIR,,,
@@ -138,7 +138,7 @@ r,,,ModbusInterface,Modbus Interface,,,4050,41,uir,,UIR,,,,min,,UIR,,,[min:0],ma
 w,,,ModbusInterface,Modbus Interface,,,4080,41,uir,,UIR,,,
 r,,,ModbusSlaveAddress,Modbus Slave Address,,,4050,42,uir,,UIR,,,,min,,UIR,,,[min:1],max,,UIR,,,[max:247],step,,UIR,,,[step:1],default,,UIR,,,[default:11]
 w,,,ModbusSlaveAddress,Modbus Slave Address,,,4080,42,uir,,UIR,,,
-r,,,ModbusSpeed,Modbus Speed,,,4050,43,baud,,UIR,0=_1k2;1=_2k4;2=_4k8;3=_9k6;4=_19k2;5=_38k4;6=_56k;7=_115k,baud,,ign,,IGN:6,,,,default,,UIR,0=_1k2;1=_2k4;2=_4k8;3=_9k6;4=_19k2;5=_38k4;6=_56k;7=_115k,baud,[default:3] - min/max/step fields of enum message omitted
-w,,,ModbusSpeed,Modbus Speed,,,4080,43,baud,,UIR,0=_1k2;1=_2k4;2=_4k8;3=_9k6;4=_19k2;5=_38k4;6=_56k;7=_115k,baud,
+r,,,ModbusSpeed,Modbus Speed,,,4050,43,baud,,UIR,0=_1k2;1=_2k4;2=_4k8;3=_9k6;4=_19k2;5=_38k4;6=_56k;7=_115k,,Baudrate,ign,,IGN:6,,,,default,,UIR,0=_1k2;1=_2k4;2=_4k8;3=_9k6;4=_19k2;5=_38k4;6=_56k;7=_115k,,[default:3] - min/max/step fields of enum message omitted
+w,,,ModbusSpeed,Modbus Speed,,,4080,43,baud,,UIR,0=_1k2;1=_2k4;2=_4k8;3=_9k6;4=_19k2;5=_38k4;6=_56k;7=_115k,,Baudrate
 r,,,ModbusParity,Modbus Parity,,,4050,44,parity,,UIR,0=None;1=Even;2=Odd;3=Unknown,,,ign,,IGN:6,,,,default,,UIR,0=None;1=Even;2=Odd;3=Unknown,,[default:1] - min/max/step fields of enum message omitted
 w,,,ModbusParity,Modbus Parity,,,4080,44,parity,,UIR,0=None;1=Even;2=Odd;3=Unknown,,

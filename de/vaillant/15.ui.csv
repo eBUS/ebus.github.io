@@ -47,8 +47,8 @@ r,,,KeyCodeforConfigMenu,Passwort für das Konfigurationsmenü,,,b509,0d2c00,val
 w,,install,KeyCodeforConfigMenu,Passwort für das Konfigurationsmenü,,,b509,0e2c00,value,,HEX:4,,,
 r,,,TempFailDetectTime,Temperaturfehlererkennung nach,,,b509,0d3300,value,,UCH,,°C,Temperatur
 w,,install,TempFailDetectTime,Temperaturfehlererkennung nach,,,b509,0e3300,value,,UCH,,°C,Temperatur
-r,,,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0d3600,value,,UCH,,,
-w,,install,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0e3600,value,,UCH,,,
+r,,,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0d3600,value,,UCH,,,display contrast
+w,,install,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0e3600,value,,UCH,,,display contrast
 r,,,Time,Uhrzeit,,,b509,0d5f00,value,,VTI,,,Uhrzeit
 r,,,Day,Wochentag,,,b509,0d6000,value,,BDY,,,Wochentag
 r,,,Date,Datum,,,b509,0d6100,value,,HDA:3,,,Datum

@@ -59,7 +59,7 @@ r,,,FlowTempMin,Min. Vorlauftemp.: BMR:Minimum Flow Temperature for circuit,,,b5
 w,,install,FlowTempMin,Min. Vorlauftemp.: BMR:Minimum Flow Temperature for circuit,,,b509,0e3000,value,,UCH,,°C,Temperatur
 r,,,FlowTempDesired,Vorlaufsolltemperatur: BMR:flow temperature that is actually desired by circuit,,,b509,0d4600,value,,D1C,,°C,Temperatur
 w,,,FlowTempDesired,Vorlaufsolltemperatur: BMR:flow temperature that is actually desired by circuit,,,b509,0e4600,value,,D1C,,°C,Temperatur
-u,,,FlowTempDesired,Vorlaufsolltemperatur: BMR:flow temperature that is actually desired by circuit,,,b509,294600,value,,IGN:2,,,,value,,D1C,,°C,Temperatur
+u,,,FlowTempDesired,Vorlaufsolltemperatur: BMR:flow temperature that is actually desired by circuit,,,b509,294600,ign,,IGN:2,,,,value,,D1C,,°C,Temperatur
 r,,,FlowTempMax,Max. Vorlauftemp.: BMR:Maximum Flow Temperature for circuit,,,b509,0d3100,value,,UCH,,°C,Temperatur
 w,,install,FlowTempMax,Max. Vorlauftemp.: BMR:Maximum Flow Temperature for circuit,,,b509,0e3100,value,,UCH,,°C,Temperatur
 r,,,HcMaxPreHeating,"Max. Voraufheizung: Um die Trägheit der Fußbodenheizung zu berücksichtigen, können Sie eine Voraufheizung vor Beginn der programmierten Heizzeit manuell einstellen",,,b509,0d3800,value,,UCH,-5,min,Minuten

@@ -4,195 +4,195 @@ type,circuit,level,name,comment,qq,zz,pbsb,id,*name,part,type,divisor/values,uni
 *w,
 *uw,
 r,,,State,,,,b511,07,energy,,UCH,,,,energy_1,,UIN,,kWh,,onoff,,UCH,0=off;1=on,,,state,,UCH,1=ready;11=error;9=heating;17=cooling;129=heating_water,,
-r,,,YieldHcDay,,,,b51a,05ff3200,value,,IGN:3,,,,value,,UIN,10,kWh,
-r,,,YieldCoolDay,,,,b51a,05ff3201,value,,IGN:3,,,,value,,UIN,10,kWh,
-r,,,YieldHwcDay,,,,b51a,05ff3202,value,,IGN:3,,,,value,,UIN,10,kWh,
-r,,,YieldHcMonth,,,,b51a,05ff320e,value,,IGN:3,,,,value,,UIN,10,kWh,
-r,,,CopHcMonth,,,,b51a,05ff320f,value,,IGN:3,,,,value,,UIN,10,,
-r,,,YieldHc,,,,b51a,05ff3210,value,,IGN:3,,,,value,,UIN,,kWh,
-r,,,CopHc,,,,b51a,05ff3211,value,,IGN:3,,,,value,,UIN,10,,
-r,,,YieldHwcMonth,,,,b51a,05ff3212,value,,IGN:3,,,,value,,UIN,10,kWh,
-r,,,CopHwcMonth,,,,b51a,05ff3213,value,,IGN:3,,,,value,,UIN,10,,
-r,,,YieldHwc,energy yield hot water,,,b51a,05ff3216,value,,IGN:3,,,,value,,ULG,,kWh,
-r,,,CopHwc,,,,b51a,05ff3217,value,,IGN:3,,,,value,,UIN,10,,
-r,,,Hours,operation hours,,,b51a,05ff3240,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,,HoursHc,operation hours heating,,,b51a,05ff3241,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,,HoursCool,operation hours cooling,,,b51a,05ff3243,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,,HoursHwc,operation hours hot water,,,b51a,05ff3244,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,,TargetFlowTemp,target flow temperature,,,b51a,05ff321f,value,,IGN:3,,,,value,,D2C,,°C,temperature
-r,,,FlowTemp,current flow temperature,,,b51a,05ff3220,value,,IGN:3,,,,value,,D2C,,°C,temperature
-r,,,EnergyIntegral,current energy integral,,,b51a,05ff3221,value,,IGN:3,,,,value,,SIN,,°min,
-r,,,CurrentYieldPower,current yielded energy from the environment,,,b51a,05ff3223,value,,IGN:3,,,,value,,SCH,10,kW,
-r,,,CurrentConsumedPower,current power consumption,,,b51a,05ff3224,value,,IGN:3,,,,value,,SCH,10,kW,
-r,,,CurrentCompressorUtil,current compressor utilization,,,b51a,05ff3225,value,,IGN:3,,,,value,,SCH,,%,
-r,,,AirIntakeTemp,air intake temperature,,,b51a,05ff3226,value,,IGN:3,,,,value,,D2C,,°C,temperature
-r,,,TargetTempHc,heat circuit target temperature,,,b51a,05ff321c,value,,IGN:3,,,,value,,D2C,,°C,
-r,,,SourceTempOutput,,,,b51a,05ff3227,value,,IGN:3,,,,value,,D2C,,°C,
-r,,,BuildingCircuitFlow,,,,b51a,05ff323c,value,,IGN:3,,,,value,,UIN,,l/h,
-r,,,FlowPressure,,,,b51a,05ff323d,value,,IGN:3,,,,value,,D2C,4,,
-r,,,SourcePressure,,,,b51a,05ff323e,value,,IGN:3,,,,value,,D2C,4,,
-r,,,TotalEnergyUsage,,,,b51a,05ff324d,value,,IGN:3,,,,value,,UIN,,kWh,
-r,,,CompressorHours,,,,b51a,05ff3400,value,,IGN:3,,,,value,,UIN,,h,hours
-u,,,CompressorHours,,,,b51a,05e53400,value,,IGN:3,,,,value,,UIN,,h,hours
-r,,,CompressorStarts,,,,b51a,05ff3401,value,,IGN:3,,,,value,,UIN,,,
-u,,,CompressorStarts,,,,b51a,05e53401,value,,IGN:3,,,,value,,UIN,,,
-r,,,BuildingPumpHours,,,,b51a,05ff3402,value,,IGN:3,,,,value,,UIN,,h,hours
-u,,,BuildingPumpHours,,,,b51a,05e53402,value,,IGN:3,,,,value,,UIN,,h,hours
-r,,,BuildingPumpStarts,,,,b51a,05ff3403,value,,IGN:3,,,,value,,UIN,,,
-u,,,BuildingPumpStarts,,,,b51a,05e53403,value,,IGN:3,,,,value,,UIN,,,
-r,,,FourWayValveHours,,,,b51a,05ff3406,value,,IGN:3,,,,value,,UIN,,h,hours
-u,,,FourWayValveHours,,,,b51a,05e53406,value,,IGN:3,,,,value,,UIN,,h,hours
-r,,,FourWayValveSwitches,,,,b51a,05ff3407,value,,IGN:3,,,,value,,UIN,,,
-u,,,FourWayValveSwitches,,,,b51a,05e53407,value,,IGN:3,,,,value,,UIN,,,
-r,,,EEVSteps,,,,b51a,05ff340d,value,,IGN:3,,,,value,,UIN,,,
-u,,,EEVSteps,,,,b51a,05e5340d,value,,IGN:3,,,,value,,UIN,,,
-r,,,FourWayValveSwitchingOperations,,,,b51a,05ff3430,value,,IGN:3,,,,value,,UIN,,,
-u,,,FourWayValveSwitchingOperations,,,,b51a,05e53430,value,,IGN:3,,,,value,,UIN,,,
-r,,,Fan1Hours,,,,b51a,05ff3451,value,,IGN:3,,,,value,,UIN,,h,hours
-u,,,Fan1Hours,,,,b51a,05e53451,value,,IGN:3,,,,value,,UIN,,h,hours
-r,,,Fan1Starts,,,,b51a,05ff3452,value,,IGN:3,,,,value,,UIN,,,
-u,,,Fan1Starts,,,,b51a,05e53452,value,,IGN:3,,,,value,,UIN,,,
-r,,,Fan2Hours,,,,b51a,05ff345e,value,,IGN:3,,,,value,,UIN,,h,hours
-u,,,Fan2Hours,,,,b51a,05e5345e,value,,IGN:3,,,,value,,UIN,,h,hours
-r,,,Fan2Starts,,,,b51a,05ff345f,value,,IGN:3,,,,value,,UIN,,,
-u,,,Fan2Starts,,,,b51a,05e5345f,value,,IGN:3,,,,value,,UIN,,,
-r,,,HeatCurve,,,,b51a,05ff348f352d,value,,IGN:3,,,,ign,,IGN:3,,,,bcd,,BCD,10,,heat curve 0.1 to 4.0
-r,,,SummerSwitchOffTemp,,,,b51a,05ff348f352e,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Switch-off temperature summer (°C)
-r,,,HcBivalencePoint,,,,b51a,05ff348f352f,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Central heating bivalence point (°C)
-r,,,HwcBivalencePoint,,,,b51a,05ff348f3530,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Bivalence point domestic hot water (°C)
-r,,,MaxFlowTemp,,,,b51a,05ff348f3532,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Maximum flow temperature (°C)
-r,,,MinFlowTemp,,,,b51a,05ff348f3533,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Minimum flow temperature (°C)
-r,,,HcModeActive,,,,b51a,05ff348f3534,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=no;1=yes,,Central heating mode active (yes/no)
-r,,,HwcModeActive,,,,b51a,05ff348f3535,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=no;1=yes,,Domestic hot water mode active (yes/no)
-r,,,HwcChargeHysteresis,,,,b51a,05ff348f3539,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,K,Hysteresis Hwc charging
-r,,,ImmersionHeaterMode,,,,b51a,05ff34c4331e,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=off;1=on,,Immersion heater mode (on/off)
-r,,,CompressorHysteresisHc,,,,b51a,05ff34f83443,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,K,Compressor hysteresis central heating
-r,,,CompressorHysteresisCooling,,,,b51a,05ff3486353f,value,,IGN:3,,,,ign,,IGN:3,,K,,d2c,,D2C,,,Compressor hysteresis cooling
-r,,,HwcMode,,,,b51a,05ff34523444,value,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=eco;1=normal;2=balance,,Domestic hot water mod (eco/normal/balance)
-r,,,TargetTempHwc,,,,b51a,05ff34c63207,value,,IGN:3,,,,ign,,IGN:3,,,,d2c,,D2C,,°C,Target Hwc temperature (°C)
-r,,,YieldTotal,,,,b516,1801,value,,IGN:1,,,,value,,UIN,,kWh,
-r,,,ConsumptionTotal,,,,b516,1802,value,,IGN:1,,,,value,,UIN,,kWh,
-r,,,YieldThisYear1,,,,b516,1a010100,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear2,,,,b516,1a010200,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear3,,,,b516,1a010300,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear4,,,,b516,1a010400,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear5,,,,b516,1a010500,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear6,,,,b516,1a010600,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear7,,,,b516,1a010700,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear8,,,,b516,1a010800,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear9,,,,b516,1a010900,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear10,,,,b516,1a010a00,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear11,,,,b516,1a010b00,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,YieldThisYear12,,,,b516,1a010c00,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear1,,,,b516,1a020100,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear2,,,,b516,1a020200,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear3,,,,b516,1a020300,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear4,,,,b516,1a020400,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear5,,,,b516,1a020500,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear6,,,,b516,1a020600,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear7,,,,b516,1a020700,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear8,,,,b516,1a020800,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear9,,,,b516,1a020900,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear10,,,,b516,1a020a00,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear11,,,,b516,1a020b00,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
-r,,,ConsumptionThisYear12,,,,b516,1a020c00,value,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldHcDay,,,,b51a,05ff3200,ign,,IGN:3,,,,value,,UIN,10,kWh,
+r,,,YieldCoolDay,,,,b51a,05ff3201,ign,,IGN:3,,,,value,,UIN,10,kWh,
+r,,,YieldHwcDay,,,,b51a,05ff3202,ign,,IGN:3,,,,value,,UIN,10,kWh,
+r,,,YieldHcMonth,,,,b51a,05ff320e,ign,,IGN:3,,,,value,,UIN,10,kWh,
+r,,,CopHcMonth,,,,b51a,05ff320f,ign,,IGN:3,,,,value,,UIN,10,,
+r,,,YieldHc,,,,b51a,05ff3210,ign,,IGN:3,,,,value,,UIN,,kWh,
+r,,,CopHc,,,,b51a,05ff3211,ign,,IGN:3,,,,value,,UIN,10,,
+r,,,YieldHwcMonth,,,,b51a,05ff3212,ign,,IGN:3,,,,value,,UIN,10,kWh,
+r,,,CopHwcMonth,,,,b51a,05ff3213,ign,,IGN:3,,,,value,,UIN,10,,
+r,,,YieldHwc,energy yield hot water,,,b51a,05ff3216,ign,,IGN:3,,,,value,,ULG,,kWh,
+r,,,CopHwc,,,,b51a,05ff3217,ign,,IGN:3,,,,value,,UIN,10,,
+r,,,Hours,operation hours,,,b51a,05ff3240,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,,HoursHc,operation hours heating,,,b51a,05ff3241,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,,HoursCool,operation hours cooling,,,b51a,05ff3243,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,,HoursHwc,operation hours hot water,,,b51a,05ff3244,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,,TargetFlowTemp,target flow temperature,,,b51a,05ff321f,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,,FlowTemp,current flow temperature,,,b51a,05ff3220,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,,EnergyIntegral,current energy integral,,,b51a,05ff3221,ign,,IGN:3,,,,value,,SIN,,°min,
+r,,,CurrentYieldPower,current yielded energy from the environment,,,b51a,05ff3223,ign,,IGN:3,,,,value,,SCH,10,kW,
+r,,,CurrentConsumedPower,current power consumption,,,b51a,05ff3224,ign,,IGN:3,,,,value,,SCH,10,kW,
+r,,,CurrentCompressorUtil,current compressor utilization,,,b51a,05ff3225,ign,,IGN:3,,,,value,,SCH,,%,
+r,,,AirIntakeTemp,air intake temperature,,,b51a,05ff3226,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,,TargetTempHc,heat circuit target temperature,,,b51a,05ff321c,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,,SourceTempOutput,,,,b51a,05ff3227,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,,BuildingCircuitFlow,,,,b51a,05ff323c,ign,,IGN:3,,,,value,,UIN,,l/h,
+r,,,FlowPressure,,,,b51a,05ff323d,ign,,IGN:3,,,,value,,D2C,4,,
+r,,,SourcePressure,,,,b51a,05ff323e,ign,,IGN:3,,,,value,,D2C,4,,
+r,,,TotalEnergyUsage,,,,b51a,05ff324d,ign,,IGN:3,,,,value,,UIN,,kWh,
+r,,,CompressorHours,,,,b51a,05ff3400,ign,,IGN:3,,,,value,,UIN,,h,hours
+u,,,CompressorHours,,,,b51a,05e53400,ign,,IGN:3,,,,value,,UIN,,h,hours
+r,,,CompressorStarts,,,,b51a,05ff3401,ign,,IGN:3,,,,value,,UIN,,,
+u,,,CompressorStarts,,,,b51a,05e53401,ign,,IGN:3,,,,value,,UIN,,,
+r,,,BuildingPumpHours,,,,b51a,05ff3402,ign,,IGN:3,,,,value,,UIN,,h,hours
+u,,,BuildingPumpHours,,,,b51a,05e53402,ign,,IGN:3,,,,value,,UIN,,h,hours
+r,,,BuildingPumpStarts,,,,b51a,05ff3403,ign,,IGN:3,,,,value,,UIN,,,
+u,,,BuildingPumpStarts,,,,b51a,05e53403,ign,,IGN:3,,,,value,,UIN,,,
+r,,,FourWayValveHours,,,,b51a,05ff3406,ign,,IGN:3,,,,value,,UIN,,h,hours
+u,,,FourWayValveHours,,,,b51a,05e53406,ign,,IGN:3,,,,value,,UIN,,h,hours
+r,,,FourWayValveSwitches,,,,b51a,05ff3407,ign,,IGN:3,,,,value,,UIN,,,
+u,,,FourWayValveSwitches,,,,b51a,05e53407,ign,,IGN:3,,,,value,,UIN,,,
+r,,,EEVSteps,,,,b51a,05ff340d,ign,,IGN:3,,,,value,,UIN,,,
+u,,,EEVSteps,,,,b51a,05e5340d,ign,,IGN:3,,,,value,,UIN,,,
+r,,,FourWayValveSwitchingOperations,,,,b51a,05ff3430,ign,,IGN:3,,,,value,,UIN,,,
+u,,,FourWayValveSwitchingOperations,,,,b51a,05e53430,ign,,IGN:3,,,,value,,UIN,,,
+r,,,Fan1Hours,,,,b51a,05ff3451,ign,,IGN:3,,,,value,,UIN,,h,hours
+u,,,Fan1Hours,,,,b51a,05e53451,ign,,IGN:3,,,,value,,UIN,,h,hours
+r,,,Fan1Starts,,,,b51a,05ff3452,ign,,IGN:3,,,,value,,UIN,,,
+u,,,Fan1Starts,,,,b51a,05e53452,ign,,IGN:3,,,,value,,UIN,,,
+r,,,Fan2Hours,,,,b51a,05ff345e,ign,,IGN:3,,,,value,,UIN,,h,hours
+u,,,Fan2Hours,,,,b51a,05e5345e,ign,,IGN:3,,,,value,,UIN,,h,hours
+r,,,Fan2Starts,,,,b51a,05ff345f,ign,,IGN:3,,,,value,,UIN,,,
+u,,,Fan2Starts,,,,b51a,05e5345f,ign,,IGN:3,,,,value,,UIN,,,
+r,,,HeatCurve,,,,b51a,05ff348f352d,ign,,IGN:3,,,,ign,,IGN:3,,,,bcd,,BCD,10,,heat curve 0.1 to 4.0
+r,,,SummerSwitchOffTemp,,,,b51a,05ff348f352e,ign,,IGN:3,,,,ign,,IGN:3,,,,temp,,D2C,,°C,Switch-off temperature summer
+r,,,HcBivalencePoint,,,,b51a,05ff348f352f,ign,,IGN:3,,,,ign,,IGN:3,,,,temp,,D2C,,°C,Central heating bivalence point
+r,,,HwcBivalencePoint,,,,b51a,05ff348f3530,ign,,IGN:3,,,,ign,,IGN:3,,,,temp,,D2C,,°C,Bivalence point domestic hot water
+r,,,MaxFlowTemp,,,,b51a,05ff348f3532,ign,,IGN:3,,,,ign,,IGN:3,,,,temp,,D2C,,°C,Maximum flow temperature
+r,,,MinFlowTemp,,,,b51a,05ff348f3533,ign,,IGN:3,,,,ign,,IGN:3,,,,temp,,D2C,,°C,Minimum flow temperature
+r,,,HcModeActive,,,,b51a,05ff348f3534,ign,,IGN:3,,,,ign,,IGN:3,,,,yesno,,UCH,0=no;1=yes,,Central heating mode active
+r,,,HwcModeActive,,,,b51a,05ff348f3535,ign,,IGN:3,,,,ign,,IGN:3,,,,yesno,,UCH,0=no;1=yes,,Domestic hot water mode active
+r,,,HwcChargeHysteresis,,,,b51a,05ff348f3539,ign,,IGN:3,,,,ign,,IGN:3,,,,calibration,,D2C,,K,Hysteresis Hwc charging
+r,,,ImmersionHeaterMode,,,,b51a,05ff34c4331e,ign,,IGN:3,,,,ign,,IGN:3,,,,onoff,,UCH,0=off;1=on,,Immersion heater mode
+r,,,CompressorHysteresisHc,,,,b51a,05ff34f83443,ign,,IGN:3,,,,ign,,IGN:3,,,,calibration,,D2C,,K,Compressor hysteresis central heating
+r,,,CompressorHysteresisCooling,,,,b51a,05ff3486353f,ign,,IGN:3,,,,ign,,IGN:3,,,,calibration,,D2C,,K,Compressor hysteresis cooling
+r,,,HwcMode,,,,b51a,05ff34523444,ign,,IGN:3,,,,ign,,IGN:3,,,,uch,,UCH,0=eco;1=normal;2=balance,,Domestic hot water mod (eco/normal/balance)
+r,,,TargetTempHwc,,,,b51a,05ff34c63207,ign,,IGN:3,,,,ign,,IGN:3,,,,temp,,D2C,,°C,Target Hwc temperature
+r,,,YieldTotal,,,,b516,1801,ign,,IGN:1,,,,value,,UIN,,kWh,
+r,,,ConsumptionTotal,,,,b516,1802,ign,,IGN:1,,,,value,,UIN,,kWh,
+r,,,YieldThisYear1,,,,b516,1a010100,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear2,,,,b516,1a010200,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear3,,,,b516,1a010300,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear4,,,,b516,1a010400,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear5,,,,b516,1a010500,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear6,,,,b516,1a010600,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear7,,,,b516,1a010700,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear8,,,,b516,1a010800,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear9,,,,b516,1a010900,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear10,,,,b516,1a010a00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear11,,,,b516,1a010b00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,YieldThisYear12,,,,b516,1a010c00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear1,,,,b516,1a020100,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear2,,,,b516,1a020200,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear3,,,,b516,1a020300,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear4,,,,b516,1a020400,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear5,,,,b516,1a020500,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear6,,,,b516,1a020600,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear7,,,,b516,1a020700,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear8,,,,b516,1a020800,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear9,,,,b516,1a020900,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear10,,,,b516,1a020a00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear11,,,,b516,1a020b00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
+r,,,ConsumptionThisYear12,,,,b516,1a020c00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
 w,,service,EnableTestEEVPosition,read EEV position,,,b514,0515,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestEEVPosition,EEV position,,,b514,0515,value,,IGN:2,,,,value,,UCH,,%,T.0.21
+r,,service,TestEEVPosition,EEV position,,,b514,0515,ign,,IGN:2,,,,value,,UCH,,%,T.0.21
 w,,service,EnableTestCompressorExitTemp,read compressor outlet temperature,,,b514,0537,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestCompressorExitTemp,compressor outlet temperature,,,b514,0537,value,,IGN:2,,,,value,,SIN,10,°C,T.0.55
+r,,service,TestCompressorExitTemp,compressor outlet temperature,,,b514,0537,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.55
 w,,service,EnableTestCompressorIntakeTemp,read compressor inlet temperature,,,b514,0538,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestCompressorInletTemp,compressor inlet temperature,,,b514,0538,value,,IGN:2,,,,value,,SIN,10,°C,T.0.56
+r,,service,TestCompressorInletTemp,compressor inlet temperature,,,b514,0538,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.56
 w,,service,EnableTestWaterThroughput,read current heating water flow rate,,,b514,052b,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestWaterThroughput,current heating water flow rate,,,b514,052b,value,,IGN:2,,,,value,,UIN,,l/h,T.0.45
+r,,service,TestWaterThroughput,current heating water flow rate,,,b514,052b,ign,,IGN:2,,,,value,,UIN,,l/h,T.0.45
 w,,service,EnableTestCompressorSpeed,read compressor speed,,,b514,055d,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestCompressorSpeed,compressor speed,,,b514,055d,value,,IGN:2,,,,value,,SIN,10,U/s,T.0.93
-r,,service,TestBuildingPumpPower,building pump power,,,b514,0501,value,,IGN:2,,,,value,,UCH,,%,T.0.01
-r,,service,TestFan1,fan 1,,,b514,0511,value,,IGN:2,,,,value,,UCH,,%,T.0.02
-r,,service,TestFan2,fan 2,,,b514,0512,value,,IGN:2,,,,value,,UCH,,%,T.0.02
-r,,service,TestCondensateTrayHeater,condensate tray heater,,,b514,0513,value,,IGN:2,,,,value,,UCH,0=off;1=on,,T.0.19
-r,,service,TestFourWayValve,4 way valve,,,b514,0514,value,,IGN:2,,,,value,,UCH,0=off;1=on,,T.0.20
-r,,service,TestHeatingCoilCompressor,heating coil compressor,,,b514,0517,value,,IGN:2,,,,value,,UCH,0=off;1=on,,T.0.23
+r,,service,TestCompressorSpeed,compressor speed,,,b514,055d,ign,,IGN:2,,,,value,,SIN,10,U/s,T.0.93
+r,,service,TestBuildingPumpPower,building pump power,,,b514,0501,ign,,IGN:2,,,,value,,UCH,,%,T.0.01
+r,,service,TestFan1,fan 1,,,b514,0511,ign,,IGN:2,,,,value,,UCH,,%,T.0.02
+r,,service,TestFan2,fan 2,,,b514,0512,ign,,IGN:2,,,,value,,UCH,,%,T.0.02
+r,,service,TestCondensateTrayHeater,condensate tray heater,,,b514,0513,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,T.0.19
+r,,service,TestFourWayValve,4 way valve,,,b514,0514,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,T.0.20
+r,,service,TestHeatingCoilCompressor,heating coil compressor,,,b514,0517,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,T.0.23
 w,,service,EnableTestFlowTemp,read flow temperature,,,b514,0528,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestFlowTemp,flow temperature,,,b514,0528,value,,IGN:2,,,,value,,SIN,10,°C,T.0.40
+r,,service,TestFlowTemp,flow temperature,,,b514,0528,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.40
 w,,service,EnableTestReturnTemp,read return temperature,,,b514,0529,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestReturnTemp,return temperature,,,b514,0529,value,,IGN:2,,,,value,,SIN,10,°C,T.0.41
-r,,service,TestBuildingWaterPress,building water pressure,,,b514,052a,value,,IGN:2,,,,value,,UIN,10,bar,T.0.42
-r,,service,TestAirIntakeTemp,air intake temperature,,,b514,0530,value,,IGN:2,,,,value,,SIN,10,°C,T.0.48
-r,,service,TestEEVOutletTemp,EEV outlet temperature,,,b514,0539,value,,IGN:2,,,,value,,SIN,10,°C,T.0.57
-r,,service,TestCondensorOutletTemp,condensor outlet temperature,,,b514,053b,value,,IGN:2,,,,value,,SIN,10,°C,T.0.59
+r,,service,TestReturnTemp,return temperature,,,b514,0529,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.41
+r,,service,TestBuildingWaterPress,building water pressure,,,b514,052a,ign,,IGN:2,,,,value,,UIN,10,bar,T.0.42
+r,,service,TestAirIntakeTemp,air intake temperature,,,b514,0530,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.48
+r,,service,TestEEVOutletTemp,EEV outlet temperature,,,b514,0539,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.57
+r,,service,TestCondensorOutletTemp,condensor outlet temperature,,,b514,053b,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.59
 w,,service,EnableTestHighPress,read high pressure,,,b514,053f,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestHighPress,high pressure,,,b514,053f,value,,IGN:2,,,,value,,SIN,10,bar,T.0.63
-r,,service,TestLowPress,low pressure,,,b514,0540,value,,IGN:2,,,,value,,SIN,10,bar,T.0.64
-r,,service,TestHighPressureSwitch,high pressure switch,,,b514,0543,value,,IGN:2,,,,value,,UCH,0=open;1=close,,T.0.67
+r,,service,TestHighPress,high pressure,,,b514,053f,ign,,IGN:2,,,,value,,SIN,10,bar,T.0.63
+r,,service,TestLowPress,low pressure,,,b514,0540,ign,,IGN:2,,,,value,,SIN,10,bar,T.0.64
+r,,service,TestHighPressureSwitch,high pressure switch,,,b514,0543,ign,,IGN:2,,,,value,,UCH,0=open;1=close,,T.0.67
 w,,service,EnableTestEvaporationTemp,read evaporation temperature,,,b514,0555,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestEvaporationTemp,evaporation temperature,,,b514,0555,value,,IGN:2,,,,value,,SIN,10,°C,T.0.85
+r,,service,TestEvaporationTemp,evaporation temperature,,,b514,0555,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.85
 w,,service,EnableTestCondensateTemp,read condensate temperature,,,b514,0556,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestCondensateTemp,condensate temperature,,,b514,0556,value,,IGN:2,,,,value,,SIN,10,°C,T.0.86
-r,,service,TestOverheatingTargetValue,overheating target value,,,b514,0557,value,,IGN:2,,,,value,,SIN,10,K,T.0.87
-r,,service,TestOverheatingActualValue,overheating current value,,,b514,0558,value,,IGN:2,,,,value,,SIN,10,K,T.0.88
-r,,service,TestSubcoolingTargetValue,sub cooling target value,,,b514,0559,value,,IGN:2,,,,value,,SIN,10,K,T.0.89
-r,,service,TestSubcoolingActualValue,sub cooling current value,,,b514,055a,value,,IGN:2,,,,value,,SIN,10,K,T.0.90
-r,,service,TestTempSwitchCompressorOutlet,temperature switch compressor outlet,,,b514,057b,value,,IGN:2,,,,value,,UCH,0=open;1=close,,T.0.123
-r,,service,TestPrioritySwitchingValve,priority switch valve WW,,,b514,0502,value,,IGN:2,,,,value,,UCH,0=heat;1=water,,T.1.02
-r,,service,TestCylinderTemp,storage temperature,,,b514,052c,value,,IGN:2,,,,value,,SIN,10,°C,T.1.44
-r,,service,TestLockoutContactS20,lockout contact S20,,,b514,052e,value,,IGN:2,,,,value,,UCH,0=close;1=open,,T.1.46
-r,,service,TestOutdoorTemp,outside temperature,,,b514,0545,value,,IGN:2,,,,value,,SIN,10,°C,T.1.69
-r,,service,TestSystemTemp,system temperature,,,b514,0546,value,,IGN:2,,,,value,,SIN,10,°C,T.1.70
-r,,service,TestDCFStatus,DCF status,,,b514,0547,value,,IGN:2,,,,value,,UCH,0=nosignal;1=ok;2=sync;3=valid,,T.1.71
-r,,service,TestLockoutContactS21,lockout contact S21,,,b514,0548,value,,IGN:2,,,,value,,UCH,0=close;1=open,,T.1.72
-r,,service,TestMA1Output,MA1 output,,,b514,0577,value,,IGN:2,,,,value,,UCH,0=off;1=on,,T.1.119
-r,,service,TestImmersionHeaterSafetyCutOut,STB heater,,,b514,057c,value,,IGN:2,,,,value,,UCH,0=close;1=open,,T.1.124
-r,,service,TestMIInput,ME input,,,b514,057d,value,,IGN:2,,,,value,,SIN,,,T.1.125
-r,,service,TestMO2Output,MA2 output,,,b514,057e,value,,IGN:2,,,,value,,UCH,0=off;1=on,,T.1.126
-r,,service,TestMO3Output,MA3 output,,,b514,057f,value,,IGN:2,,,,value,,UCH,0=off;1=on,,T.1.127
-r,,service,TestCondensorInletTemp,condensor inlet temperature,,,b514,0581,value,,IGN:2,,,,value,,SIN,10,°C,
-r,,service,TestFlowTempImmersionHeater,Vorlauftemperatur Heizstab,,,b514,0582,value,,IGN:2,,,,value,,SIN,10,°C,T1.130
+r,,service,TestCondensateTemp,condensate temperature,,,b514,0556,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.86
+r,,service,TestOverheatingTargetValue,overheating target value,,,b514,0557,ign,,IGN:2,,,,value,,SIN,10,K,T.0.87
+r,,service,TestOverheatingActualValue,overheating current value,,,b514,0558,ign,,IGN:2,,,,value,,SIN,10,K,T.0.88
+r,,service,TestSubcoolingTargetValue,sub cooling target value,,,b514,0559,ign,,IGN:2,,,,value,,SIN,10,K,T.0.89
+r,,service,TestSubcoolingActualValue,sub cooling current value,,,b514,055a,ign,,IGN:2,,,,value,,SIN,10,K,T.0.90
+r,,service,TestTempSwitchCompressorOutlet,temperature switch compressor outlet,,,b514,057b,ign,,IGN:2,,,,value,,UCH,0=open;1=close,,T.0.123
+r,,service,TestPrioritySwitchingValve,priority switch valve WW,,,b514,0502,ign,,IGN:2,,,,value,,UCH,0=heat;1=water,,T.1.02
+r,,service,TestCylinderTemp,storage temperature,,,b514,052c,ign,,IGN:2,,,,value,,SIN,10,°C,T.1.44
+r,,service,TestLockoutContactS20,lockout contact S20,,,b514,052e,ign,,IGN:2,,,,value,,UCH,0=close;1=open,,T.1.46
+r,,service,TestOutdoorTemp,outside temperature,,,b514,0545,ign,,IGN:2,,,,value,,SIN,10,°C,T.1.69
+r,,service,TestSystemTemp,system temperature,,,b514,0546,ign,,IGN:2,,,,value,,SIN,10,°C,T.1.70
+r,,service,TestDCFStatus,DCF status,,,b514,0547,ign,,IGN:2,,,,value,,UCH,0=nosignal;1=ok;2=sync;3=valid,,T.1.71
+r,,service,TestLockoutContactS21,lockout contact S21,,,b514,0548,ign,,IGN:2,,,,value,,UCH,0=close;1=open,,T.1.72
+r,,service,TestMA1Output,MA1 output,,,b514,0577,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,T.1.119
+r,,service,TestImmersionHeaterSafetyCutOut,STB heater,,,b514,057c,ign,,IGN:2,,,,value,,UCH,0=close;1=open,,T.1.124
+r,,service,TestMIInput,ME input,,,b514,057d,ign,,IGN:2,,,,value,,SIN,,,T.1.125
+r,,service,TestMO2Output,MA2 output,,,b514,057e,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,T.1.126
+r,,service,TestMO3Output,MA3 output,,,b514,057f,ign,,IGN:2,,,,value,,UCH,0=off;1=on,,T.1.127
+r,,service,TestCondensorInletTemp,condensor inlet temperature,,,b514,0581,ign,,IGN:2,,,,value,,SIN,10,°C,
+r,,service,TestFlowTempImmersionHeater,Vorlauftemperatur Heizstab,,,b514,0582,ign,,IGN:2,,,,value,,SIN,10,°C,T1.130
 w,,service,EnableTestEEVTemp,read EEV temperature,,,b514,053b,ignore,,HEX:3,=000000,,,value,,HEX:3,,,
-r,,service,TestEEVTemp,EEV temperature,,,b514,053b000000,value,,IGN:2,,,,ign,,IGN:2,,,,sin,,SIN,10,°C,
+r,,service,TestEEVTemp,EEV temperature,,,b514,053b000000,ign,,IGN:2,,,,ign,,IGN:2,,,,sin,,SIN,10,°C,
 w,,service,EnableiveMonitorMain,enable live monitor read status,,,b503,0003,
 u,,service,LiveMonitorMain,live monitor status,71,,b503,0003,status,,UCH,57=Controller_starting;244=Standby;245=Supply_on;246=Heating_Flow_ok;247=Heating_temperature_self_test;248=Heating_Start;250=Heating_Fan_on;252=EEV_switch;253=Compressor_starting;254=Heating_compressor_on;0=Compressor_off;2=Compressor_coast_down;3=Deicing_start;4=Deicing;5=Deicing_end;18=Cooling_Flow_on;20=Cooling_temperature_self_test;21=Cooling_starting;23=Cooling_Fan_on;19=Cooling_Flow_ok;25=Cooling_EEV;26=Cooling_compressor_starting;27=Cooling_compressor_on;29=Cooling_ending;41=Start_condition_not_met;87=Device_error;68=Flow_error_in_distribution_system,,,function,,UCH,1=Heating;2=Cooling,,
-r,,service,LiveMonitorDesiredSupplyTemp,desired supply temperature,,,b51a,0500321f,value,,IGN:3,,,,value,,D2C,,°C,temperature
-r,,service,LiveMonitorCurrentSupplyTemp,current supply temperature,,,b51a,05003220,value,,IGN:3,,,,value,,D2C,,°C,temperature
-r,,service,LiveMonitorCurrentYieldPower,current power generated,,,b51a,05003223,value,,IGN:3,,,,value,,UIN,10,kW,
-r,,service,LiveMonitorCurrentConsumedPower,current power consumption,,,b51a,05003224,value,,IGN:3,,,,value,,UIN,10,kW,
-r,,service,LiveMonitorCurrentCompressorUtil,compressor modulation,,,b51a,05003225,value,,IGN:3,,,,value,,SCH,,%,
-r,,service,LiveMonitorAirIntakeTemp,air intake temperature,,,b51a,05003226,value,,IGN:3,,,,value,,D2C,,°C,temperature
-r,,install,StatCompressorHours,compressor hours,,,b51a,05b43400,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,install,StatCompressorStarts,compressor starts,,,b51a,05b43401,value,,IGN:3,,,,value,,UIN,,,
-r,,install,StatBuildingPumpHours,building pump hours,,,b51a,05b43402,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,install,StatBuildingPumpStarts,building pump starts,,,b51a,05b43403,value,,IGN:3,,,,value,,UIN,,,
-r,,install,StatFourWayValveHours,4 way valve hours,,,b51a,05073406,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,install,StatFourWayValveSwitchingOperations,4 way valve switching operations,,,b51a,05363407,value,,IGN:3,,,,value,,UIN,,,
-r,,install,StatFan1Hours,fan 1 hours,,,b51a,053c3451,value,,IGN:3,,,,value,,ULG,,h,hours
-r,,install,StatFan1Starts,fan 1 starts,,,b51a,05d63452,value,,IGN:3,,,,value,,UIN,,,
-r,,install,StatEEVSteps,EEV steps,,,b51a,05e4340d,value,,IGN:3,,,,value,,UIN,,,
-r,,,RunDataCompressorSpeed,,,,b509,5402000d0a,value,,IGN:4,,,,value,,EXP,,rps,
-r,,,RunDataEEVPositionAbs,(EEV Position in different scale?),,,b509,540200280a,value,,IGN:4,,,,value,,UIN,,,
-r,,,RunDataFan1Speed,,,,b509,540200470a,value,,IGN:4,,,,value,,EXP,,rpm,
-r,,,RunDataFan2Speed,,,,b509,540200490a,value,,IGN:4,,,,value,,EXP,,rpm,
-r,,,RunDataStatuscode,,,,b509,540200530d,value,,IGN:4,,,,value,,UIN,34=Frost_protection;100=Standby;101=Heating_Compressor_shutdown;102=Heating_Compressor_blocked;103=Heating_Prerun;104=Heating_Compressor_active;107=Heating_Overrun;111=Cooling_Compressor_shutdown;112=Cooling_Compressor_blocked;113=Cooling_Prerun;114=Cooling_Compressor_active;117=Cooling_Overrun;125=Heating_Immersion_heater_active;132=Warm_Water_Compressor_blocked;133=Warm_Water_Prerun;134=Warm_Water_Compressor_active;135=Warm_Water_Immersion_Heater_active;137=Warm_Water_Overrun;141=Heating_Immersion_Heater_shutdown;142=Heating_Immersion_Heater_blocked;151=Warm_Water_Immersion_Heater_shutdown;152=Warm_Water_Immersion_Heater_blocked;202=Air_purging_program_active;240=Compressor_oil_heating_activated;252=Fan_1_blocked;255=Fan_1_air_inlet_too_high;256=Fan_1_air_inlet_too_low;260=Fan_2_blocked;275=Building_circuit_flow_too_low;277=Building_circuit_pump_fault;280=Frequency_converter_fault_Compressor;281=Frequency_converter_fault_Mains_voltage;282=Frequency_converter_fault_Overheating;283=Deicing_time_too_long;284=Deicing_flow_temperature_too_low;285=Compressor_outlet_temperature_too_high;286=Hot_gas_temperature_switch_open;287=Fan_1_Wind;288=Fan_2_Wind;289=Current_limt_active;302=High_pressure_switch_open;303=Compressor_outlet_temperature_too_high_1;304=Evaporation_temperature_too_low;305=Condensation_temperature_too_low;306=Evaporation_temperature_too_high;308=Condensation_temperature_too_high;312=Building_circuit_return_temperature_too_low;314=Building_circuit_return_temperature_too_high;351=Immersion_heater_Flow_temperature_too_high;516=Deicing_active;575=Frequency_converter_fault;581=Connection_fault_frequency_converter;590=_4_port_valve_position_fault,,
-r,,,RunDataElectricPowerConsumption,,,,b509,5402005b0d,value,,IGN:4,,,,value,,EXP,,W,current electrical power consumption (Watt)
-r,,,RunDataHighPressure,,,,b509,5402006a09,value,,IGN:4,,,,value,,EXP,,bar,pressure
-r,,,RunDataCompressorInletTemp,,,,b509,5402009808,value,,IGN:4,,,,value,,EXP,,°C,temperature
-r,,,RunDataCompressorOutletTemp,,,,b509,540200a208,value,,IGN:4,,,,value,,EXP,,°C,temperature
-r,,,RunDataEEVOutletTemp,,,,b509,540200ac08,value,,IGN:4,,,,value,,EXP,,°C,temperature
-r,,,RunDataFlowTemp,,,,b509,540200fc08,value,,IGN:4,,,,value,,EXP,,°C,"current flow temp, accurate to 2 decimal places"
-r,,,RunDataReturnTemp,,,,b509,5402000609,value,,IGN:4,,,,value,,EXP,,°C,"current return temp, accurate to 2 decimal places"
-r,,,RunStatsHMUHours,,,,b509,540200b80b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunStatsHcHours,,,,b509,540200b90b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunStatsHwcHours,,,,b509,540200bc0b,value,,IGN:4,,,,value,,UIN,,h,total runtime of Hwc mode
-r,,,RunStatsCompressorHours,,,,b509,540200c20b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunStatsCompressorStarts,,,,b509,540200c30b,value,,IGN:4,,,,value,,UIN,,,start count
-r,,,RunStatsBuildingPumpHours,,,,b509,540200c40b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunDataBuildingCPumpPower,,,,b509,540200c509,value,,IGN:4,,,,value,,EXP,,%,
-r,,,RunStatsBuildingCPumpStarts,,,,b509,540200c50b,value,,IGN:4,,,,value,,UIN,,,total starts of building circuit pump
-r,,,RunStats4PortValveHours,,,,b509,540200c80b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunStats4PortValveSwitches,,,,b509,540200c90b,value,,IGN:4,,,,value,,UIN,,,start count
-r,,,RunStatsFan1Hours,,,,b509,540200d70b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunStatsFan1Starts,,,,b509,540200d80b,value,,IGN:4,,,,value,,UIN,,,start count
-r,,,RunStatsFan2Hours,,,,b509,540200d90b,value,,IGN:4,,,,value,,UIN,,h,hours
-r,,,RunStatsFan2Starts,,,,b509,540200da0b,value,,IGN:4,,,,value,,UIN,,,start count
-r,,,RunDataAirInletTemp,,,,b509,540200de08,value,,IGN:4,,,,value,,EXP,,°C,temperature
+r,,service,LiveMonitorDesiredSupplyTemp,desired supply temperature,,,b51a,0500321f,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,service,LiveMonitorCurrentSupplyTemp,current supply temperature,,,b51a,05003220,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,service,LiveMonitorCurrentYieldPower,current power generated,,,b51a,05003223,ign,,IGN:3,,,,value,,UIN,10,kW,
+r,,service,LiveMonitorCurrentConsumedPower,current power consumption,,,b51a,05003224,ign,,IGN:3,,,,value,,UIN,10,kW,
+r,,service,LiveMonitorCurrentCompressorUtil,compressor modulation,,,b51a,05003225,ign,,IGN:3,,,,value,,SCH,,%,
+r,,service,LiveMonitorAirIntakeTemp,air intake temperature,,,b51a,05003226,ign,,IGN:3,,,,value,,D2C,,°C,temperature
+r,,install,StatCompressorHours,compressor hours,,,b51a,05b43400,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,install,StatCompressorStarts,compressor starts,,,b51a,05b43401,ign,,IGN:3,,,,value,,UIN,,,
+r,,install,StatBuildingPumpHours,building pump hours,,,b51a,05b43402,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,install,StatBuildingPumpStarts,building pump starts,,,b51a,05b43403,ign,,IGN:3,,,,value,,UIN,,,
+r,,install,StatFourWayValveHours,4 way valve hours,,,b51a,05073406,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,install,StatFourWayValveSwitchingOperations,4 way valve switching operations,,,b51a,05363407,ign,,IGN:3,,,,value,,UIN,,,
+r,,install,StatFan1Hours,fan 1 hours,,,b51a,053c3451,ign,,IGN:3,,,,value,,ULG,,h,hours
+r,,install,StatFan1Starts,fan 1 starts,,,b51a,05d63452,ign,,IGN:3,,,,value,,UIN,,,
+r,,install,StatEEVSteps,EEV steps,,,b51a,05e4340d,ign,,IGN:3,,,,value,,UIN,,,
+r,,,RunDataCompressorSpeed,,,,b509,5402000d0a,ign,,IGN:4,,,,value,,EXP,,rps,
+r,,,RunDataEEVPositionAbs,(EEV Position in different scale?),,,b509,540200280a,ign,,IGN:4,,,,value,,UIN,,,
+r,,,RunDataFan1Speed,,,,b509,540200470a,ign,,IGN:4,,,,value,,EXP,,rpm,
+r,,,RunDataFan2Speed,,,,b509,540200490a,ign,,IGN:4,,,,value,,EXP,,rpm,
+r,,,RunDataStatuscode,,,,b509,540200530d,ign,,IGN:4,,,,value,,UIN,34=Frost_protection;100=Standby;101=Heating_Compressor_shutdown;102=Heating_Compressor_blocked;103=Heating_Prerun;104=Heating_Compressor_active;107=Heating_Overrun;111=Cooling_Compressor_shutdown;112=Cooling_Compressor_blocked;113=Cooling_Prerun;114=Cooling_Compressor_active;117=Cooling_Overrun;125=Heating_Immersion_heater_active;132=Warm_Water_Compressor_blocked;133=Warm_Water_Prerun;134=Warm_Water_Compressor_active;135=Warm_Water_Immersion_Heater_active;137=Warm_Water_Overrun;141=Heating_Immersion_Heater_shutdown;142=Heating_Immersion_Heater_blocked;151=Warm_Water_Immersion_Heater_shutdown;152=Warm_Water_Immersion_Heater_blocked;202=Air_purging_program_active;240=Compressor_oil_heating_activated;252=Fan_1_blocked;255=Fan_1_air_inlet_too_high;256=Fan_1_air_inlet_too_low;260=Fan_2_blocked;275=Building_circuit_flow_too_low;277=Building_circuit_pump_fault;280=Frequency_converter_fault_Compressor;281=Frequency_converter_fault_Mains_voltage;282=Frequency_converter_fault_Overheating;283=Deicing_time_too_long;284=Deicing_flow_temperature_too_low;285=Compressor_outlet_temperature_too_high;286=Hot_gas_temperature_switch_open;287=Fan_1_Wind;288=Fan_2_Wind;289=Current_limt_active;302=High_pressure_switch_open;303=Compressor_outlet_temperature_too_high_1;304=Evaporation_temperature_too_low;305=Condensation_temperature_too_low;306=Evaporation_temperature_too_high;308=Condensation_temperature_too_high;312=Building_circuit_return_temperature_too_low;314=Building_circuit_return_temperature_too_high;351=Immersion_heater_Flow_temperature_too_high;516=Deicing_active;575=Frequency_converter_fault;581=Connection_fault_frequency_converter;590=_4_port_valve_position_fault,,
+r,,,RunDataElectricPowerConsumption,,,,b509,5402005b0d,ign,,IGN:4,,,,value,,EXP,,W,current electrical power consumption (Watt)
+r,,,RunDataHighPressure,,,,b509,5402006a09,ign,,IGN:4,,,,value,,EXP,,bar,pressure
+r,,,RunDataCompressorInletTemp,,,,b509,5402009808,ign,,IGN:4,,,,value,,EXP,,°C,temperature
+r,,,RunDataCompressorOutletTemp,,,,b509,540200a208,ign,,IGN:4,,,,value,,EXP,,°C,temperature
+r,,,RunDataEEVOutletTemp,,,,b509,540200ac08,ign,,IGN:4,,,,value,,EXP,,°C,temperature
+r,,,RunDataFlowTemp,,,,b509,540200fc08,ign,,IGN:4,,,,value,,EXP,,°C,"current flow temp, accurate to 2 decimal places"
+r,,,RunDataReturnTemp,,,,b509,5402000609,ign,,IGN:4,,,,value,,EXP,,°C,"current return temp, accurate to 2 decimal places"
+r,,,RunStatsHMUHours,,,,b509,540200b80b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunStatsHcHours,,,,b509,540200b90b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunStatsHwcHours,,,,b509,540200bc0b,ign,,IGN:4,,,,value,,UIN,,h,total runtime of Hwc mode
+r,,,RunStatsCompressorHours,,,,b509,540200c20b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunStatsCompressorStarts,,,,b509,540200c30b,ign,,IGN:4,,,,value,,UIN,,,start count
+r,,,RunStatsBuildingPumpHours,,,,b509,540200c40b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunDataBuildingCPumpPower,,,,b509,540200c509,ign,,IGN:4,,,,value,,EXP,,%,
+r,,,RunStatsBuildingCPumpStarts,,,,b509,540200c50b,ign,,IGN:4,,,,value,,UIN,,,total starts of building circuit pump
+r,,,RunStats4PortValveHours,,,,b509,540200c80b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunStats4PortValveSwitches,,,,b509,540200c90b,ign,,IGN:4,,,,value,,UIN,,,start count
+r,,,RunStatsFan1Hours,,,,b509,540200d70b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunStatsFan1Starts,,,,b509,540200d80b,ign,,IGN:4,,,,value,,UIN,,,start count
+r,,,RunStatsFan2Hours,,,,b509,540200d90b,ign,,IGN:4,,,,value,,UIN,,h,hours
+r,,,RunStatsFan2Starts,,,,b509,540200da0b,ign,,IGN:4,,,,value,,UIN,,,start count
+r,,,RunDataAirInletTemp,,,,b509,540200de08,ign,,IGN:4,,,,value,,EXP,,°C,temperature
 r,,,RunStatsCompressorHc,compressor runtime in min and starts in Hc mode,,,b511,1801,ign,,IGN:1,,,,runtime,,ULG,,min,minutes,cycles,,ULG,,,start count
 r,,,RunStatsCompressorHwc,compressor runtime in min and starts in Hwc mode,,,b511,1802,ign,,IGN:1,,,,runtime,,ULG,,min,minutes,cycles,,ULG,,,start count
 r,,,DateTime,date/time,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF receiver state,btime,,BTI,,,time,bdate,,BDA,,,date,temp,,D2B,,°C,temperature
@@ -201,7 +201,7 @@ uw,,,SetMode,Operation mode,,,b510,00,hcmode,,UCH,0=auto;1=off;2=heat;3=water,,b
 w,,install,SetMode,Operation mode,,,b510,00,hcmode,,UCH,0=auto;1=off;2=heat;3=water,,boiler mode,flowtempdesired,,D1C,,°C,temperature,hwctempdesired,,D1C,,°C,temperature,hwcflowtempdesired,,UCH,,°C,temperature,ign,,IGN:1,,,,disablehc,,BI0,,,,disablehwctapping,,BI1,,,,disablehwcload,,BI2,,,,ign_1,,IGN:1,,,,remotecontrolhcpump,,BI0,,,,releasebackup,,BI1,,,,releasecooling,,BI2,,,
 r,,,Status01,Vorlauftemperatur/Rücklauftemperatur/Aussentemperatur/WW Temperatur/Speichertemperatur/Pumpenstatus,,,b511,01,temp,,D1C,,°C,temperature,temp_1,,D1C,,°C,temperature,temp_2,,D2B,,°C,temperature,temp_3,,D1C,,°C,temperature,temp_4,,D1C,,°C,temperature,pumpstate,,UCH,0=off;1=on;2=overrun;4=hwc,,pump state
 r,,,Status02,Betriebsart/Maximaltemperatur/ReglerCurrentTemp/Maximaltemperatur/ReglerCurrentTemp,,,b511,02,hwcmode,,UCH,0=disabled;1=on;2=off;3=auto,,hot water mode,temp,,UCH,,°C,temperature,temp_1,,D1C,,°C,temperature,temp_2,,UCH,,°C,temperature,temp_3,,D1C,,°C,temperature
-r,,,Status,Status,,,b511,03,temp,,D2C,,°C,temperature,press,,FLT,,bar,pressure,press_1,,FLT,,bar,pressure,hcmode,,UCH,0=off;3=heat;4=water,,boiler mode,hex,,HEX,,,
+r,,,Status,Status,,,b511,03,temp,,D2C,,°C,temperature,press,,FLT,,bar,pressure,press_1,,FLT,,bar,pressure,hcmode,,UCH,0=off;1=cooling;3=heat;4=water,,boiler mode,hex,,HEX,,,
 uw,,,StatusCirPump,Status circulation pump,,,b512,00,value,,UCH,0=off;100=on,,
 r,,,Currenterror,Current errors,,,b503,0001,error,,UIN,,,error number,error_1,,UIN,,,error number,error_2,,UIN,,,error number,error_3,,UIN,,,error number,error_4,,UIN,,,error number
 r,,,Errorhistory,Error_History,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,time,date,,HDA:3,,,date,error,,UIN,,,error number

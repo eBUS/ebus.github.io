@@ -186,6 +186,3 @@ r,,,PrEnergySumHc3,PrEnergySumCH3,,,b509,0df900,value,,ULG,,,Wartungsdaten
 w,,install_NOT_YET_CONFIRMED,PrEnergySumHc3,PrEnergySumCH3,,,b509,0ef900,value,,ULG,,,Wartungsdaten
 r,,,PrEnergyCountHc3,PrEnergyCountCH3,,,b509,0dfa00,value,,ULG,,,Wartungsdaten
 w,,install_NOT_YET_CONFIRMED,PrEnergyCountHc3,PrEnergyCountCH3,,,b509,0efa00,value,,ULG,,,Wartungsdaten
-r,,,Currenterror,Aktuelle Fehler,,,b503,0001,error,,UIN,,,Fehlernummer,error_1,,UIN,,,Fehlernummer,error_2,,UIN,,,Fehlernummer,error_3,,UIN,,,Fehlernummer,error_4,,UIN,,,Fehlernummer
-r,,,Errorhistory,Fehlerhistorie,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,Uhrzeit,date,,HDA:3,,,Datum,error,,UIN,,,Fehlernummer
-w,,install,Clearerrorhistory,Fehlerhistorie löschen,,,b503,0201,cleared,s,UCH,0=no;1=yes,,
