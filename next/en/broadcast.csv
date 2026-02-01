@@ -9,9 +9,3 @@ u,Broadcast,,IdAnswer,answer to identification query,,fe,0704,,mf,,UCH,6=Dungs;1
 w,Broadcast,,Queryexistence,Inquiry of existence,,fe,07fe,,
 u,Broadcast,,Signoflife,sign of life,,fe,07ff,,
 u,Broadcast,,Error,error message,,fe,fe01,,error,,STR:10,,,
-u,Broadcast,,RcTarget,room controller target values,,fe,0800,,desiredtemp,,D2B,,°C,boiler target temperature,outsidetemp,,D2B,,°C,outside temperature,forced,,SCH,,%,forced performance,hwc,,BI0,,,hot water active,hc,,BI1,,,heat active,hwcdesiredtemp,,D2B,,°C,hot water target temperature
-u,Broadcast,,RcOperation,room controller operational data,,fe,0801,,temp,,D2B,,°C,boiler effective temperature,buffertemp,,D2B,,°C,hot water effective temperature,emissiontest,,UCH,0=none;1=br1;2=br1stb;3=br12;4=br12stb,,emission test,hwc,,BI0,,,hot water active,pump,,BI1,,,pump active,buffer1,,BI2,,,buffer 1 active,buffer2,,BI3,,,buffer 2 active,loading,,BI4,,,loading pump active,hwcloading,,BI5,,,hot water loading pump active,tbfconnect,,BI6,,,TBF connected,returntemp,,D2B,,°C,return flow temperature
-u,Broadcast,,ControlCmd,control commands,,fe,0802,,desiredtemp,,D2B,,°C,boiler target temperature,hwcdesiredtemp,,D2B,,°C,hot water target temperature,expected,,SCH,,%,expected performance,device,,UCH,,,first device with error,error,,UCH,,,error code
-u,Broadcast,,Netresetstate,reset network state,,fe,ff00,,
-u,Broadcast,,Netresetcfg,reset network config,,fe,ff01,,
-u,Broadcast,,Netloss,network loss,,fe,ff02,,

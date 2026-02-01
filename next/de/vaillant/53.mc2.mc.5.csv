@@ -61,20 +61,20 @@ r,,,CoolingOpmodeAutoState,Kühlbetriebsart Auto Zustand,,,b509,0dc600,value,,UC
 r,,,CoolingModeAutomaticState,CoolingModeAutomaticState,,,b509,0dc700,value,,UCH,,,
 r,,,CoolingWhileHolidaySupported,Kühlung freigegeben während Urlaubszeitraum,,,b509,0dc800,value,,UCH,,,
 r,,,RcRoomTemp,RcRoomTemp,,,b509,0dc900,value,,D2C,,°C,Temperatur
-r,,,CoolingTimer_Monday,Zeitfenster Montag,,,b515,0003,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Monday,Zeitfenster Montag,,,b515,0003,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,CoolingTimer_Tuesday,Zeitfenster Dienstag,,,b515,0103,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Tuesday,Zeitfenster Dienstag,,,b515,0103,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,CoolingTimer_Wednesday,Zeitfenster Mittwoch,,,b515,0203,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Wednesday,Zeitfenster Mittwoch,,,b515,0203,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,CoolingTimer_Thursday,Zeitfenster Donnerstag,,,b515,0303,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Thursday,Zeitfenster Donnerstag,,,b515,0303,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,CoolingTimer_Friday,Zeitfenster Freitag,,,b515,0403,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Friday,Zeitfenster Freitag,,,b515,0403,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,CoolingTimer_Saturday,Zeitfenster Samstag,,,b515,0503,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Saturday,Zeitfenster Samstag,,,b515,0503,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,CoolingTimer_Sunday,Zeitfenster Sonntag,,,b515,0603,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,CoolingTimer_Sunday,Zeitfenster Sonntag,,,b515,0603,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
+r,,,CoolingTimer_Monday,Zeitfenster Montag,,,b515,0003,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Monday,Zeitfenster Montag,,,b515,0003,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,CoolingTimer_Tuesday,Zeitfenster Dienstag,,,b515,0103,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Tuesday,Zeitfenster Dienstag,,,b515,0103,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,CoolingTimer_Wednesday,Zeitfenster Mittwoch,,,b515,0203,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Wednesday,Zeitfenster Mittwoch,,,b515,0203,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,CoolingTimer_Thursday,Zeitfenster Donnerstag,,,b515,0303,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Thursday,Zeitfenster Donnerstag,,,b515,0303,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,CoolingTimer_Friday,Zeitfenster Freitag,,,b515,0403,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Friday,Zeitfenster Freitag,,,b515,0403,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,CoolingTimer_Saturday,Zeitfenster Samstag,,,b515,0503,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Saturday,Zeitfenster Samstag,,,b515,0503,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,CoolingTimer_Sunday,Zeitfenster Sonntag,,,b515,0603,ign,,IGN:1,,,,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,CoolingTimer_Sunday,Zeitfenster Sonntag,,,b515,0603,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
 r,,,DateTime,Datum Uhrzeit,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF Empfängerstatus,btime,,BTI,,,Uhrzeit,bdate,,BDA,,,Datum,temp,,D2B,,°C,Temperatur
 r,,,Mode,Betriebsmodus,,,b504,01,tempdesired,,UCH,,°C,Temperatur,mcmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus,floorpavingdryingday,,UCH,,,Tage,floorpavingdryingtemp,,UCH,,°C,Temperatur,teleswitchmode,,UCH,0=disabled;1=on;2=off;3=auto;4=eco;5=low,,Mischer Modus,mctype,,BI0:7,0=inactive;1=mixer;2=fixed;3=hwc;4=returnincr;5=pool;6=circulation,,Mischer Typ,ign,,IGN,,,,daynight,,UCH,0=night;1=day;4=load;7=floorpaving,,Tag-/Nachtmodus
 w,,,SetTempDesired,Solltemperatur setzen,,,b505,01,value,,UCH,,°C,Temperatur
@@ -94,20 +94,20 @@ r,,,Params,Parameter,,,b504,09,tempdesired,,UCH,,°C,Temperatur,tempdesiredlow,,
 r,,,Status0a,Status Vorlauf Ist/Mixer/Pumpe/Vorlauf Soll,,,b504,0a,flowtemp,,D2C,,°C,Temperatur,mixer,,UCH,0=off;1=open;2=close,,Mixer Status,pump,,UCH,0=off;1=on,,,onoff,,UCH,0=off;1=on,,,flowtempdesired,,UCH,,°C,Temperatur
 r,,,Status,Status Vorlauf Soll/Ist,,,b504,0d,flowtempdesired,,UCH,,°C,Temperatur,onoff,,UCH,0=off;1=on,,,flowtemp,,D2C,,°C,Temperatur,tempdesired,,UCH,,°C,Temperatur
 r,,,Status16,Außentemperatur,,,b504,16,value,,D2C,,°C,Temperatur
-r,,,Timer_Monday,Zeitfenster Montag,,,b504,02,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Monday,Zeitfenster Montag,,,b505,0901,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,Timer_Tuesday,Zeitfenster Dienstag,,,b504,03,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Tuesday,Zeitfenster Dienstag,,,b505,0902,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,Timer_Wednesday,Zeitfenster Mittwoch,,,b504,04,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Wednesday,Zeitfenster Mittwoch,,,b505,0903,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,Timer_Thursday,Zeitfenster Donnerstag,,,b504,05,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Thursday,Zeitfenster Donnerstag,,,b505,0904,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,Timer_Friday,Zeitfenster Freitag,,,b504,06,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Friday,Zeitfenster Freitag,,,b505,0905,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,Timer_Saturday,Zeitfenster Samstag,,,b504,07,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Saturday,Zeitfenster Samstag,,,b505,0906,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-r,,,Timer_Sunday,Zeitfenster Sonntag,,,b504,08,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
-w,,,Timer_Sunday,Zeitfenster Sonntag,,,b505,0907,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,Tage
+r,,,Timer_Monday,Zeitfenster Montag,,,b504,02,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Monday,Zeitfenster Montag,,,b505,0901,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Tuesday,Zeitfenster Dienstag,,,b504,03,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Tuesday,Zeitfenster Dienstag,,,b505,0902,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Wednesday,Zeitfenster Mittwoch,,,b504,04,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Wednesday,Zeitfenster Mittwoch,,,b505,0903,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Thursday,Zeitfenster Donnerstag,,,b504,05,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Thursday,Zeitfenster Donnerstag,,,b505,0904,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Friday,Zeitfenster Freitag,,,b504,06,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Friday,Zeitfenster Freitag,,,b505,0905,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Saturday,Zeitfenster Samstag,,,b504,07,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Saturday,Zeitfenster Samstag,,,b505,0906,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Sunday,Zeitfenster Sonntag,,,b504,08,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Sunday,Zeitfenster Sonntag,,,b505,0907,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,from,,TTM,,,von,to,,TTM,,,bis,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
 r,,,Currenterror,Aktuelle Fehler,,,b503,0001,error,,UIN,,,Fehlernummer,error_1,,UIN,,,Fehlernummer,error_2,,UIN,,,Fehlernummer,error_3,,UIN,,,Fehlernummer,error_4,,UIN,,,Fehlernummer
 r,,,Errorhistory,Fehlerhistorie,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,Uhrzeit,date,,HDA:3,,,Datum,error,,UIN,,,Fehlernummer
 w,,install,Clearerrorhistory,Fehlerhistorie löschen,,,b503,0201,cleared,s,UCH,0=no;1=yes,,

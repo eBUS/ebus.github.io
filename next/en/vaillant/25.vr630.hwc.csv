@@ -42,20 +42,20 @@ r,,,Params,Parameters,,,b504,09,temp,,UCH,,°C,temperature,ign,,IGN:3,,,,mctype,
 r,,,Status0a,Status flow temperature/mixer/pump/desired flow temperature,,,b504,0a,flowtemp,,D2C,,°C,temperature,mixer,,UCH,0=off;1=open;2=close,,mixer State,pump,,UCH,0=off;1=on,,,onoff,,UCH,0=off;1=on,,,flowtempdesired,,UCH,,°C,temperature
 r,,,Status,Desired flow/status/flow/desired temperature,,,b504,0d,temp,,UCH,,°C,temperature,onoff,,UCH,0=off;1=on,,,temp_1,,D2C,,°C,temperature,temp_2,,UCH,,°C,temperature
 r,,,Status16,outside temperature,,,b504,16,value,,D2C,,°C,temperature
-r,,,Timer_Monday,Periods Monday,,,b504,02,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Monday,Periods Monday,,,b505,0901,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Tuesday,Periods Tuesday,,,b504,03,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Tuesday,Periods Tuesday,,,b505,0902,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Wednesday,Periods Wednesday,,,b504,04,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Wednesday,Periods Wednesday,,,b505,0903,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Thursday,Periods Thursday,,,b504,05,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Thursday,Periods Thursday,,,b505,0904,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Friday,Periods Friday,,,b504,06,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Friday,Periods Friday,,,b505,0905,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Saturday,Periods Saturday,,,b504,07,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Saturday,Periods Saturday,,,b505,0906,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Sunday,Periods Sunday,,,b504,08,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Sunday,Periods Sunday,,,b505,0907,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
+r,,,Timer_Monday,Periods Monday,,,b504,02,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Monday,Periods Monday,,,b505,0901,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Tuesday,Periods Tuesday,,,b504,03,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Tuesday,Periods Tuesday,,,b505,0902,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Wednesday,Periods Wednesday,,,b504,04,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Wednesday,Periods Wednesday,,,b505,0903,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Thursday,Periods Thursday,,,b504,05,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Thursday,Periods Thursday,,,b505,0904,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Friday,Periods Friday,,,b504,06,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Friday,Periods Friday,,,b505,0905,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Saturday,Periods Saturday,,,b504,07,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Saturday,Periods Saturday,,,b505,0906,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Sunday,Periods Sunday,,,b504,08,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Sunday,Periods Sunday,,,b505,0907,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
 w,,install,Iotest,I/O test,,,b506,02,value,,UCH,0=valve1;1=cirpump;2=pump1;3=hc2mixeropen;4=hc2mixerclose;5=hc2pump;6=hc3mixeropen;7=hc3mixerclose;8=hc3pump;9=level1;10=level2;11=av;12=c1c2,,
 w,,install,Ioteststop,stop I/O test,,,b506,01,
 r,,,Currenterror,Current errors,,,b503,0001,error,,UIN,,,error number,error_1,,UIN,,,error number,error_2,,UIN,,,error number,error_3,,UIN,,,error number,error_4,,UIN,,,error number

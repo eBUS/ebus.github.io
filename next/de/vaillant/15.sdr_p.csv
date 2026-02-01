@@ -41,8 +41,8 @@ r,,,Time,Uhrzeit,,,b509,0d1700,value,,VTI,,,Uhrzeit
 w,,install,Time,Uhrzeit,,,b509,0e1700,value,,VTI,,,Uhrzeit
 r1,,,Yield,Solarertrag,,,b509,0d1e00,value,,UIN,,,
 w,,install,Yield,Solarertrag,,,b509,0e1e00,value,,UIN,,,
-r1,,,CollPumpHRuntime,Laufzeit Solarpumpe,,,b509,0d1f00,value,,ULG,,,
-w,,install,CollPumpHRuntime,Laufzeit Solarpumpe,,,b509,0e1f00,value,,ULG,,,
+r1,,,CollPumpHours,Laufzeit Solarpumpe,,,b509,0d1f00,value,,ULG,,h,Stunden
+w,,install,CollPumpHours,Laufzeit Solarpumpe,,,b509,0e1f00,value,,ULG,,h,Stunden
 r,,,Date,Datum,,,b509,0d2000,value,,HDA:3,,,Datum
 w,,install,Date,Datum,,,b509,0e2000,value,,HDA:3,,,Datum
 r,,,IsInHoliday,Urlaub,,,b509,0d2800,value,,UCH,,,

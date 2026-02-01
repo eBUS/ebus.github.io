@@ -40,20 +40,20 @@ r,,,Params,Parameters,,,b504,09,tempdesired,,UCH,,°C,temperature,tempdesiredlow
 r,,,Status0a,Status flow temperature/mixer/pump/desired flow temperature,,,b504,0a,flowtemp,,D2C,,°C,temperature,mixer,,UCH,0=off;1=open;2=close,,mixer State,pump,,UCH,0=off;1=on,,,onoff,,UCH,0=off;1=on,,,flowtempdesired,,UCH,,°C,temperature
 r,,,Status,Status flow desired/current,,,b504,0d,flowtempdesired,,UCH,,°C,temperature,onoff,,UCH,0=off;1=on,,,flowtemp,,D2C,,°C,temperature,tempdesired,,UCH,,°C,temperature
 r,,,Status16,outside temperature,,,b504,16,value,,D2C,,°C,temperature
-r,,,Timer_Monday,Periods Monday,,,b504,02,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Monday,Periods Monday,,,b505,0901,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Tuesday,Periods Tuesday,,,b504,03,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Tuesday,Periods Tuesday,,,b505,0902,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Wednesday,Periods Wednesday,,,b504,04,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Wednesday,Periods Wednesday,,,b505,0903,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Thursday,Periods Thursday,,,b504,05,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Thursday,Periods Thursday,,,b505,0904,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Friday,Periods Friday,,,b504,06,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Friday,Periods Friday,,,b505,0905,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Saturday,Periods Saturday,,,b504,07,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Saturday,Periods Saturday,,,b505,0906,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-r,,,Timer_Sunday,Periods Sunday,,,b504,08,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
-w,,,Timer_Sunday,Periods Sunday,,,b505,0907,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,days
+r,,,Timer_Monday,Periods Monday,,,b504,02,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Monday,Periods Monday,,,b505,0901,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Tuesday,Periods Tuesday,,,b504,03,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Tuesday,Periods Tuesday,,,b505,0902,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Wednesday,Periods Wednesday,,,b504,04,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Wednesday,Periods Wednesday,,,b505,0903,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Thursday,Periods Thursday,,,b504,05,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Thursday,Periods Thursday,,,b505,0904,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Friday,Periods Friday,,,b504,06,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Friday,Periods Friday,,,b505,0905,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Saturday,Periods Saturday,,,b504,07,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Saturday,Periods Saturday,,,b505,0906,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+r,,,Timer_Sunday,Periods Sunday,,,b504,08,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
+w,,,Timer_Sunday,Periods Sunday,,,b505,0907,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,from,,TTM,,,from,to,,TTM,,,to,daysel,,UCH,0=selected;1=Mo_Fr;2=Sa_Su;3=Mo_Su,,day selector
 w,,,RoomTempOffset,Room offset calculation,,,b505,2d,value,,D2C,,°C,temperature
 w,,,Party,Quick - party,,,b505,05,value,,UCH,0=off;1=on,,
 w,,,Load,quick - hot water tank filling,,,b505,06,value,,UCH,0=off;1=on,,

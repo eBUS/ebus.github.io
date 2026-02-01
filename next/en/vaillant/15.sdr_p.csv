@@ -41,8 +41,8 @@ r,,,Time,time,,,b509,0d1700,value,,VTI,,,time
 w,,install,Time,time,,,b509,0e1700,value,,VTI,,,time
 r1,,,Yield,Solar gain,,,b509,0d1e00,value,,UIN,,,
 w,,install,Yield,Solar gain,,,b509,0e1e00,value,,UIN,,,
-r1,,,CollPumpHRuntime,Operation time solar pump,,,b509,0d1f00,value,,ULG,,,
-w,,install,CollPumpHRuntime,Operation time solar pump,,,b509,0e1f00,value,,ULG,,,
+r1,,,CollPumpHours,Operation time solar pump,,,b509,0d1f00,value,,ULG,,h,hours
+w,,install,CollPumpHours,Operation time solar pump,,,b509,0e1f00,value,,ULG,,h,hours
 r,,,Date,date,,,b509,0d2000,value,,HDA:3,,,date
 w,,install,Date,date,,,b509,0e2000,value,,HDA:3,,,date
 r,,,IsInHoliday,Holiday,,,b509,0d2800,value,,UCH,,,
