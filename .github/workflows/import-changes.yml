@@ -23,15 +23,15 @@ jobs:
       subdir: .
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         persist-credentials: false
         fetch-depth: 1
         submodules: true
-    - name: Use Node.js node 20.x
-      uses: actions/setup-node@v5
+    - name: Use Node.js node 24.x
+      uses: actions/setup-node@v6
       with:
-        node-version: 20.x
+        node-version: 24.x
     - name: Determine suffix and subdir
       run: |
         if [[ "$next" == "next" ]]; then
@@ -84,7 +84,7 @@ jobs:
         ./.github/workflows/genversions.sh ${subdir}/en
         ./.github/workflows/genversions.sh ${subdir}/de
     - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: conversion_result
         path: |
